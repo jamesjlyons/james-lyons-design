@@ -7,5 +7,12 @@
 module.exports = {
   siteName: '🦁',
   siteUrl: 'https://www.jameslyons.design',
-  plugins: []
+  plugins: [
+      {
+      use: '@gridsome/plugin-google-analytics',
+      options: {
+        id: 'UA-115297912-2'
+      }
+    }
+  ]
 }
