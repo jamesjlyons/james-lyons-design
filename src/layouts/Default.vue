@@ -27,10 +27,11 @@ html {
   font-size: 18px;
 }
 
-@media (width: 360px) {
+@media (max-width: 414px) {
   html {
   font-size: 16px;
 }
+
 }
 
 body {
@@ -119,5 +120,14 @@ a:hover::before {
   margin-bottom: 96px;
   padding-left: 48px;
   padding-right: 48px;
+}
+
+@media (max-width: 414px) {
+  .layout {
+  margin-top: 48px;
+  margin-bottom: 48px;
+  padding-left: 24px;
+  padding-right: 24px;
+  }
 }
 </style>
