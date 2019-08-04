@@ -1,33 +1,74 @@
 <template>
   <Layout>
-    
     <!-- Learn how to use images here: https://gridsome.org/docs/images -->
-    <g-image alt="Example image" src="~/favicon.png" width="135" />
-    
-    <h1>Hello, world!</h1>
-   
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur excepturi labore tempore expedita, et iste tenetur suscipit explicabo! Dolores, aperiam non officia eos quod asperiores
-    </p>
+    <div class="intro">
+      <h4 class="overline">Hello</h4>
+      <h2>I'm James Lyons</h2>
+      <h3>
+        Currently working as a Product Designer at
+        <a
+          href="https://liferay.design"
+        >Liferay</a> and making things with
+        <a
+          href="http://tapfive.io/"
+        >Tap&nbspFive</a>.
+      </h3>
+      <h4>
+        Previously lead designer at
+        <a
+          href="https://www.grandpad.net"
+        >GrandPad</a>
+      </h4>
 
-    <p class="home-links">
-      <a href="https://gridsome.org/docs" target="_blank" rel="noopener">Gridsome Docs</a>
-      <a href="https://github.com/gridsome/gridsome" target="_blank" rel="noopener">GitHub</a>
-    </p>
-
+      <div class="links">
+        <h5>
+          <a href="mailto:jamesjlyons29@gmail.com" target="_blank" class="button-link">
+            <span>✉️</span>&nbspEmail
+          </a>
+        </h5>
+        <h5>
+          <a href="https://dribbble.com/jamesjlyons" target="_blank" class="button-link">
+            <span>🏀</span>&nbspDribbble
+          </a>
+        </h5>
+        <h5>
+          <a href="https://github.com/jamesjlyons" target="_blank" class="button-link">
+            <span>👨‍💻</span>&nbspGitHub
+          </a>
+        </h5>
+      </div>
+      <br />
+      <br />
+      <br />
+      <div class="werk text_small">
+        <g-image alt="party parrot construction" src="~/assets/fixparrot.gif" width="16" />Currently getting werk done on this site.
+      </div>
+    </div>
   </Layout>
 </template>
 
 <script>
-export default {
-  metaInfo: {
-    title: 'Hello, world!'
-  }
-}
+// export default {
+//   metaInfo: {
+//     title: "🦁"
+//   }
+// };
 </script>
 
 <style>
-.home-links a {
-  margin-right: 1rem;
+.intro {
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.werk {
+  text-align: right;
+}
+
+h5 {
+  margin-right: 48px;
 }
 </style>
