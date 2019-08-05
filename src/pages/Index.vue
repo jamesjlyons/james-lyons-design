@@ -6,18 +6,12 @@
       <h2>I'm James Lyons</h2>
       <h3>
         Currently working as a Product Designer at
-        <a
-          href="https://liferay.design"
-        >Liferay</a> and making things with
-        <a
-          href="http://tapfive.io/"
-        >Tap&nbspFive</a>.
+        <a href="https://liferay.design">Liferay</a> and making things with
+        <a href="http://tapfive.io/">Tap&nbspFive</a>.
       </h3>
       <h4>
         Previously lead designer at
-        <a
-          href="https://www.grandpad.net"
-        >GrandPad</a>
+        <a href="https://www.grandpad.net">GrandPad</a>
       </h4>
 
       <div class="links">
@@ -40,23 +34,24 @@
       <br />
       <br />
       <br />
-      <div class="werk text_small">
-        <g-image alt="party parrot construction" src="~/assets/fixparrot.gif" width="16" />Currently getting werk done on this site.
-      </div>
+    </div>
+    <div class="werk text_small">
+      <g-image alt="party parrot construction" src="~/assets/fixparrot.gif" width="16" />Currently getting werk done on this site.
     </div>
   </Layout>
 </template>
 
 <script>
-// export default {
-//   metaInfo: {
-//     title: "🦁"
-//   }
-// };
+export default {
+  metaInfo: {
+    title: "🦁"
+  }
+}
 </script>
 
 <style>
 .intro {
+  max-width: 1200px;
 }
 
 .links {
