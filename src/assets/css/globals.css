@@ -1,0 +1,7 @@
+@import url("https://fonts.googleapis.com/css?family=Barlow:400,500,600,700&display=swap");
+
+:root {
+    font-size: 18px;
+  --dark: black;
+  --gradient: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);;
+}
