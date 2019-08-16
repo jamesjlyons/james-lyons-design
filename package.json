@@ -11,5 +11,10 @@
   "dependencies": {
     "@gridsome/plugin-google-analytics": "^0.1.0",
     "gridsome": "^0.6.0"
+  },
+  "devDependencies": {
+    "postcss-loader": "^3.0.0",
+    "postcss-nesting": "^7.0.1",
+    "postcss-preset-env": "^6.7.0"
   }
 }

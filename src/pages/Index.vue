@@ -7,7 +7,7 @@
       <h3>
         Currently working as a Product Designer at
         <a href="https://liferay.design">Liferay</a> and making things with
-        <a href="http://tapfive.io/">Tap&nbspFive</a>.
+        <a href="http://tapfive.io/">Tap&nbsp;Five</a>.
       </h3>
       <h4>
         Previously lead designer at
@@ -17,17 +17,17 @@
       <div class="links">
         <h5>
           <a href="mailto:jamesjlyons29@gmail.com" target="_blank" class="button-link">
-            <span>✉️</span>&nbspEmail
+            <span>✉️</span>&nbsp;Email
           </a>
         </h5>
         <h5>
           <a href="https://dribbble.com/jamesjlyons" target="_blank" class="button-link">
-            <span>🏀</span>&nbspDribbble
+            <span>🏀</span>&nbsp;Dribbble
           </a>
         </h5>
         <h5>
           <a href="https://github.com/jamesjlyons" target="_blank" class="button-link">
-            <span>👨‍💻</span>&nbspGitHub
+            <span>👨‍💻</span>&nbsp;GitHub
           </a>
         </h5>
       </div>
@@ -44,12 +44,12 @@
 <script>
 export default {
   metaInfo: {
-    title: "🦁"
+    title: ""
   }
 }
 </script>
 
-<style>
+<style lang="postcss">
 .intro {
   max-width: 1200px;
 }
@@ -65,5 +65,10 @@ export default {
 
 h5 {
   margin-right: 48px;
+  & a { 
+    & span {
+      text-decoration: underline white;
+   }
+  }
 }
 </style>
