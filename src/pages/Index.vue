@@ -142,6 +142,7 @@ span.wave:hover {
 
 .intro-frame {
   grid-area: 1 / 1 / 3 / 2;
+  z-index: 1;
   /* width: 196px;
   height: 196px; */
   background: rgb(255, 255, 255);
@@ -166,7 +167,6 @@ span.wave:hover {
   grid-area:  2 / 1 / 4 / 2;
   width: 196px;
   padding-bottom: 14px;
-  z-index: -1;
   background: rgb(243, 243, 243);
   border-radius: 0 0 16px 16px;
   display: flex;
