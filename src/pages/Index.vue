@@ -8,17 +8,19 @@
               <span class="wave">👋</span>
             </div>
           </div>
-          <div class="intro-links">
-            <a href="https://dribbble.com/jamesjlyons" target="_blank" class="button-link">
-              <g-image src="~/assets/icon-dribbble.svg" width="24"/>
-            </a>
-            <a href="https://github.com/jamesjlyons" target="_blank" class="button-link">
-              <g-image src="~/assets/icon-github.svg" width="24"/>
-            </a>
-            <a href="mailto:jamesjlyons29@gmail.com" target="_blank" class="button-link">
-              <g-image src="~/assets/icon-email.svg" width="24"/>
-            </a>
-          </div>
+          <transition name="fade" appear>
+            <div class="intro-links">
+              <a href="https://dribbble.com/jamesjlyons" target="_blank" class="button-link">
+                <g-image src="~/assets/icon-dribbble.svg" width="24"/>
+              </a>
+              <a href="https://github.com/jamesjlyons" target="_blank" class="button-link">
+                <g-image src="~/assets/icon-github.svg" width="24"/>
+              </a>
+              <a href="mailto:jamesjlyons29@gmail.com" target="_blank" class="button-link">
+                <g-image src="~/assets/icon-email.svg" width="24"/>
+              </a>
+            </div>
+          </transition>
         </div>
         <transition name="fade" appear>
           <div class="intro-type">
@@ -129,10 +131,6 @@ span.wave:hover {
 
 .intro-graphic {
   margin-right: 24px;
-  /* background: rgb(243, 243, 243);
-  border-radius: 16px;
-  height: 208px;
-  width: 196px; */
   display: grid;
   grid-template-columns: 196px;
   grid-template-rows: 140px repeat(2, 56px);
@@ -143,8 +141,6 @@ span.wave:hover {
 .intro-frame {
   grid-area: 1 / 1 / 3 / 2;
   z-index: 1;
-  /* width: 196px;
-  height: 196px; */
   background: rgb(255, 255, 255);
   border: 4px solid rgb(235, 235, 235);
   box-shadow: 0px 12px 24px -9px rgba(0, 0, 0, 0.5);
@@ -222,6 +218,15 @@ span.wave:hover {
   .intro-hero {
     flex-direction: column;
     align-items: center;
+  }
+  .intro-graphic {
+    margin-right: 0px;
+    margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: 196px;
+    grid-template-rows: 140px repeat(2, 56px);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px; 
   }
 }
 
