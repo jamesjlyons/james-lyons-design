@@ -144,14 +144,13 @@ span.wave {
     color: var(--dark);
     text-decoration: underline var(--medium);
     text-decoration-skip-ink: auto;
-    transition-property: all;
+    transition-property: text-decoration;
     transition-duration: .3s;
     transition-timing-function: ease;
   }
    & a:hover {
     color: var(--dark);
     text-decoration: underline var(--green);
-    text-decoration-skip-ink: auto;
   }
 }
 
