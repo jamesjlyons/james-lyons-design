@@ -1,7 +1,65 @@
-@import url("https://fonts.googleapis.com/css?family=Barlow:400,500,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Barlow:500,800&display=swap");
 
 :root {
-    font-size: 18px;
-  --dark: black;
-  --gradient: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);;
+  /* font-size: 18px; */
+  --dark: hsla(0, 0%, 0%, 100%);
+  --medium: hsla(0, 0%, 0%, 33%);
+  --green: hsla(165, 82%, 52%, 1.00);
+  --gradient: linear-gradient(90deg, #00c9ff 0%, #92fe9d 100%);
+}
+
+html {
+  font-size: 18px;
+}
+
+body {
+  background-color: white;
+  font-family: "Barlow", -apple-system, system-ui, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-weight: 500;
+  line-height: 1.45;
+  color: var(--dark);
+}
+
+p {
+  margin-bottom: 1.25em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 2.75rem 0 1rem;
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+  line-height: 1.15;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 7.594em;
+}
+
+h2 {
+  font-size: 5.063em;
+  font-weight: 800;
+}
+
+h3 {
+  font-size: 3.375em;
+  font-weight: 800;
+}
+
+h4 {
+  font-size: 2.25em;
+}
+
+h5 {
+  font-size: 1.5em;
+}
+
+small,
+.text_small {
+  font-size: 0.667em;
 }
