@@ -10,13 +10,13 @@
           </div>
           <div class="intro-links">
             <a href="https://dribbble.com/jamesjlyons" target="_blank" class="button-link">
-              <span>🏀</span>
+              <g-image src="~/assets/icon-dribbble.svg" width="24"/>
             </a>
             <a href="https://github.com/jamesjlyons" target="_blank" class="button-link">
-              <span>👨‍💻</span>
+              <g-image src="~/assets/icon-github.svg" width="24"/>
             </a>
             <a href="mailto:jamesjlyons29@gmail.com" target="_blank" class="button-link">
-              <span>✉️</span>
+              <g-image src="~/assets/icon-email.svg" width="24"/>
             </a>
           </div>
         </div>
@@ -166,7 +166,7 @@ span.wave:hover {
 .intro-links {
   grid-area:  2 / 1 / 4 / 2;
   width: 196px;
-  padding-bottom: 14px;
+  padding-bottom: 12px;
   background: rgb(243, 243, 243);
   border-radius: 0 0 16px 16px;
   display: flex;
@@ -175,6 +175,12 @@ span.wave:hover {
   align-items: flex-end;
   & a {
     text-decoration: none;
+    transition-property: transform;
+    transition-duration: 0.1s;
+    transition-timing-function: ease-in-out;
+  }
+  & a:hover {
+    transform: scale(1.1);
   }
 }
 
@@ -183,9 +189,9 @@ span.wave:hover {
     color: var(--dark);
     text-decoration: underline var(--medium);
     text-decoration-skip-ink: auto;
-    transition-property: text-decoration;
+    transition-property: text-decoration color;
     transition-duration: 0.3s;
-    transition-timing-function: ease;
+    transition-timing-function: ease-in-out;
   }
   & a:hover {
     color: var(--dark);

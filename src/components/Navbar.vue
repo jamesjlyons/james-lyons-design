@@ -29,8 +29,15 @@ nav {
   align-items: flex-end;
   & .nav__link {
     color: var(--dark);
-    text-decoration: none;
     margin-left: 24px;
+    text-decoration: underline var(--light);
+    text-decoration-skip-ink: auto;
+    transition-property: text-decoration color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+  }
+  & .nav__link:hover {
+    text-decoration: underline var(--green);
   }
 }
 </style>
