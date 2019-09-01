@@ -216,12 +216,13 @@ span.wave:hover {
 /* Medium (md) */
 @media (max-width: 768px) {
   .intro-hero {
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
   }
   .intro-graphic {
     margin-right: 0px;
     margin-bottom: 40px;
+    margin-top: 40px;
     display: grid;
     grid-template-columns: 196px;
     grid-template-rows: 140px repeat(2, 56px);
