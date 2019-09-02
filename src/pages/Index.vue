@@ -9,26 +9,26 @@
                 <span class="wave">👋</span>
               </div>
               <div class="frame-liferay">
-                <g-image src="~/assets/liferay-icon-white.svg" width="88" />
+                <g-image src="~/assets/liferay-icon-white.svg" width="88" immediate="true"/>
               </div>
               <div class="frame-tapfive">
-                <g-image src="~/assets/tap5-logo.svg" width="120" />
+                <g-image src="~/assets/tap5-logo.svg" width="120" immediate="true"/>
               </div>
               <div class="frame-grandpad">
-                <g-image src="~/assets/grandpad-logo.svg" width="96" />
+                <g-image src="~/assets/grandpad-logo.svg" width="96" immediate="true"/>
               </div>
             </div>
           </transition>
           <transition name="fade" appear>
             <div class="intro-links">
               <a href="https://dribbble.com/jamesjlyons" target="_blank" class="button-link">
-                <g-image src="~/assets/icon-dribbble.svg" width="24" />
+                <g-image src="~/assets/icon-dribbble.svg" width="24" immediate="true"/>
               </a>
               <a href="https://github.com/jamesjlyons" target="_blank" class="button-link">
-                <g-image src="~/assets/icon-github.svg" width="24" />
+                <g-image src="~/assets/icon-github.svg" width="24" immediate="true"/>
               </a>
               <a href="mailto:jamesjlyons29@gmail.com" target="_blank" class="button-link">
-                <g-image src="~/assets/icon-email.svg" width="24" />
+                <g-image src="~/assets/icon-email.svg" width="24" immediate="true"/>
               </a>
             </div>
           </transition>
@@ -97,22 +97,7 @@ export default {
 </script>
 
 <style lang="postcss">
-.fade-enter-active {
-  transition: opacity 0.8s ease-in;
-}
 
-.fade-enter {
-  opacity: 0;
-}
-
-.fade-delay-enter-active {
-  transition: all 0.8s ease-in-out 0.75s;
-}
-
-.fade-delay-enter {
-  opacity: 0;
-  /* transform: translateY(10%); */
-}
 
 span.wave {
   animation-name: wave-animation;
@@ -188,29 +173,29 @@ span.wave:hover {
   grid-template-rows: 1fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
-  transition: all 0.5s ease-in-out;
+  /* transition: all 0.5s ease-in-out; */
   & .frame-wave {
     font-size: 72px;
     transform: translateX(-5%);
     z-index: 2;
     opacity: 1;
-    transition: all 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
   }
   & .frame-liferay {
     opacity: 0;
     background: #0d63ce;
-    transition: all 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
   }
   & .frame-tapfive {
     opacity: 0;
     background: linear-gradient(136deg, #b721ff 10%, #21d4fd 100%);
-    transition: all 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
   }
   & .frame-grandpad {
     opacity: 0;
     /* background: #55acee; */
     background: linear-gradient(-135deg, #64B4F0 0%, #55ACEE 50%, #2795E9 100%);
-    transition: all 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
   }
 }
 
@@ -277,7 +262,7 @@ span.wave:hover {
     color: var(--dark);
     text-decoration: underline var(--medium);
     text-decoration-skip-ink: auto;
-    transition-property: text-decoration color;
+    transition-property: text-decoration, color;
     transition-duration: 0.3s;
     transition-timing-function: ease-in-out;
   }
@@ -331,5 +316,22 @@ span.wave:hover {
 /* Extra Large (xl) */
 @media (min-width: 1280px) {
   /* ... */
+}
+
+.fade-enter-active {
+  transition: opacity 0.8s ease-in;
+}
+
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-delay-enter-active {
+  transition: opacity 0.8s ease-in-out 0.75s;
+}
+
+.fade-delay-enter {
+  opacity: 0;
+  /* transform: translateY(10%); */
 }
 </style>
