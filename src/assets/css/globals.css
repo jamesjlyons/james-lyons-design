@@ -77,6 +77,10 @@ small,
   font-size: 0.667em;
 }
 
+::selection {
+  background: var(--green); /* WebKit/Blink Browsers */
+}
+
 /* media queries */
 
 /* Small (sm) */
