@@ -106,7 +106,7 @@ export default {
 }
 
 .fade-delay-enter-active {
-  transition: all 0.8s ease-in-out 0.75s;
+  transition: opacity 0.8s ease-in-out 0.75s;
 }
 
 .fade-delay-enter {
@@ -188,29 +188,29 @@ span.wave:hover {
   grid-template-rows: 1fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
-  transition: all 0.5s ease-in-out;
+  /* transition: all 0.5s ease-in-out; */
   & .frame-wave {
     font-size: 72px;
     transform: translateX(-5%);
     z-index: 2;
     opacity: 1;
-    transition: all 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
   }
   & .frame-liferay {
     opacity: 0;
     background: #0d63ce;
-    transition: all 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
   }
   & .frame-tapfive {
     opacity: 0;
     background: linear-gradient(136deg, #b721ff 10%, #21d4fd 100%);
-    transition: all 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
   }
   & .frame-grandpad {
     opacity: 0;
     /* background: #55acee; */
     background: linear-gradient(-135deg, #64B4F0 0%, #55ACEE 50%, #2795E9 100%);
-    transition: all 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
   }
 }
 
