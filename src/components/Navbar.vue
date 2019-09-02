@@ -32,7 +32,7 @@ nav {
     margin-left: 24px;
     text-decoration: underline var(--light);
     text-decoration-skip-ink: auto;
-    transition-property: text-decoration color;
+    transition-property: text-decoration, color;
     transition-duration: 0.3s;
     transition-timing-function: ease-in-out;
   }

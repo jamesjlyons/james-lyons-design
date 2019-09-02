@@ -97,22 +97,7 @@ export default {
 </script>
 
 <style lang="postcss">
-.fade-enter-active {
-  transition: opacity 0.8s ease-in;
-}
 
-.fade-enter {
-  opacity: 0;
-}
-
-.fade-delay-enter-active {
-  transition: opacity 0.8s ease-in-out 0.75s;
-}
-
-.fade-delay-enter {
-  opacity: 0;
-  /* transform: translateY(10%); */
-}
 
 span.wave {
   animation-name: wave-animation;
@@ -277,7 +262,7 @@ span.wave:hover {
     color: var(--dark);
     text-decoration: underline var(--medium);
     text-decoration-skip-ink: auto;
-    transition-property: text-decoration color;
+    transition-property: text-decoration, color;
     transition-duration: 0.3s;
     transition-timing-function: ease-in-out;
   }
@@ -331,5 +316,22 @@ span.wave:hover {
 /* Extra Large (xl) */
 @media (min-width: 1280px) {
   /* ... */
+}
+
+.fade-enter-active {
+  transition: opacity 0.8s ease-in;
+}
+
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-delay-enter-active {
+  transition: opacity 0.8s ease-in-out 0.75s;
+}
+
+.fade-delay-enter {
+  opacity: 0;
+  /* transform: translateY(10%); */
 }
 </style>
