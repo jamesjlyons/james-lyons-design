@@ -1,7 +1,7 @@
 :root {
   /* font-size: 18px; */
   --dark: hsla(0, 0%, 0%, 100%);
-  --medium: hsla(0, 0%, 0%, 33%);
+  --medium: hsla(0, 0%, 58%, 100%);
   --light: hsla(0, 0%, 100%, 100%);
   --green: hsla(165, 82%, 52%, 1.00);
   --gradient: linear-gradient(90deg, #00c9ff 0%, #92fe9d 100%);
@@ -80,7 +80,7 @@ small,
 /* media queries */
 
 /* Small (sm) */
-@media (min-width: 640px) { /* ... */ }
+@media (max-width: 640px) { /* ... */ }
 
 /* Medium (md) */
 @media (max-width: 768px) { 
@@ -90,7 +90,7 @@ small,
  }
 
 /* Large (lg) */
-@media (min-width: 1024px) { /* ... */ }
+@media (max-width: 1024px) { /* ... */ }
 
 /* Extra Large (xl) */
-@media (min-width: 1280px) { /* ... */ }
+@media (max-width: 1280px) { /* ... */ }

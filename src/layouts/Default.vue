@@ -4,6 +4,7 @@
       <Navbar></Navbar>
     </header>
     <slot />
+    <Footer></Footer>
   </div>
 </template>
 
@@ -17,9 +18,11 @@ query {
 
 <script>
 import Navbar from "~/components/Navbar.vue";
+import Footer from "~/components/Footer.vue";
 export default {
   components: {
-    Navbar
+    Navbar,
+    Footer
   }
 };
 </script>
@@ -28,4 +31,10 @@ export default {
 .layout {
   margin: 40px 16px;
 }
+/* Small (sm) */
+@media (max-width: 640px) { 
+  .layout {
+  margin: 24px 16px;
+}
+ }
 </style>

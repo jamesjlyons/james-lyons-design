@@ -3,11 +3,13 @@
     <section class="intro">
       <div class="intro-hero">
         <div class="intro-graphic">
+          <transition name="fade" appear>
           <div class="intro-frame">
             <div class="frame-wave">
               <span class="wave">👋</span>
             </div>
           </div>
+          </transition>
           <transition name="fade" appear>
             <div class="intro-links">
               <a href="https://dribbble.com/jamesjlyons" target="_blank" class="button-link">
@@ -22,7 +24,7 @@
             </div>
           </transition>
         </div>
-        <transition name="fade" appear>
+        <transition name="fade-delay" appear>
           <div class="intro-type">
             <h5 class="small-margin">Hello, I'm</h5>
             <h2 class="small-margin">James Lyons</h2>
@@ -70,11 +72,20 @@ export default {
 
 <style lang="postcss">
 .fade-enter-active {
-  transition: opacity 1s;
+  transition: opacity 0.8s ease-in;
 }
 
 .fade-enter {
   opacity: 0;
+}
+
+.fade-delay-enter-active {
+  transition: all 0.8s ease-in-out 0.75s;
+}
+
+.fade-delay-enter {
+  opacity: 0;
+  /* transform: translateY(10%); */
 }
 
 span.wave {
