@@ -9,26 +9,26 @@
                 <span class="wave">👋</span>
               </div>
               <div class="frame-liferay">
-                <g-image src="~/assets/liferay-icon-white.svg" width="88" />
+                <g-image src="~/assets/liferay-icon-white.svg" width="88" immediate="true"/>
               </div>
               <div class="frame-tapfive">
-                <g-image src="~/assets/tap5-logo.svg" width="120" />
+                <g-image src="~/assets/tap5-logo.svg" width="120" immediate="true"/>
               </div>
               <div class="frame-grandpad">
-                <g-image src="~/assets/grandpad-logo.svg" width="96" />
+                <g-image src="~/assets/grandpad-logo.svg" width="96" immediate="true"/>
               </div>
             </div>
           </transition>
           <transition name="fade" appear>
             <div class="intro-links">
               <a href="https://dribbble.com/jamesjlyons" target="_blank" class="button-link">
-                <g-image src="~/assets/icon-dribbble.svg" width="24" />
+                <g-image src="~/assets/icon-dribbble.svg" width="24" immediate="true"/>
               </a>
               <a href="https://github.com/jamesjlyons" target="_blank" class="button-link">
-                <g-image src="~/assets/icon-github.svg" width="24" />
+                <g-image src="~/assets/icon-github.svg" width="24" immediate="true"/>
               </a>
               <a href="mailto:jamesjlyons29@gmail.com" target="_blank" class="button-link">
-                <g-image src="~/assets/icon-email.svg" width="24" />
+                <g-image src="~/assets/icon-email.svg" width="24" immediate="true"/>
               </a>
             </div>
           </transition>
