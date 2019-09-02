@@ -2,7 +2,7 @@
   <nav class="nav">
     <div class="nav-items">
       <!-- <g-link class="nav__link" to="/">/home</g-link> -->
-      <g-link class="nav__link" to="/work">/work</g-link>
+      <g-link class="nav__link" to="/">/work</g-link>
       <g-link class="nav__link" to="/writing">/writing</g-link>
       <g-link class="nav__link" to="/about">/about</g-link>
     </div>
