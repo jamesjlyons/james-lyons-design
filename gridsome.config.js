@@ -57,6 +57,22 @@ module.exports = {
         width: 1300,
         height: 900
       }
+    },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: 'src/content/projects/**/*.md',
+        typeName: 'Project',
+        route: '/project/:slug',
+        remark: {
+          // remark options
+        }
+      }
+    },
+  ],
+  transformers: {
+    remark: {
+      // global remark options
     }
-  ]
+  }
 }
