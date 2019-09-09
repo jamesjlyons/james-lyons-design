@@ -9,8 +9,9 @@
 query Project ($path: String!) {
   project: project (path: $path) {
     title
-    content
+    description
     company
+    content
   }
 }
 </page-query>
