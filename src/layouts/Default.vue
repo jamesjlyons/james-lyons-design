@@ -29,12 +29,17 @@ export default {
 
 <style>
 .layout {
-  margin: 40px 16px;
+  margin: 40px 0px;
+}
+
+.layout > * {
+  padding-left: 16px;
+  padding-right: 16px;
 }
 /* Small (sm) */
 @media (max-width: 640px) { 
   .layout {
-  margin: 24px 16px;
+  margin: 24px 0px;
 }
  }
 </style>

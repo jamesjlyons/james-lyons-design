@@ -3,7 +3,7 @@
   --dark: hsla(0, 0%, 0%, 100%);
   --medium: hsla(0, 0%, 58%, 100%);
   --light: hsla(0, 0%, 100%, 100%);
-  --green: hsla(165, 82%, 52%, 1.00);
+  --green: hsla(165, 82%, 52%, 1);
   --gradient: linear-gradient(90deg, #00c9ff 0%, #92fe9d 100%);
 
   --screen-sm: 640px;
@@ -23,6 +23,7 @@ body {
   font-weight: 500;
   line-height: 1.45;
   color: var(--dark);
+  margin: 0px;
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -31,8 +32,6 @@ body {
     color: var(--light)
   }
 } */
-
-
 
 p {
   margin-bottom: 1.25em;
@@ -84,17 +83,23 @@ small,
 /* media queries */
 
 /* Small (sm) */
-@media (max-width: 640px) { /* ... */ }
+@media (max-width: 640px) {
+  /* ... */
+}
 
 /* Medium (md) */
-@media (max-width: 768px) { 
+@media (max-width: 768px) {
   html {
-    font-size: 16px; 
-   }
- }
+    font-size: 16px;
+  }
+}
 
 /* Large (lg) */
-@media (max-width: 1024px) { /* ... */ }
+@media (max-width: 1024px) {
+  /* ... */
+}
 
 /* Extra Large (xl) */
-@media (max-width: 1280px) { /* ... */ }
+@media (max-width: 1280px) {
+  /* ... */
+}

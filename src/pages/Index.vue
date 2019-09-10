@@ -69,11 +69,14 @@
       </div>
     </section>
     <section class="projects">
-      <ProjectList
-        v-for="project in $page.allProject.edges"
-        :key="project.node.id"
-        :project="project.node"
-      />
+      <div class="project-list">
+        <h5>Latest Projects</h5>
+        <ProjectListItem
+          v-for="project in $page.allProject.edges"
+          :key="project.node.id"
+          :project="project.node"
+        />
+      </div>
     </section>
   </Layout>
 </template>
@@ -102,7 +105,7 @@ export default {
     title: ""
   },
   components: {
-    ProjectList
+    ProjectListItem
   },
   methods: {
     wave: function(event) {
@@ -306,6 +309,17 @@ span.wave:hover {
   color: var(--medium);
   & a {
     color: var(--medium);
+  }
+}
+
+.projects {
+  background-color: #fafafa;
+  & .project-list {
+    max-width: 980px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }
 
