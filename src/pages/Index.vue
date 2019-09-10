@@ -83,7 +83,7 @@
 
 <page-query>
 query {
-  allProject {
+  allProject (sortBy: "order", order: ASC) {
     totalCount
     edges {
       node {
