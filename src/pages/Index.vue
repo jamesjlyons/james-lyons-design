@@ -96,7 +96,7 @@ query {
 </page-query>
 
 <script>
-import ProjectList from "~/components/ProjectList.vue";
+import ProjectListItem from "~/components/ProjectListItem.vue";
 export default {
   metaInfo: {
     title: ""

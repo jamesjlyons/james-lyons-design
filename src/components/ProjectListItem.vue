@@ -1,5 +1,5 @@
 <template>
-  <div class="project-list">
+  <div class="project-list-item">
     <hr class="line" />
     <h1 class="title" v-html="project.title" />
     <p class="description" v-html="project.description" />
