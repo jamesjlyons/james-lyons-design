@@ -91,6 +91,7 @@ query {
         title
         company
         description
+        thumbnail
         path
       }
     }

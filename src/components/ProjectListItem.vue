@@ -1,7 +1,7 @@
 <template>
   <div class="project-list-item">
     <div class="project-list-frame">
-      <img src />
+      <g-image :src="project.thumbnail" />
     </div>
     <div class="project-list-text">
       <h3 class="title" v-html="project.title" />
@@ -25,8 +25,8 @@ export default {
     margin-left: 44px;
   }
   & .project-list-frame {
-    height: 316px;
-    width: 422px;
+    height: 300px;
+    width: 400px;
     overflow: hidden;
     background: rgb(255, 255, 255);
     border: 4px solid rgb(235, 235, 235);

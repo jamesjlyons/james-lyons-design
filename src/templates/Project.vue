@@ -2,6 +2,7 @@
   <Layout>
     <h1 v-if="$page.project">{{ $page.project.title }}</h1>
     <div v-if="$page.project" v-html="$page.project.content"></div>
+    <g-image v-if="$page.project" :src="$page.project.thumbnail" />
   </Layout>
 </template>
 
@@ -12,6 +13,7 @@ query Project ($path: String!) {
     description
     company
     content
+    thumbnail
   }
 }
 </page-query>
