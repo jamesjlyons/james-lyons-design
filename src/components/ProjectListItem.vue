@@ -1,5 +1,5 @@
 <template>
-  <g-link :to="project.path" class="project-list-item">
+  <a :href="project.website" class="project-list-item">
     <div class="project-list-frame">
       <g-image :src="project.thumbnail"/>
     </div>
@@ -11,7 +11,7 @@
       </div>
       <g-image src="~/assets/icon-arrow-right.svg" width="24" immediate="true" />
     </div>
-  </g-link>
+  </a>
 </template>
 
 <script>
