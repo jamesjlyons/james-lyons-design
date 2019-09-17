@@ -3,7 +3,7 @@ slug: lio
 title: Lio
 company: Testtt
 description: A simple, decentralized cryptocurrency portfolio.
-thumbnail: "/assets/static/src/content/projects/lio/lio-cover.png?width=400"
+thumbnail: ./lio-cover.png
 order: 2
 ---
 #Test Heading

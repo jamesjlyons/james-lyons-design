@@ -88,11 +88,11 @@ query {
     edges {
       node {
         id
+        path
         title
         company
         description
         thumbnail
-        path
       }
     }
   }

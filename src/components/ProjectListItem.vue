@@ -1,7 +1,7 @@
 <template>
   <div class="project-list-item">
     <div class="project-list-frame">
-      <g-image :src="project.thumbnail" />
+      <g-image :src="project.thumbnail"/>
     </div>
     <div class="project-list-text">
       <h3 class="title" v-html="project.title" />
