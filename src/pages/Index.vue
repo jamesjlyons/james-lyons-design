@@ -91,6 +91,7 @@ query {
         path
         title
         company
+        website
         description
         thumbnail
       }
@@ -315,6 +316,7 @@ span.wave:hover {
 
 .projects {
   background-color: #fafafa;
+  padding-bottom: 80px;
   & .project-list {
     max-width: 980px;
     margin: auto;

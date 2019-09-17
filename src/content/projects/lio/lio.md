@@ -1,7 +1,8 @@
 ---
 slug: lio
 title: Lio
-company: Testtt
+company: Tap Five
+website: http://www.lioapp.io
 description: A simple, decentralized cryptocurrency portfolio.
 thumbnail: ./images/lio-cover.png
 order: 2
