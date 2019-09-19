@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="320px" height="240px" viewBox="0 0 320 240" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>subdivide-thumbnail</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M63.9268531,0 C12.7853706,0 0,12.7853706 0,63.9268531 C0,115.068336 12.7853706,127.853706 63.9268531,127.853706 C115.068336,127.853706 127.853706,115.068336 127.853706,63.9268531 C127.853706,12.7853706 115.068336,0 63.9268531,0 Z" id="path-1"></path>
+        <filter x="-24.2%" y="-36.4%" width="150.6%" height="176.3%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="2" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="4.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.4 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <radialGradient cx="27.5377653%" cy="27.4856189%" fx="27.5377653%" fy="27.4856189%" r="65.878193%" id="radialGradient-4">
+            <stop stop-color="#FFFFFF" stop-opacity="0.1" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="100%"></stop>
+        </radialGradient>
+    </defs>
+    <g id="subdivide-thumbnail" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#FFFFFF" x="0" y="0" width="320" height="240"></rect>
+        <g id="Group-Copy-6" transform="translate(96.000000, 48.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="mask-squircle"></g>
+            <g id="adaptive-icon" mask="url(#mask-2)">
+                <g transform="translate(-31.963427, -27.963427)">
+                    <g>
+                        <g id="background" fill="#536DFE">
+                            <rect id="base" x="0" y="0" width="191.780565" height="191.780565"></rect>
+                        </g>
+                        <g id="foreground">
+                            <g id="subdivide-shadow" filter="url(#filter-3)" transform="translate(51.496633, 63.926855)">
+                                <path d="M15.2831383,20.6103762 C18.750498,17.1430165 18.750498,11.5213157 15.2831383,8.05395605 C11.8157786,4.58659637 6.19407783,4.58659637 2.72671814,8.05395605 C-0.740641541,11.5213157 -0.740641541,17.1430165 2.72671814,20.6103762 C6.19407783,24.0777359 11.8157786,24.0777359 15.2831383,20.6103762 Z" id="Oval" fill="#FFFFFF"></path>
+                                <path d="M9.58653018,57.1779308 L57.1779308,9.58653018 C59.292311,7.47214996 59.3198446,4.07159589 57.2394288,1.99118008 C55.159013,-0.0892357306 51.7584589,-0.0617021381 49.6440787,2.05267808 L2.05267808,49.6440787 C-0.0617021381,51.7584589 -0.0892357306,55.159013 1.99118008,57.2394288 C4.07159589,59.3198446 7.47214996,59.292311 9.58653018,57.1779308 Z" id="Path-2" fill="#FFFFFF" fill-rule="nonzero"></path>
+                                <circle id="Oval-Copy" stroke="#FFFFFF" stroke-width="3.73128257" transform="translate(79.908569, 49.720887) rotate(-360.000000) translate(-79.908569, -49.720887) " cx="79.9085686" cy="49.7208871" r="8.87872985"></circle>
+                                <path d="M40.1054333,57.2026696 L82.0631132,15.2449897 C83.9257097,13.3823932 83.9257097,10.3625277 82.0631132,8.49993123 C80.2005167,6.63733476 77.1806512,6.63733476 75.3180547,8.49993123 L33.3603748,50.4576112 C31.4977783,52.3202076 31.4977783,55.3400732 33.3603748,57.2026696 C35.2229713,59.0652661 38.2428368,59.0652661 40.1054333,57.2026696 Z" id="Path-2-Copy" stroke="#FFFFFF" stroke-width="3.54220663" fill-rule="nonzero" transform="translate(57.711744, 32.851300) rotate(-360.000000) translate(-57.711744, -32.851300) "></path>
+                            </g>
+                            <rect id="finish" fill="url(#radialGradient-4)" x="0" y="0" width="191.780565" height="191.780565"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
