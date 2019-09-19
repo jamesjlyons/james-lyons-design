@@ -23,5 +23,6 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  color: var(--medium);
 }
 </style>

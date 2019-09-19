@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <section>
-      <h1>Writings</h1>
+      <h1>Writing</h1>
       <p>Coming later.</p>
     </section>
   </Layout>
@@ -23,5 +23,6 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  color: var(--medium);
 }
 </style>
