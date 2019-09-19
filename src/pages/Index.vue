@@ -349,6 +349,13 @@ span.wave:hover {
     grid-column-gap: 0px;
     grid-row-gap: 0px;
   }
+
+  .projects {
+    /* padding-bottom: 80px; */
+    & .project-list {
+      align-items: center;
+    }
+  }
 }
 
 /* Large (lg) */

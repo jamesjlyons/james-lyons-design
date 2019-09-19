@@ -9,7 +9,7 @@
         <p class="description" v-html="project.description" />
         <!-- <g-link :to="project.path" class="read">Read More...</g-link> -->
       </div>
-      <g-image src="~/assets/icon-arrow-right.svg" width="24" immediate="true" />
+      <g-image class="project-list-arrow" src="~/assets/icon-arrow-right.svg" width="24" immediate="true" />
     </div>
   </a>
 </template>
@@ -44,7 +44,7 @@ export default {
     align-items: center;
     justify-content: space-between;
     padding-left: calc(160px + 44px);
-    border-radius: 0 16px 16px 0;
+    border-radius: 16px;
     box-shadow: 0px 12px 8px -9px rgba(0, 0, 0, 0);
     transition-property: box-shadow background-color;
     transition-duration: 0.1s;
@@ -86,5 +86,56 @@ export default {
   & .project-list-frame {
       box-shadow: 0px 12px 24px -9px rgba(0, 0, 0, 0.5);
     }
+}
+
+/* Small (sm) */
+@media (min-width: 640px) {
+  /* ... */
+}
+
+/* Medium (md) */
+@media (max-width: 768px) {
+  .project-list-item {
+    grid-template-columns: 320px;
+    grid-template-rows: repeat(2, 120px) 1fr; 
+    /* margin: 40px 0 40px 0; */
+    & .project-list-info {
+      grid-area:  2 / 1 / 4 / 2;
+
+      margin-top: 16px;
+      margin-bottom: 16px;
+      padding-left: 0;
+      padding-right: 0;
+      padding-bottom: 24px;
+      padding-top: calc(120px + 24px);
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+
+      background-color: white;
+      box-shadow: 0px 12px 8px -9px rgba(0, 0, 0, 0.2);
+
+
+      & .project-list-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 240px;
+        text-align: center;
+        & .title {
+          margin: 0;
+        }
+      }
+
+      & .project-list-arrow {
+          display: none;
+        }
+    }
+    & .project-list-frame {
+      grid-area:  1 / 1 / 3 / 2;
+      box-shadow: 0px 12px 24px -9px rgba(0, 0, 0, 0.5);
+    }
+  }
 }
 </style>
