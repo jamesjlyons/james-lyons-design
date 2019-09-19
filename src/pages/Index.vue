@@ -9,26 +9,26 @@
                 <span class="wave">👋</span>
               </div>
               <div class="frame-liferay">
-                <g-image src="~/assets/liferay-icon-white.svg" width="88" immediate="true"/>
+                <g-image src="~/assets/liferay-icon-white.svg" width="88" immediate="true" />
               </div>
               <div class="frame-tapfive">
-                <g-image src="~/assets/tap5-logo.svg" width="120" immediate="true"/>
+                <g-image src="~/assets/tap5-logo.svg" width="120" immediate="true" />
               </div>
               <div class="frame-grandpad">
-                <g-image src="~/assets/grandpad-logo.svg" width="96" immediate="true"/>
+                <g-image src="~/assets/grandpad-logo.svg" width="96" immediate="true" />
               </div>
             </div>
           </transition>
           <transition name="fade" appear>
             <div class="intro-links">
               <a href="https://dribbble.com/jamesjlyons" target="_blank" class="button-link">
-                <g-image src="~/assets/icon-dribbble.svg" width="24" immediate="true"/>
+                <g-image src="~/assets/icon-dribbble.svg" width="24" immediate="true" />
               </a>
               <a href="https://github.com/jamesjlyons" target="_blank" class="button-link">
-                <g-image src="~/assets/icon-github.svg" width="24" immediate="true"/>
+                <g-image src="~/assets/icon-github.svg" width="24" immediate="true" />
               </a>
               <a href="mailto:jamesjlyons29@gmail.com" target="_blank" class="button-link">
-                <g-image src="~/assets/icon-email.svg" width="24" immediate="true"/>
+                <g-image src="~/assets/icon-email.svg" width="24" immediate="true" />
               </a>
             </div>
           </transition>
@@ -68,13 +68,46 @@
         </transition>
       </div>
     </section>
+    <section class="projects">
+      <div class="project-list">
+        <h5>Latest Projects</h5>
+        <ProjectListItem
+          v-for="project in $page.allProject.edges"
+          :key="project.node.id"
+          :project="project.node"
+        />
+      </div>
+    </section>
   </Layout>
 </template>
 
+<page-query>
+query {
+  allProject (sortBy: "order", order: ASC) {
+    totalCount
+    edges {
+      node {
+        id
+        path
+        title
+        company
+        website
+        description
+        thumbnail
+      }
+    }
+  }
+}
+</page-query>
+
 <script>
+import ProjectListItem from "~/components/ProjectListItem.vue";
 export default {
   metaInfo: {
     title: ""
+  },
+  components: {
+    ProjectListItem
   },
   methods: {
     wave: function(event) {
@@ -97,8 +130,6 @@ export default {
 </script>
 
 <style lang="postcss">
-
-
 span.wave {
   animation-name: wave-animation;
   animation-duration: 2.5s;
@@ -194,7 +225,7 @@ span.wave:hover {
   & .frame-grandpad {
     opacity: 0;
     /* background: #55acee; */
-    background: linear-gradient(-135deg, #64B4F0 0%, #55ACEE 50%, #2795E9 100%);
+    background: linear-gradient(-135deg, #64b4f0 0%, #55acee 50%, #2795e9 100%);
     transition: opacity 0.5s ease-in-out;
   }
 }
@@ -283,6 +314,18 @@ span.wave:hover {
   }
 }
 
+.projects {
+  background-color: #fafafa;
+  padding-bottom: 80px;
+  & .project-list {
+    max-width: 980px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
 /* media queries */
 
 /* Small (sm) */
@@ -305,6 +348,13 @@ span.wave:hover {
     grid-template-rows: 140px repeat(2, 56px);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
+  }
+
+  .projects {
+    /* padding-bottom: 80px; */
+    & .project-list {
+      align-items: center;
+    }
   }
 }
 
