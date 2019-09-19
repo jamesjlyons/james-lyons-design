@@ -1,7 +1,7 @@
 <template>
   <a :href="project.website" class="project-list-item">
     <div class="project-list-frame">
-      <g-image :src="project.thumbnail"/>
+      <g-image :src="project.thumbnail" />
     </div>
     <div class="project-list-info">
       <div class="project-list-text">
@@ -9,7 +9,12 @@
         <p class="description" v-html="project.description" />
         <!-- <g-link :to="project.path" class="read">Read More...</g-link> -->
       </div>
-      <g-image class="project-list-arrow" src="~/assets/icon-arrow-right.svg" width="24" immediate="true" />
+      <g-image
+        class="project-list-arrow"
+        src="~/assets/icon-arrow-right.svg"
+        width="24"
+        immediate="true"
+      />
     </div>
   </a>
 </template>
@@ -28,7 +33,7 @@ export default {
   grid-template-columns: repeat(2, 160px) 1fr;
   grid-template-rows: 240px;
   grid-column-gap: 0px;
-  grid-row-gap: 0px; 
+  grid-row-gap: 0px;
   margin: 40px 0 40px 0;
   text-decoration: none;
   color: unset;
@@ -58,10 +63,9 @@ export default {
         margin: 0;
       }
     }
-    
   }
   & .project-list-frame {
-    grid-area:  1 / 1 / 2 / 3;
+    grid-area: 1 / 1 / 2 / 3;
     z-index: 1;
     /* height: 300px;
     width: 400px; */
@@ -78,14 +82,12 @@ export default {
 
 .project-list-item:hover {
   & .project-list-info {
-
-      background-color: white;
-      box-shadow: 0px 12px 8px -9px rgba(0, 0, 0, 0.2);
-
+    background-color: white;
+    box-shadow: 0px 12px 8px -9px rgba(0, 0, 0, 0.2);
   }
   & .project-list-frame {
-      box-shadow: 0px 12px 24px -9px rgba(0, 0, 0, 0.5);
-    }
+    box-shadow: 0px 12px 24px -9px rgba(0, 0, 0, 0.5);
+  }
 }
 
 /* Small (sm) */
@@ -97,10 +99,10 @@ export default {
 @media (max-width: 768px) {
   .project-list-item {
     grid-template-columns: 320px;
-    grid-template-rows: repeat(2, 120px) 1fr; 
+    grid-template-rows: repeat(2, 120px) 1fr;
     /* margin: 40px 0 40px 0; */
     & .project-list-info {
-      grid-area:  2 / 1 / 4 / 2;
+      grid-area: 2 / 1 / 4 / 2;
 
       margin-top: 16px;
       margin-bottom: 16px;
@@ -116,7 +118,6 @@ export default {
       background-color: white;
       box-shadow: 0px 12px 8px -9px rgba(0, 0, 0, 0.2);
 
-
       & .project-list-text {
         display: flex;
         flex-direction: column;
@@ -129,11 +130,11 @@ export default {
       }
 
       & .project-list-arrow {
-          display: none;
-        }
+        display: none;
+      }
     }
     & .project-list-frame {
-      grid-area:  1 / 1 / 3 / 2;
+      grid-area: 1 / 1 / 3 / 2;
       box-shadow: 0px 12px 24px -9px rgba(0, 0, 0, 0.5);
     }
   }
