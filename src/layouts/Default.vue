@@ -10,7 +10,7 @@
 
 <static-query>
 query {
-  metaData {
+  metadata {
     siteName
   }
 }
@@ -33,8 +33,8 @@ export default {
 }
 
 .layout > * {
-  padding-left: 16px;
   padding-right: 16px;
+  padding-left: 16px;
 }
 /* Small (sm) */
 @media (max-width: 640px) { 
