@@ -13,7 +13,7 @@
     "@gridsome/plugin-google-analytics": "^0.1.0",
     "@gridsome/source-filesystem": "^0.5.0",
     "@gridsome/transformer-remark": "^0.3.2",
-    "gridsome": "^0.6.9"
+    "gridsome": "^0.7.4"
   },
   "devDependencies": {
     "postcss-loader": "^3.0.0",
