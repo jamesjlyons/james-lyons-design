@@ -25,7 +25,7 @@ query Project ($path: String!) {
     role
     content
     thumbnail
-    hero
+    hero (quality: 100)
     order
   }
 }
@@ -85,6 +85,11 @@ h2, h4, h6 {
   & img {
     width: 100%;
     max-width: 980px;
+  }
+  & .center {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   & iframe {

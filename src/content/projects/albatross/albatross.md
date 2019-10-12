@@ -13,24 +13,23 @@ order: 3
 #### The Problem
 
 99.8% of users bounced when arriving at the first page of GrandPad's buy flow, whether coming from a point in the sales funnel or landing directly on the page. Mobile devices were starting to account for a large percentage of our visitors, and none of the buy flow was optimized well for mobile. To add some spice to this project, GrandPad had recently started working with a marketing firm, and their biggest marketing campaign was scheduled to launch in a little over a month. Somewhat of a crunchy timeline.
-
+<br /><br /><br />
 
 #### The Goal of the Redesign
 
 The main goal of this redesign was to improve the bounce rate on the first page and retain users through the flow. After evaluating the current iteration of the checkout flow and doing some research, I decided to focus on these points to achieve that goal:
 
-1. **Minimize the amount of data collection needed.** 
-   This would cut back on the number of steps a user would have to take and make the process feel more manageable.
-    - Group data collection in a logical order so we could reuse data that had already been submitted
-2. **Provide users with an indicator of their progress** through the checkout process.
-3.  **Make users feel secure in making their purchase.** The checkout process was basically vanilla-bootstrap-styled, which made users feel like they had left the GrandPad website. We wanted a more seamless experience that instilled some trust in users who were about to make a large purchase.
+1. **Minimize the amount of data collection needed.** This would cut back on the number of steps a user would need to take and would make the process feel more manageable.
+2. **Provide users with an indicator of their progress** through the entirety of checkout process.
+3.  **Ensure users feel secure in making their purchase.** The checkout process was basically vanilla-bootstrap-styled, which made users feel like they had left the GrandPad website. We wanted a more seamless experience that instilled some trust in users who were about to make a large purchase.
+<br /><br /><br />
 
 #### Constraints:
 
 - Time (marketing campaign)
-- Resources (Me + 1 developer)
 - Couldn't rely on 3rd party checkouts (PayPal, Amazon, etc) because of our shipping process.
 - In order to deliver a GrandPad, we had to collect info on multiple people.
+<br /><br /><br />
 
 #### Research
 
@@ -60,16 +59,22 @@ I explored the idea of integrating with third-party checkouts like Paypal or Ama
 
 ##### Flow v1
 ![case study flow v1](./images/case-study-flow-v1.png)
+<br /><br />
 
 The next iteration of the flow I tested grouped name, email, and payment information on the first page. Since a majority of the users were coming from the product info page of the website, they had already clicked on which plan they were interested in buying. This helped cut one more page out of the process and 
-##### Flow v2
+
+##### Flow v1
 ![case study flow v1](./images/case-study-flow-v2.png)
+<br /><br />
 
 I created a prototype to be tested on mobile phones, since the amount of data the user had to input was going to feel like more on a small screen. I used one of the more popular small device sizes, 320x568, to do a quick test on how much scrolling would be needed on each page of the flow to get through the checkout.
+<br /><br /><br />
 
-###### Scrollable prototype with clickable buttons at the bottom of each screen
+
 <iframe src="https://albatross-wireframe-screenonly.jamesjlyons.now.sh" width="320" height="568" frameborder="0"></iframe>
-
+<br />
+<h6 class="center">Scrollable prototype with clickable buttons at the bottom of each screen</h6>
+<br /><br /><br />
 
 #### High Fidelity Mockups and Interactions
 Now that we had a direction to move in with the flow of the checkout, it was time to put the polish on the mockups. 
