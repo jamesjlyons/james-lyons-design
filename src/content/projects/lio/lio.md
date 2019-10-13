@@ -4,7 +4,9 @@ title: Lio
 company: Tap Five
 website: http://www.lioapp.io
 description: A simple, decentralized cryptocurrency portfolio.
+role: Product Design, Frontend Development
 thumbnail: ./images/lio-thumbnail.svg
+hero: ./images/lio-thumbnail.svg
 order: 2
 ---
 

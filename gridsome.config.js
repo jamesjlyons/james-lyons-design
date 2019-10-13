@@ -65,7 +65,7 @@ module.exports = {
         typeName: 'Project',
         route: '/project/:slug',
         remark: {
-          // remark options
+          imageQuality: 100
         }
       }
     },

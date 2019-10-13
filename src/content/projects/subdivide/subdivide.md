@@ -4,7 +4,9 @@ title: Subdivide
 company: Tap Five
 website: http://subdivide.io
 description: It's time for a better metronome
+role: Product Design, Frontend Development
 thumbnail: ./images/subdivide-thumbnail.svg
+hero: ./images/subdivide-thumbnail.svg
 order: 1
 ---
 

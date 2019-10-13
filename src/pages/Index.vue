@@ -95,6 +95,7 @@ query {
         company
         website
         description
+        role
         thumbnail
       }
     }
