@@ -67,12 +67,12 @@ h2, h4, h6 {
 }
 
 .project-content {
-  max-width: 980px;
+  max-width: 65ch;
   margin-left: auto;
   margin-right: auto;
   margin-top: 80px;
   & p {
-    max-width: 80ch;
+    max-width: 65ch;
     line-height: 1.6;
     font-weight: 500;
   }
