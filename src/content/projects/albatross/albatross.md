@@ -12,7 +12,7 @@ order: 3
 
 #### The Problem
 
-99.8% of users bounced when arriving on the first page of GrandPad's buy flow, whether coming from a point in the sales funnel or landing directly on the page. Mobile devices were starting to account for a large percentage of our visitors, and none of the buy flow was optimized well for mobile. To add some spice to this project, GrandPad had recently started working with a marketing firm, and ou biggest marketing campaign was scheduled to launch in a little over a month. Somewhat of a crunchy timeline.
+99.8% of users bounced when arriving on the first page of GrandPad's buy flow, whether coming from a point in the sales funnel or landing directly on the page. Mobile devices were starting to account for a large percentage of our visitors, and none of the buy flow was optimized well for mobile. To add some spice to this project, GrandPad had recently started working with a marketing firm, and ou biggest marketing campaign was scheduled to launch in a little over a month. Somewhat of a crunched timeline.
 <br /><br /><br />
 
 #### The Goal of the Redesign
@@ -40,15 +40,16 @@ The most common complaint was that the process from start to finish just took to
 Turns out, we did. From a product perspective, names and emails were a necessity, and birthdays were a nice-to-have for product features like birthday reminders. I figured we could drop gender because it was pretty useless for us to know, but after talking with engineering I found out that the database was set up to where it needed a gender input.
 
 Since I couldn't cut back on the data needed, the next solution I explored was allowing the user to reuse data that had already been submitted. It was common that the purchaser of the GrandPad would also be the Family Admin, and in rare cases, the GrandPad user would be purchasing it themselves. Based on this information, I felt comfortable having the primary form action being selecting previously inputted data, while the secondary action would be adding new data. 
-![reusing data](./images/data-reuse.png)
 <br /><br />
+![reusing data](./images/data-reuse.png)
+<br />
 
 In the case that a user could not re-use data for any of the people or addresses, I still wanted a way to make the process feel quicker. The current version had a progress bar at the top of the page, but it was a solid green bar that incremented at seemingly random levels each step along the way with no indicator on how much many steps were left to complete.
 
 I internally tested a few wireframe navigation patterns to see which best informed users on their progress: Collapsible sections, breadcrumbs, and an updated progress bar. Collapsible sections for steps allowed users to quickly go back and forth between steps but seeing the names of all the steps felt too heavy and overwhelming to the user. Using a typical breadcrumb pattern had similar problems, and didn't scale well to mobile with the step names listed inside the breadcrumbs. The updated progress bar used icons to show the type of data being collected and broken lines to indicate the steps for each group. This option provided users with just enough information about their progress without overwhelming them with the names of all the steps left.
-
+<br />
 ![navigation patterns](./images/navigation-options.png)
-<br /><br />
+<br />
 
 ##### Testing
 The first flow I prototyped and tested collected only the name and email on the first step so that enough information was grabbed for marketing to work their retargeting and abandon cart magic.
@@ -76,33 +77,36 @@ I created a prototype to be tested on mobile phones since the amount of data the
 
 Note: Once development started, we found out that to create an order we first needed a name and email address before we could assign payment info to the order. The experience we shipped ended up having only a name and email address collection form on the first page, but to avoid adding another step to the flow I combined the payment info and billing address into one.
 
-#### High Fidelity Mockups and Interactions
+<br /><br />
+#### High Fidelity Mockups<br /> and Interactions
 Now that we had a direction to move in with the flow of the checkout, it was time to put the polish on the mockups. I followed the same base for UI styling I used in the main website redesign: large and bold type. This played an important role in ensuring users felt secure in making their purchases.
 
 Because the user had to make a payment before entering in the details for the setup and shipping, I made sure it was clear that their card was about to be charged. Instead of the blue buttons used in the rest of the flow, I used a bright green color with the text "Confirm & Pay". This way the users would know that the payment would be processed before the full buy flow was complete.
-![button comparison](./images/button-coomparison.png)
 <br /><br />
+![button comparison](./images/button-comparison.png)
+<br />
 
 Another detail I used to bring confidence to the user was small indicators with details of what had already been input, as well as when the purchase had been made. These only appeared on the desktop version, as they were nice-to-haves and didn't fit well on mobile.
-![indicators](./images/action-detail-indicators.png)
-<br /><br />
+<!-- ![indicators](./images/action-detail-indicators.png) -->
+<!-- <br /><br /> -->
 
 After that, I prototyped the interaction for showing and hiding inputs for when a user was not reusing already saved data. Nothing too fancy, and something easy to implement in code.
-![form expansion interaction](./images/case-study-flow-v2.png)
-<br /><br />
+<!-- ![form expansion interaction](./images/case-study-flow-v2.png) -->
+<!-- <br /><br /> -->
 
+<br /><br />
 #### Implementation
 Me and one developer worked on the implementation together for a couple of weeks. He worked on the backend PHP code to get the correct data showing on the pages, and from there I would handle the layout and styling in HTML, CSS, and JavaScript. 
 
-
+<br /><br />
 #### Results
 We launched in time for the marketing campaign, and the redesign was well-received by our team, customer experience, and the marketing firm. Customer experience also pointed out that they were getting fewer calls about the buy flow after we launched.
 
 But sadly, the new site didn't stay up long enough to get significant data for comparison to the metrics from the previous version. Shortly after we launched the redesign, we partnered with Consumer Cellular, who was going to handle all sales through their website.
-![sad parrot](./images/sad-parrot.png)
+<!-- ![sad parrot](./images/sad-parrot.png) -->
+<!-- <br /><br /> -->
 <br /><br />
-
-#### Takeaways from this project
+#### Takeaways
 One of my biggest learnings from this project was how to deal with unforeseen snags during the implementation process. When finding out some features or flows couldn't be accomplished due to development or time constraints, it was tempting just to fall back to the way the old version was because we were already set up to support it. But finding compromises in the middle of what was intended and what was possible only required asking the right questions and having good discussions with development. I've found that knowing a bit of code makes me much more empathetic to developers' concerns about implementing a design.
 
 Another lesson from this project was learning to realize that a product you spend a lot of time and effort on to launch may only be in production for a short while. While it is arguably better than a product never seeing the light of day, it serves as a reminder for me not to get too caught up in the long-term vision or timeline.
