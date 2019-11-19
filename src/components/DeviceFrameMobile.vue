@@ -12,7 +12,7 @@ export default {
 };
 </script>
 
-<style lang="postcss">
+<style scoped lang="postcss">
 .frame {
    display: flex;
    align-items: center;
