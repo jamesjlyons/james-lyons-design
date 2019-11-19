@@ -71,7 +71,7 @@
     <section class="projects">
       <transition name="fade-delay" appear>
         <div class="project-list">
-          <h5>Latest Projects</h5>
+          <h5>Selected Work</h5>
           <ProjectListItem
             v-for="project in $page.allProject.edges"
             :key="project.node.id"
