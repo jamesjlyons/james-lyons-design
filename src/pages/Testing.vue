@@ -39,6 +39,8 @@ query {
         description
         role
         thumbnail
+        mockuptype
+        mockupimage
       }
     }
   }

@@ -7,6 +7,8 @@ description: Redesigning the buy flow
 role: UX Research, UX Design, UI Design, Frontend Development
 thumbnail: ./images/albatross-thumbnail.svg
 hero: ./images/albatross-hero@2x.png
+mockuptype: desktop
+mockupimage: ./images/mockup-desktop.png
 order: 3
 ---
 
