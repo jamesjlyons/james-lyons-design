@@ -17,6 +17,11 @@
         <DeviceFrameMobile />
       </transition>
     </section>
+    <section class="frames">
+      <transition name="fade-delay" appear>
+        <DeviceFrameDesktop />
+      </transition>
+    </section>
   </Layout>
 </template>
 
@@ -43,13 +48,15 @@ query {
 <script>
 import ProjectListItem2 from "~/components/ProjectListItem2.vue";
 import DeviceFrameMobile from "~/components/DeviceFrameMobile.vue";
+import DeviceFrameDesktop from "~/components/DeviceFrameDesktop.vue";
 export default {
   metaInfo: {
     title: "test"
   },
   components: {
     ProjectListItem2,
-    DeviceFrameMobile
+    DeviceFrameMobile,
+    DeviceFrameDesktop
   }
 };
 </script>
@@ -57,7 +64,6 @@ export default {
 <style lang="postcss" scoped>
 .frames {
  height: 100vh;
- width:100vw;
  display: flex;
  justify-content: center;
  align-items: center;
