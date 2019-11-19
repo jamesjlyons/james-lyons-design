@@ -35,8 +35,8 @@ export default {
 } */
 
 .frame {
-  --n: 9;
-  --d: 16;
+  --n: 32;
+  --d: 45;
   padding-bottom: calc(var(--n) / var(--d) * 100%);
   position: relative;
   width: 100%;
