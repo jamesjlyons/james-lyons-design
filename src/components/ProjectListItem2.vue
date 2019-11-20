@@ -3,7 +3,7 @@
     <div class="project-list-frame">
       <!-- <g-image :src="project.thumbnail" /> -->
       <div v-if="project.mockuptype === 'mobile'">
-        <DeviceFrameMobile/>
+        <DeviceFrameMobile :imagepath="project.mockupimage"/>
       </div>
       <div v-if="project.mockuptype === 'desktop'">
         <DeviceFrameDesktop :imagepath="project.mockupimage"/>
@@ -15,7 +15,7 @@
         <h3 class="title" v-html="project.title" />
         <p class="description" v-html="project.description" />
         <g-link v-if="project.casestudy === 'yes'" :to="project.path" class="read">View Case Study</g-link>
-        <g-link v-if="project.website != 'no'" :to="project.path" class="read">View Project</g-link>
+        <g-link v-if="project.website != 'no'" :to="project.website" class="read">View Project</g-link>
       </div>
     </div>
   </div>
@@ -50,6 +50,18 @@ export default {
       flex-direction: row;
       align-items: center;
       justify-content: space-between;
+      & a {
+        color: var(--dark);
+        text-decoration: underline var(--medium);
+        text-decoration-skip-ink: auto;
+        transition-property: text-decoration, color;
+        transition-duration: 0.3s;
+        transition-timing-function: ease-in-out;
+      }
+      & a:hover {
+        color: var(--dark);
+        text-decoration: underline var(--green);
+      }
     }
   }
 

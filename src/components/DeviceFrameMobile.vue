@@ -1,14 +1,12 @@
 <template>
  <div class="frame">
-     <div class="screen">
-         <g-image src="~/content/projects/albatross/images/mockup-mobile.png" />
-     </div>
+    <g-image :src="imagepath" />
  </div>
 </template>
 
 <script>
 export default {
-  props: ["project"]
+  props: ['project', 'imagepath']
 };
 </script>
 
@@ -23,12 +21,21 @@ export default {
    padding: 22px 10px;
    /* transform: rotateZ(16deg); */
 }
-.screen {
-    width:207px;
-    height: 448px;
-    /* background: var(--gradient); */
+/* .screen {
+    width:240px;
+    height: 480px;
+    /* background: var(--gradient);
     border: 1px solid rgba(0, 0, 0, 0.03);
     border-radius:16px;
+} */
+
+.frame > img,
+.frame > video {
+    width:240px;
+    height: 480px;
+  object-fit: cover;
+  border: 1px solid rgba(0, 0, 0, 0.03);
+  border-radius:16px;
 }
     
 </style>
