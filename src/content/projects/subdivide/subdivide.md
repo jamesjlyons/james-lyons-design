@@ -8,7 +8,7 @@ role: Product Design, Frontend Development
 thumbnail: ./images/subdivide-thumbnail.svg
 hero: ./images/subdivide-thumbnail.svg
 mockuptype: mobile
-mockupimage: ./images/mockup-desktop.png
+mockupimage: ./images/mockup-mobile.png
 casestudy: no
 order: 1
 ---
