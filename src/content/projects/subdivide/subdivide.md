@@ -7,6 +7,9 @@ description: It's time for a better metronome
 role: Product Design, Frontend Development
 thumbnail: ./images/subdivide-thumbnail.svg
 hero: ./images/subdivide-thumbnail.svg
+mockuptype: mobile
+mockupimage: ./images/mockup-mobile.png
+casestudy: no
 order: 1
 ---
 

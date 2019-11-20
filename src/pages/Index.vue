@@ -71,8 +71,8 @@
     <section class="projects">
       <transition name="fade-delay" appear>
         <div class="project-list">
-          <h5>Latest Projects</h5>
-          <ProjectListItem
+          <h5>Selected Work</h5>
+          <ProjectListItem2
             v-for="project in $page.allProject.edges"
             :key="project.node.id"
             :project="project.node"
@@ -97,6 +97,9 @@ query {
         description
         role
         thumbnail
+        mockuptype
+        mockupimage
+        casestudy
       }
     }
   }
@@ -104,13 +107,13 @@ query {
 </page-query>
 
 <script>
-import ProjectListItem from "~/components/ProjectListItem.vue";
+import ProjectListItem2 from "~/components/ProjectListItem2.vue";
 export default {
   metaInfo: {
     title: ""
   },
   components: {
-    ProjectListItem
+    ProjectListItem2
   },
   methods: {
     wave: function(event) {
@@ -326,6 +329,9 @@ span.wave:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    & h5 {
+      text-align: center;
+    }
   }
 }
 

@@ -7,6 +7,9 @@ description: A simple, decentralized cryptocurrency portfolio.
 role: Product Design, Frontend Development
 thumbnail: ./images/lio-thumbnail.svg
 hero: ./images/lio-thumbnail.svg
+mockuptype: desktop
+mockupimage: ./images/mockup-desktop.png
+casestudy: no
 order: 2
 ---
 
