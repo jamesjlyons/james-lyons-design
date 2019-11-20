@@ -6,7 +6,7 @@
         <DeviceFrameMobile/>
       </div>
       <div v-if="project.mockuptype === 'desktop'">
-        <DeviceFrameDesktop/>
+        <DeviceFrameDesktop :imagepath="project.mockupimage"/>
       </div>
     </div>
    
@@ -24,7 +24,7 @@
 import DeviceFrameMobile from "~/components/DeviceFrameMobile.vue";
 import DeviceFrameDesktop from "~/components/DeviceFrameDesktop.vue";
 export default {
-  props: ["project"],
+  props: ["project", "imagepath"],
   components: {
     DeviceFrameMobile,
     DeviceFrameDesktop

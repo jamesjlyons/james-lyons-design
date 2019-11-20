@@ -1,14 +1,20 @@
 <template>
  <div class="device-border">
-     <div class="frame">
-         <g-image src="~/content/projects/albatross/images/mockup-desktop.png" />
+     <div class="frame" >
+         <g-image :src="imagepath" />
      </div>
  </div>
 </template>
 
 <script>
 export default {
-  props: ['project']
+  data () {
+     return {
+       // declare imagepath with an empty value
+      imagepath: mockupimage
+     }
+  },
+  props: ['project', 'imagepath']
 };
 </script>
 
