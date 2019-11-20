@@ -329,6 +329,9 @@ span.wave:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    & h5 {
+      text-align: center;
+    }
   }
 }
 
