@@ -8,12 +8,6 @@
 
 <script>
 export default {
-  data () {
-     return {
-       // declare imagepath with an empty value
-      imagepath: mockupimage
-     }
-  },
   props: ['project', 'imagepath']
 };
 </script>
