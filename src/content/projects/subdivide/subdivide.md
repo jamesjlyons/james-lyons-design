@@ -9,6 +9,7 @@ thumbnail: ./images/subdivide-thumbnail.svg
 hero: ./images/subdivide-thumbnail.svg
 mockuptype: mobile
 mockupimage: ./images/mockup-desktop.png
+casestudy: no
 order: 1
 ---
 

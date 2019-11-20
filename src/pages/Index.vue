@@ -72,7 +72,7 @@
       <transition name="fade-delay" appear>
         <div class="project-list">
           <h5>Selected Work</h5>
-          <ProjectListItem
+          <ProjectListItem2
             v-for="project in $page.allProject.edges"
             :key="project.node.id"
             :project="project.node"
@@ -97,6 +97,9 @@ query {
         description
         role
         thumbnail
+        mockuptype
+        mockupimage
+        casestudy
       }
     }
   }
@@ -104,13 +107,13 @@ query {
 </page-query>
 
 <script>
-import ProjectListItem from "~/components/ProjectListItem.vue";
+import ProjectListItem2 from "~/components/ProjectListItem2.vue";
 export default {
   metaInfo: {
     title: ""
   },
   components: {
-    ProjectListItem
+    ProjectListItem2
   },
   methods: {
     wave: function(event) {

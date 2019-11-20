@@ -1,5 +1,5 @@
 <template>
-  <a :href="project.website" class="project-list-item">
+  <div class="project-list-item">
     <div class="project-list-frame">
       <!-- <g-image :src="project.thumbnail" /> -->
       <div v-if="project.mockuptype === 'mobile'">
@@ -14,10 +14,11 @@
       <div class="project-list-text">
         <h3 class="title" v-html="project.title" />
         <p class="description" v-html="project.description" />
-        <g-link :to="project.path" class="read">View Project</g-link>
+        <g-link v-if="project.casestudy === 'yes'" :to="project.path" class="read">View Case Study</g-link>
+        <g-link v-if="project.website != 'no'" :to="project.path" class="read">View Project</g-link>
       </div>
     </div>
-  </a>
+  </div>
 </template>
 
 <script>
@@ -43,6 +44,13 @@ export default {
   margin: 40px 0 40px 0;
   text-decoration: none;
   color: unset;
+    & .project-list-info {
+      text-align: center;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
   }
 
 /* Small (sm) */
