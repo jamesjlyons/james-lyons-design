@@ -23,6 +23,7 @@ export default {
   align-items: center;
   justify-content: center;
 }
+
 .frame {
    display: flex;
    align-items: center;
@@ -46,6 +47,15 @@ export default {
 
 .frame > img,
 .frame > video {
+    width:249.75px;
+    height: 541px;
+  object-fit: cover;
+  border: 1px solid rgba(0, 0, 0, 0.03);
+  border-radius:16px;
+}
+
+.frame:nth-of-type(2) > img,
+.frame:nth-of-type(2) > video {
     width:240px;
     height: 480px;
   object-fit: cover;
