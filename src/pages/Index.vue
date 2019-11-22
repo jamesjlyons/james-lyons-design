@@ -99,6 +99,7 @@ query {
         thumbnail
         mockuptype
         mockupimage
+        mockupimagetwo
         casestudy
       }
     }

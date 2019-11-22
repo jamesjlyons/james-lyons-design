@@ -10,7 +10,7 @@ hero: ./images/lio-thumbnail.svg
 mockuptype: desktop
 mockupimage: ./images/mockup-desktop.png
 casestudy: no
-order: 2
+order: 3
 ---
 
 #Test Heading

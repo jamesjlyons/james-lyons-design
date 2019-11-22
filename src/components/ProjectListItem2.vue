@@ -5,6 +5,9 @@
       <div v-if="project.mockuptype === 'mobile'">
         <DeviceFrameMobile :imagepath="project.mockupimage"/>
       </div>
+       <div v-if="project.mockuptype === 'mobile-two'">
+        <DeviceFrameMobileTwo :imagepath="project.mockupimage" :imagepathtwo='project.mockupimagetwo' />
+      </div>
       <div v-if="project.mockuptype === 'desktop'">
         <DeviceFrameDesktop :imagepath="project.mockupimage"/>
       </div>
@@ -23,11 +26,13 @@
 
 <script>
 import DeviceFrameMobile from "~/components/DeviceFrameMobile.vue";
+import DeviceFrameMobileTwo from "~/components/DeviceFrameMobileTwo.vue";
 import DeviceFrameDesktop from "~/components/DeviceFrameDesktop.vue";
 export default {
-  props: ["project", "imagepath"],
+  props: ["project", "imagepath", "imagepathtwo"],
   components: {
     DeviceFrameMobile,
+    DeviceFrameMobileTwo,
     DeviceFrameDesktop
   }
 };
