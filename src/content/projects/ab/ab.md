@@ -13,4 +13,5 @@ casestudy: no
 order: 3
 ---
 
-<!-- ![Alternative text](./images/lio-cover.png) -->
+#Test Heading
+Project Description text and lorem ipsum.
