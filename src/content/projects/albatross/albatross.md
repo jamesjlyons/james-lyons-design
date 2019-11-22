@@ -3,14 +3,14 @@ slug: grandpad-checkout
 title: GrandPad Checkout
 company: GrandPad
 website: no
-description: Redesigning the buy flow
+description: Redesigning the buy flow for a GrandPad tablet
 role: UX Research, UX Design, UI Design, Frontend Development
 thumbnail: ./images/albatross-thumbnail.svg
 hero: ./images/albatross-hero@2x.png
 mockuptype: desktop
 mockupimage: ./images/mockup-desktop.png
 casestudy: yes
-order: 3
+order: 4
 ---
 
 #### The Problem
