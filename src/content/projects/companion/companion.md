@@ -1,17 +1,17 @@
 ---
-slug: subdivide-metronome
-title: Subdivide
-company: Tap Five
-website: http://subdivide.io
-description: It's time for a better metronome
-role: Product Design, Frontend Development
-thumbnail: ./images/subdivide-thumbnail.svg
+slug: grandpad-mobile-apps
+title: GrandPad iOS & Android Apps
+company: GrandPad
+website: no
+description: Companion apps for the GrandPad tablet
+role: Product Design
+thumbnail: no
 hero: ./images/subdivide-thumbnail.svg
-mockuptype: mobile
+mockuptype: mobile-two
 mockupimage: ./images/mockup-mobile.png
-mockupimagetwo: null
+mockupimagetwo: ./images/mockup-mobile-android.png
 casestudy: no
-order: 1
+order: 2
 ---
 
 #Test Heading
