@@ -56,7 +56,7 @@ export default {
       align-items: center;
       justify-content: space-between;
       & a {
-        color: var(--dark);
+        color: var(--font-main);
         text-decoration: underline var(--medium);
         text-decoration-skip-ink: auto;
         transition-property: text-decoration, color;
@@ -64,7 +64,7 @@ export default {
         transition-timing-function: ease-in-out;
       }
       & a:hover {
-        color: var(--dark);
+        color: var(--font-main);
         text-decoration: underline var(--green);
       }
     }
