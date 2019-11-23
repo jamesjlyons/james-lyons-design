@@ -296,6 +296,14 @@ span.wave:hover {
   }
 }
 
+@media (prefers-color-scheme: dark) {
+  .intro-links {
+    & a {
+      filter: invert(0.5);
+    }
+  }
+}
+
 .intro-type {
   & a {
     color: var(--font-main);
