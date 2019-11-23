@@ -79,11 +79,17 @@ select {
 
 :root {
   /* font-size: 18px; */
-  --dark: hsla(0, 0%, 0%, 100%);
+  --black: hsla(0, 0%, 0%, 100%);
+  --dark: hsla(240, 14%, 10%, 100%);
   --medium: hsla(0, 0%, 58%, 100%);
   --light: hsla(0, 0%, 100%, 100%);
   --green: hsla(165, 82%, 52%, 1);
   --gradient: linear-gradient(90deg, #00c9ff 0%, #92fe9d 100%);
+
+  --body-foreground: hsla(0, 0%, 98%, 100%);
+  --body-background: hsla(0, 0%, 100%, 100%);
+  --font-main:hsla(240, 14%, 10%, 100%);
+  --border:hsl(0, 0%, 92%);
 
   --screen-sm: 640px;
   --screen-md: 768px;
@@ -91,25 +97,27 @@ select {
   --screen-xl: 1280px;
 }
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --body-foreground: hsl(220, 7%, 16%);
+    --body-background: hsla(240, 14%, 10%, 100%);
+    --font-main: hsla(0, 0%, 98%, 100%);
+    --border:hsl(0, 0%, 10%);
+  }
+}
+
 html {
   font-size: 18px;
 }
 
 body {
-  background-color: white;
+  background-color:var(--body-background);
   font-family: "Barlow", -apple-system, system-ui, BlinkMacSystemFont,
     "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-weight: 500;
   line-height: 1.45;
-  color: var(--dark);
+  color: var(--font-main);
 }
-
-/* @media (prefers-color-scheme: dark) {
-  body {
-    background-color: var(--dark);
-    color: var(--light)
-  }
-} */
 
 p {
   margin-bottom: 1.25em;

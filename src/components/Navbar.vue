@@ -28,9 +28,9 @@ nav {
   display: flex;
   align-items: flex-end;
   & .nav__link {
-    color: var(--dark);
+    color: var(---font-main);
     margin-left: 24px;
-    text-decoration: underline var(--light);
+    text-decoration: underline var(--body-background);
     text-decoration-skip-ink: auto;
     transition-property: text-decoration, color;
     transition-duration: 0.3s;

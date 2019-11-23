@@ -202,8 +202,8 @@ span.wave:hover {
   grid-area: 1 / 1 / 3 / 2;
   z-index: 1;
   overflow: hidden;
-  background: rgb(255, 255, 255);
-  border: 4px solid rgb(235, 235, 235);
+  background: var(--body-background);
+  border: 4px solid var(--border);
   box-shadow: 0px 12px 24px -9px rgba(0, 0, 0, 0.5);
   border-radius: 42px;
   display: grid;
@@ -278,7 +278,8 @@ span.wave:hover {
   grid-area: 2 / 1 / 4 / 2;
   width: 196px;
   padding-bottom: 12px;
-  background: rgb(243, 243, 243);
+  /* background: rgb(243, 243, 243); */
+  background: var(--body-foreground);
   border-radius: 0 0 16px 16px;
   display: flex;
   flex-wrap: nowrap;
@@ -297,7 +298,7 @@ span.wave:hover {
 
 .intro-type {
   & a {
-    color: var(--dark);
+    color: var(--font-main);
     text-decoration: underline var(--medium);
     text-decoration-skip-ink: auto;
     transition-property: text-decoration, color;
@@ -305,7 +306,7 @@ span.wave:hover {
     transition-timing-function: ease-in-out;
   }
   & a:hover {
-    color: var(--dark);
+    color: var(--font-main);
     text-decoration: underline var(--green);
   }
 }
@@ -322,7 +323,7 @@ span.wave:hover {
 }
 
 .projects {
-  background-color: #fafafa;
+  background-color: var(--body-foreground);
   padding-bottom: 80px;
   & .project-list {
     max-width: 980px;
