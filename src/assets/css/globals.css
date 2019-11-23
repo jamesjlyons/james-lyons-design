@@ -99,11 +99,23 @@ select {
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --body-foreground: hsl(220, 7%, 16%);
-    --body-background: hsla(240, 14%, 10%, 100%);
+    --body-foreground: hsla(240, 14%, 10%, 100%);
+    --body-background: hsl(220, 7%, 16%);
     --font-main: hsla(0, 0%, 98%, 100%);
     --border:hsl(0, 0%, 10%);
+
+    /* transition:
+      color var(--duration) var(--timing),
+      background-color var(--duration) var(--timing); */
   }
+}
+
+* {
+  transition:
+  color 0.5s ease,
+  background-color 0.5s ease,
+  background 0.5s ease,
+  border 0.5s ease;
 }
 
 html {
