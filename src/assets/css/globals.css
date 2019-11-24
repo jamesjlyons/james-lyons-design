@@ -97,18 +97,21 @@ select {
   --screen-xl: 1280px;
 }
 
-@media (prefers-color-scheme: dark) {
+:root [data-theme="dark"] {
+  --body-foreground: hsla(240, 14%, 10%, 100%);
+  --body-background: hsl(220, 7%, 16%);
+  --font-main: hsla(0, 0%, 98%, 100%);
+  --border:hsl(0, 0%, 10%);
+
+}
+
+/* @media (prefers-color-scheme: dark) {
   :root {
     --body-foreground: hsla(240, 14%, 10%, 100%);
     --body-background: hsl(220, 7%, 16%);
     --font-main: hsla(0, 0%, 98%, 100%);
     --border:hsl(0, 0%, 10%);
-
-    /* transition:
-      color var(--duration) var(--timing),
-      background-color var(--duration) var(--timing); */
-  }
-}
+} */
 
 * {
   transition:

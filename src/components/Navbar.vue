@@ -3,6 +3,7 @@
     <div class="nav-items">
       <!-- <g-link class="nav__link" to="/">/home</g-link> -->
       <g-link class="nav__link" to="/">/work</g-link>
+      <ToggleTheme />
       <!-- <g-link class="nav__link" to="/writing">/writing</g-link>
       <g-link class="nav__link" to="/about">/about</g-link> -->
     </div>
@@ -10,8 +11,13 @@
 </template>
 
 <script>
+import ToggleTheme from "~/components/ToggleTheme.vue";
+
 export default {
-  name: "Navbar"
+  name: "Navbar",
+   components: {
+    ToggleTheme
+  }
 };
 </script>
 
@@ -26,7 +32,7 @@ nav {
 
 .nav-items {
   display: flex;
-  align-items: flex-end;
+  /* align-items: flex-end; */
   & .nav__link {
     color: var(---font-main);
     margin-left: 24px;
