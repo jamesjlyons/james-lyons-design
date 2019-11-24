@@ -63,5 +63,11 @@ export default {
   border: 1px solid rgba(0, 0, 0, 0.03);
   border-radius:16px;
 }
-    
+
+/* Medium (md) */
+@media (max-width: 768px) {
+  .device-border {
+    padding: 16px;
+  }
+}
 </style>
