@@ -15,7 +15,7 @@ order: 4
 
 #### The Problem
 
-99.8% of users bounced when arriving on the first page of GrandPad's buy flow, whether coming from a point in the sales funnel or landing directly on the page. Mobile devices were starting to account for a large percentage of our visitors, and none of the buy flow was optimized well for mobile. To add some spice to this project, GrandPad had recently started working with a marketing firm, and ou biggest marketing campaign was scheduled to launch in a little over a month. Somewhat of a crunched timeline.
+99.8% of users bounced when arriving on the first page of GrandPad's buy flow, whether coming from a point in the sales funnel or landing directly on the page. Mobile devices were starting to account for a large percentage of our visitors, and none of the buy flow was optimized well for mobile. To add some spice to this project, GrandPad had recently started working with a marketing firm, and our biggest marketing campaign was scheduled to launch in a little over a month. Somewhat of a crunched timeline.
 <br /><br /><br />
 
 #### The Goal of the Redesign
