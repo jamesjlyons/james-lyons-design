@@ -175,6 +175,7 @@ small,
 
 ::selection {
   background: var(--green); /* WebKit/Blink Browsers */
+  color: var(--dark);
 }
 
 /* media queries */
