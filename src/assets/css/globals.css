@@ -90,6 +90,8 @@ select {
   --body-background: hsla(0, 0%, 100%, 100%);
   --font-main:hsla(240, 14%, 10%, 100%);
   --border:hsl(0, 0%, 92%);
+  --frame-links: hsl(0,0%,95.3%);
+  --invert: invert(0);
 
   --screen-sm: 640px;
   --screen-md: 768px;
@@ -102,7 +104,8 @@ select {
   --body-background: hsl(220, 7%, 16%);
   --font-main: hsla(0, 0%, 98%, 100%);
   --border:hsl(0, 0%, 10%);
-
+  --frame-links: hsl(240, 14%, 13%);
+  --invert: invert(1);
 }
 
 /* @media (prefers-color-scheme: dark) {

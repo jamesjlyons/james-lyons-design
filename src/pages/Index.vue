@@ -279,7 +279,7 @@ span.wave:hover {
   width: 196px;
   padding-bottom: 12px;
   /* background: rgb(243, 243, 243); */
-  background: var(--body-foreground);
+  background: var(--frame-links);
   border-radius: 0 0 16px 16px;
   display: flex;
   flex-wrap: nowrap;
@@ -290,17 +290,10 @@ span.wave:hover {
     transition-property: transform;
     transition-duration: 0.1s;
     transition-timing-function: ease-in-out;
+    filter: var(--invert);
   }
   & a:hover {
     transform: scale(1.1);
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  .intro-links {
-    & a {
-      filter: invert(0.5);
-    }
   }
 }
 
