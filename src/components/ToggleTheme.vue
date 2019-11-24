@@ -1,7 +1,5 @@
 <template>
-  <a role="button" @click.prevent="toggleTheme()"  
-      :aria-label="'Toggle ' + nextTheme" 
-      :title="'Toggle ' + nextTheme"
+  <a role="button" @click.prevent="toggleTheme()"
       class="toggle-theme"
     >
 
@@ -23,26 +21,37 @@ export default {
       theme: 'light',
     }
   },
-  computed: {
-    nextTheme() {
-      const currentIndex = themes.indexOf(this.theme)
-      const nextIndex = (currentIndex + 1) % themes.length
-      return themes[nextIndex]
-    }
-  },
+  // computed: {
+  //   nextTheme() {
+  //     const currentIndex = themes.indexOf(this.theme)
+  //     const nextIndex = (currentIndex + 1) % themes.length
+  //     return themes[nextIndex]
+  //   }
+  // },
   methods: {
     toggleTheme() {
-      const currentIndex = themes.indexOf(this.theme);
-      const nextIndex = (currentIndex + 1) % themes.length;
-      window.__setPreferredTheme(themes[nextIndex])
-      this.theme = themes[nextIndex]
+      const currentTheme = document.documentElement.getAttribute('data-theme');
+      if (currentTheme === 'light') {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        localStorage.setItem('theme', 'dark');
+      }
+      else {
+        document.documentElement.setAttribute('data-theme', 'light');
+        localStorage.setItem('theme', 'light');
+      }
     }
   },
   async mounted() {
     // set default
-    if (typeof window.__theme !== 'undefined') this.theme = window.__theme
+     const currentTheme = document.documentElement.getAttribute('data-theme');
+     const localTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
+     document.documentElement.setAttribute('data-theme', localTheme);
+     if (currentTheme === null) {
+      localStorage.setItem('theme', 'light');
+      document.documentElement.setAttribute('data-theme', 'light');
+     }
   }
-}
+};
 </script>
 
 <style lang="postcss">

@@ -99,7 +99,16 @@ select {
   --screen-xl: 1280px;
 }
 
-:root [data-theme="dark"] {
+[data-theme="light"] {
+  --body-foreground: hsla(0, 0%, 98%, 100%);
+  --body-background: hsla(0, 0%, 100%, 100%);
+  --font-main:hsla(240, 14%, 10%, 100%);
+  --border:hsl(0, 0%, 92%);
+  --frame-links: hsl(0,0%,95.3%);
+  --invert: invert(0);
+}
+
+[data-theme="dark"] {
   --body-foreground: hsla(240, 14%, 10%, 100%);
   --body-background: hsl(220, 7%, 16%);
   --font-main: hsla(0, 0%, 98%, 100%);
@@ -108,13 +117,48 @@ select {
   --invert: invert(1);
 }
 
-/* @media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
   :root {
+    /* font-size: 18px; */
+    --black: hsla(0, 0%, 0%, 100%);
+    --dark: hsla(240, 14%, 10%, 100%);
+    --medium: hsla(0, 0%, 58%, 100%);
+    --light: hsla(0, 0%, 100%, 100%);
+    --green: hsla(165, 82%, 52%, 1);
+    --gradient: linear-gradient(90deg, #00c9ff 0%, #92fe9d 100%);
+  
+    --body-foreground: hsla(0, 0%, 98%, 100%);
+    --body-background: hsla(0, 0%, 100%, 100%);
+    --font-main:hsla(240, 14%, 10%, 100%);
+    --border:hsl(0, 0%, 92%);
+    --frame-links: hsl(0,0%,95.3%);
+    --invert: invert(0);
+  
+    --screen-sm: 640px;
+    --screen-md: 768px;
+    --screen-lg: 1024px;
+    --screen-xl: 1280px;
+  }
+
+  [data-theme="dark"] {
+    --body-foreground: hsla(0, 0%, 98%, 100%);
+    --body-background: hsla(0, 0%, 100%, 100%);
+    --font-main:hsla(240, 14%, 10%, 100%);
+    --border:hsl(0, 0%, 92%);
+    --frame-links: hsl(0,0%,95.3%);
+    --invert: invert(0);
+
+  }
+  
+  [data-theme="light"] {
     --body-foreground: hsla(240, 14%, 10%, 100%);
     --body-background: hsl(220, 7%, 16%);
     --font-main: hsla(0, 0%, 98%, 100%);
     --border:hsl(0, 0%, 10%);
-} */
+    --frame-links: hsl(240, 14%, 13%);
+    --invert: invert(1);
+  }
+}
 
 * {
   transition:

@@ -133,7 +133,7 @@ export default {
       document.getElementById("intro-frame").classList.add("grandpad");
     }
   }
-};
+}
 </script>
 
 <style lang="postcss">
