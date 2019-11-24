@@ -21,13 +21,6 @@ export default {
       theme: 'light',
     }
   },
-  // computed: {
-  //   nextTheme() {
-  //     const currentIndex = themes.indexOf(this.theme)
-  //     const nextIndex = (currentIndex + 1) % themes.length
-  //     return themes[nextIndex]
-  //   }
-  // },
   methods: {
     toggleTheme() {
       const currentTheme = document.documentElement.getAttribute('data-theme');
