@@ -30,14 +30,14 @@ export default {
 <style>
 .layout {
   margin: 40px 0px;
-    padding-right: 16px;
-  padding-left: 16px;
+  /* padding-right: 16px;
+  padding-left: 16px; */
 }
 
-/* .layout > * {
+.layout > * {
   padding-right: 16px;
   padding-left: 16px;
-} */
+}
 /* Small (sm) */
 @media (max-width: 640px) { 
   .layout {

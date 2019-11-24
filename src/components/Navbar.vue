@@ -3,15 +3,21 @@
     <div class="nav-items">
       <!-- <g-link class="nav__link" to="/">/home</g-link> -->
       <g-link class="nav__link" to="/">/work</g-link>
-      <g-link class="nav__link" to="/writing">/writing</g-link>
-      <g-link class="nav__link" to="/about">/about</g-link>
+      <ToggleTheme />
+      <!-- <g-link class="nav__link" to="/writing">/writing</g-link>
+      <g-link class="nav__link" to="/about">/about</g-link> -->
     </div>
   </nav>
 </template>
 
 <script>
+import ToggleTheme from "~/components/ToggleTheme.vue";
+
 export default {
-  name: "Navbar"
+  name: "Navbar",
+   components: {
+    ToggleTheme
+  }
 };
 </script>
 
@@ -26,11 +32,11 @@ nav {
 
 .nav-items {
   display: flex;
-  align-items: flex-end;
+  /* align-items: flex-end; */
   & .nav__link {
-    color: var(--dark);
+    color: var(---font-main);
     margin-left: 24px;
-    text-decoration: underline var(--light);
+    text-decoration: underline var(--body-background);
     text-decoration-skip-ink: auto;
     transition-property: text-decoration, color;
     transition-duration: 0.3s;

@@ -28,7 +28,7 @@ export default {
    display: flex;
    align-items: center;
    justify-content: center;
-   background-color: var(--light);
+   background-color: var(--body-background);
    box-shadow: 0px 8px 24px -9px rgba(0, 0, 0, 0.5), inset 0px 0px 8px rgba(0, 0, 0, 0.1);
    border-radius: 24px;
    padding: 22px 10px;
