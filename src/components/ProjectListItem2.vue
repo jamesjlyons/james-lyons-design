@@ -17,8 +17,11 @@
       <div class="project-list-text">
         <h3 class="title" v-html="project.title" />
         <p class="description" v-html="project.description" />
-        <g-link v-if="project.casestudy === 'yes'" :to="project.path" class="read">View Case Study</g-link>
-        <g-link v-if="project.website != 'no'" :to="project.website" class="read">View Project</g-link>
+        <h6 class="roles" v-html="project.role"/>
+        <div class="project-links">
+          <g-link v-if="project.casestudy === 'yes'" :to="project.path" class="read">View Case Study</g-link>
+          <g-link v-if="project.website != 'no'" :to="project.website" class="read">View Project</g-link>
+        </div>
       </div>
     </div>
   </div>
@@ -67,6 +70,14 @@ export default {
         color: var(--font-main);
         text-decoration: underline var(--green);
       }
+      & .project-links {
+        display: flex;
+        flex-direction: column;
+        margin-top: 24px;
+      }
+    }
+    & .roles {
+      margin-top: 24px;
     }
   }
 
