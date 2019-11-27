@@ -32,7 +32,8 @@ query Project ($path: String!) {
 </page-query>
 
 <script>
-export default {};
+export default {
+};
 </script>
 
 <style lang="postcss">
@@ -82,6 +83,18 @@ h2, h4, h6 {
   & ol {
     max-width: 65ch;
   }
+  & a {
+        color: var(--font-main);
+        text-decoration: underline var(--medium);
+        text-decoration-skip-ink: auto;
+        transition-property: text-decoration, color;
+        transition-duration: 0.3s;
+        transition-timing-function: ease-in-out;
+      }
+      & a:hover {
+        color: var(--font-main);
+        text-decoration: underline var(--green);
+      }
   & img {
     width: 100%;
     max-width: 980px;
