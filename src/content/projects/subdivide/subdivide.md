@@ -46,6 +46,7 @@ The Remote feature allows users to control an instance of Subdivide running on a
 <br />
 
 #### What I'm Learning from This Project
+This app was one of my first attempts at tacking an entire product design from scratch, from the UX to the UI to the branding, so it continues to mature as my design skills also mature. It's been a project that pushes me to learn new things, and continues to have new needs like a better pricing model and a marketing strategy. Subdivide stemmed out of frustrations and needs from the marching arts community. Being heavily involved with it as an instructor, it was easy to get feedback on ideas and quickly test interfaces with other people. It has been rewarding to see a small side project turn into something real with a small but loyal user-base.
 
 
 <!-- ![](./images/subdivide-cover.png) -->
