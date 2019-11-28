@@ -61,6 +61,11 @@ Full disclaimer: The design of the bottom tabs with an action button over it end
 
 ##### Video Call
 
+#### Results
+Both projects successfully launched and are live on the App Store and Google Play Store. You can see the listing here:
+[`App Store`](/project/grandpad-checkout)
+[`Play Store`](/project/grandpad-checkout)
+
 
 
 <!-- ![](./images/subdivide-cover.png) -->
