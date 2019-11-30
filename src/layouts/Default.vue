@@ -43,5 +43,9 @@ export default {
   .layout {
   margin: 24px 0px;
 }
+.layout > * {
+  padding-right: 24px;
+  padding-left: 24px;
+}
  }
 </style>

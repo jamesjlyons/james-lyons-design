@@ -340,8 +340,13 @@ span.wave:hover {
 
 /* media queries */
 
-/* Small (sm) */
-@media (min-width: 640px) {
+/* Extra Large (xl) */
+@media (min-width: 1280px) {
+  /* ... */
+}
+
+/* Large (lg) */
+@media (min-width: 1024px) {
   /* ... */
 }
 
@@ -370,13 +375,8 @@ span.wave:hover {
   }
 }
 
-/* Large (lg) */
-@media (min-width: 1024px) {
-  /* ... */
-}
-
-/* Extra Large (xl) */
-@media (min-width: 1280px) {
+/* Small (sm) */
+@media (min-width: 640px) {
   /* ... */
 }
 

@@ -248,8 +248,13 @@ small,
 
 /* media queries */
 
-/* Small (sm) */
-@media (max-width: 640px) {
+/* Extra Large (xl) */
+@media (max-width: 1280px) {
+  /* ... */
+}
+
+/* Large (lg) */
+@media (max-width: 1024px) {
   /* ... */
 }
 
@@ -260,12 +265,10 @@ small,
   }
 }
 
-/* Large (lg) */
-@media (max-width: 1024px) {
-  /* ... */
-}
-
-/* Extra Large (xl) */
-@media (max-width: 1280px) {
-  /* ... */
+/* Small (sm) */
+@media (max-width: 640px) {
+  h2 {
+    font-size: 4em;
+    font-weight: 800;
+  }
 }

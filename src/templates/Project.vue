@@ -8,7 +8,7 @@
       <!-- <g-image v-if="$page.project" :src="$page.project.thumbnail" /> -->
     </section>
     <section class="project-hero">
-      <g-image v-if="$page.project" :src="$page.project.hero" quality="100"/>
+      <g-image v-if="$page.project" :src="$page.project.hero" quality="100" />
     </section>
     <section class="project-content">
       <div v-if="$page.project" v-html="$page.project.content"></div>
@@ -32,8 +32,7 @@ query Project ($path: String!) {
 </page-query>
 
 <script>
-export default {
-};
+export default {};
 </script>
 
 <style lang="postcss">
@@ -51,13 +50,15 @@ export default {
   }
   & h6 {
     color: var(--medium);
-  } 
+  }
 }
 
-h2, h4, h6 {
-    margin-top: 16px;
-    margin-bottom: 16px;
-  }
+h2,
+h4,
+h6 {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
 
 .project-hero {
   width: 100%;
@@ -87,17 +88,17 @@ h2, h4, h6 {
     max-width: 65ch;
   }
   & a {
-        color: var(--font-main);
-        text-decoration: underline var(--medium);
-        text-decoration-skip-ink: auto;
-        transition-property: text-decoration, color;
-        transition-duration: 0.3s;
-        transition-timing-function: ease-in-out;
-      }
-      & a:hover {
-        color: var(--font-main);
-        text-decoration: underline var(--green);
-      }
+    color: var(--font-main);
+    text-decoration: underline var(--medium);
+    text-decoration-skip-ink: auto;
+    transition-property: text-decoration, color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+  }
+  & a:hover {
+    color: var(--font-main);
+    text-decoration: underline var(--green);
+  }
   & img {
     width: 100%;
     max-width: 980px;
@@ -124,7 +125,39 @@ h2, h4, h6 {
     box-shadow: 27.1px 62.5px 125px -25px
     rgba(50,50,93,.5),16.2px 37.5px 75px -37.5px rgba(0,0,0,.6); */
     /* margin: auto; */
+  }
 }
 
+/* media queries */
+
+
+/* Extra Large (xl) */
+@media (max-width: 1280px) {
+  /* ... */
+}
+
+
+/* Large (lg) */
+@media (max-width: 1024px) {
+.project-intro {
+  padding-top: 40px;
+  min-height: 60vh;
+}
+}
+
+/* Medium (md) */
+@media (max-width: 768px) {
+ .project-intro {
+  padding-top: 24px;
+  min-height: 60vh;
+}
+}
+
+/* Small (sm) */
+@media (max-width: 640px) {
+   .project-intro {
+  padding-top: 8px;
+  min-height: 60vh;
+}
 }
 </style>
