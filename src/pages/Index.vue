@@ -380,20 +380,5 @@ span.wave:hover {
   /* ... */
 }
 
-.fade-enter-active {
-  transition: opacity 0.8s ease-in;
-}
 
-.fade-enter {
-  opacity: 0;
-}
-
-.fade-delay-enter-active {
-  transition: opacity 0.8s ease-in-out 0.75s;
-}
-
-.fade-delay-enter {
-  opacity: 0;
-  /* transform: translateY(10%); */
-}
 </style>
