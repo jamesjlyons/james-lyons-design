@@ -36,7 +36,7 @@ The main goal of this redesign was to improve the bounce rate on the first page 
 
 #### Research
 
-To help with research, we set up a test environment of our current buy flow. We leveraged [`usertesting.com`](http://usertesting.com) to get some feedback from people in our target audience: adults with senior parents. We had the participants read through the home and product description pages of our website so they would have a better idea of what they were testing the checkout process for.
+To help with research, we set up a test environment of our current buy flow. We leveraged [usertesting.com](http://usertesting.com) to get some feedback from people in our target audience: adults with senior parents. We had the participants read through the home and product description pages of our website so they would have a better idea of what they were testing the checkout process for.
 
 The most common complaint was that the process from start to finish just took too long. To sell and ship a pre-setup GrandPad tablet, we needed information about 3 people (which could all be the same or different): The purchaser, the Family Admin of the GrandPad account, and the GrandPad tablet user. Names, addresses, emails, gender, and birthdays were being collected for all of them. That raised the question, do we need all of this information for each individual?
 
