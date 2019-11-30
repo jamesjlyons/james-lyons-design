@@ -62,8 +62,11 @@ h2, h4, h6 {
 .project-hero {
   width: 100%;
   height: auto;
+  display: flex;
+  justify-content: center;
   & img {
     width: inherit;
+    max-width: 960px;
   }
 }
 
