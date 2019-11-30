@@ -16,7 +16,7 @@ order: 2
 
 #### The Problem
 
-As a compliment to the tablet for seniors, GrandPad provided mobile apps for family members to communicate and share photos with the tablet user. Essentially, they were social media apps meant to privately communicate with family. The iOS and Android companion apps were both functional, but were in dire need of a a more cohesive user experience between both platforms. And they honestly needed a fresh coat of paint to match with the newer website and [`checkout process`](/project/grandpad-checkout) UI. The Android app had also fallen behind in terms of features, so it was time to being it up to speed.
+As a compliment to the tablet for seniors, GrandPad provided mobile apps for family members to communicate and share photos with the tablet user. Essentially, they were social media apps meant to privately communicate with family. The iOS and Android companion apps were both functional, but were in dire need of a a more cohesive user experience between both platforms. And they honestly needed a fresh coat of paint to match with the newer website and [checkout process](/project/grandpad-checkout) UI. The Android app had also fallen behind in terms of features, so it was time to being it up to speed.
 <br /><br /><br />
 
 #### The Goal of the Redesign
@@ -28,43 +28,34 @@ The iOS redesign came first, so it was going to set the direction for the Androi
 3.  **Add a notification center.** There was no place to see past notifications within the app, so it was a priority to add a place where users could see all new and past notifications.
 <br /><br /><br />
 
-#### The iOS App
+#### The iOS & Android Apps
 Full disclaimer: The design of the bottom tabs with an action button over it ended up getting axed towards the end of development. The shipped version has a standard bottom navigation and a "New Post" button in the top toolbar.
 
 ##### Signup and Login
+![signup and login screens](./images/signup.png)
 
 ##### Home/Photo Feed
+![home screen](./images/feed.png)
 
 ##### Contacts
+![contacts screens](./images/contacts.png)
 
 ##### Post View
+![post detail screens](./images/post-detail.png)
 
 ##### New Post
+![new post screens](./images/new-post.png)
 
 ##### Notification Center
+![notification center screens](./images/notifications.png)
 
 ##### Video Call
-
-#### The Android App
-
-##### Signup and Login
-
-##### Home/Photo Feed
-
-##### Contacts
-
-##### Post View
-
-##### New Post
-
-##### Notification Center
-
-##### Video Call
+![video call screens](./images/video-call.png)
 
 #### Results
 Both projects successfully launched and are live on the App Store and Google Play Store. You can see the listing here:
-[`App Store`](/project/grandpad-checkout)
-[`Play Store`](/project/grandpad-checkout)
+[App Store](/project/grandpad-checkout)
+[Play Store](/project/grandpad-checkout)
 
 
 
