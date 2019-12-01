@@ -17,7 +17,7 @@
       <div class="project-list-text">
         <h3 class="title" v-html="project.title" />
         <p class="description" v-html="project.description" />
-        <h6 class="roles" v-html="project.role"/>
+        <!-- <h6 class="roles" v-html="project.role"/> -->
         <div class="project-links">
           <g-link v-if="project.casestudy === 'yes'" :to="project.path" class="button">View Case Study</g-link>
           <g-link v-if="project.website != 'no'" :to="project.website" class="button secondary">View Website</g-link>

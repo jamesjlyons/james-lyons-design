@@ -4,7 +4,7 @@
       <h6>CASE STUDY 0{{ $page.project.order }}</h6>
       <h2 v-if="$page.project">{{ $page.project.title }}</h2>
       <h4 v-if="$page.project">{{ $page.project.description }}</h4>
-      <h6>{{ $page.project.role }}</h6>
+      <h6>Role: {{ $page.project.role }}</h6>
       <!-- <g-image v-if="$page.project" :src="$page.project.thumbnail" /> -->
     </section>
     <section class="project-hero">
