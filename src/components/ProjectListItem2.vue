@@ -19,8 +19,8 @@
         <p class="description" v-html="project.description" />
         <h6 class="roles" v-html="project.role"/>
         <div class="project-links">
-          <g-link v-if="project.casestudy === 'yes'" :to="project.path" class="read">View Case Study</g-link>
-          <g-link v-if="project.website != 'no'" :to="project.website" class="read">View Project</g-link>
+          <g-link v-if="project.casestudy === 'yes'" :to="project.path" class="button">View Case Study</g-link>
+          <g-link v-if="project.website != 'no'" :to="project.website" class="button secondary">View Website</g-link>
         </div>
       </div>
     </div>
@@ -41,7 +41,7 @@ export default {
 };
 </script>
 
-<style lang="postcss">
+<style lang="postcss" scoped>
 .project-list-item {
   width: 100%;
   min-height: 100vh;
@@ -73,7 +73,32 @@ export default {
       & .project-links {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         margin-top: 24px;
+        & .button {
+          background-color: var(--green);
+          color: var(--dark);
+          border-radius: 8px;
+          text-decoration: none;
+          display: flex;
+          justify-content: center;
+          text-align: center;
+          padding: 8px 24px;
+          width: fit-content;
+          margin: 8px 0px;
+          box-shadow:  0px 8px 8px -8px rgba(0, 0, 0, 0.4);
+          transform: translateY(0px);
+          transition: transform .3s, box-shadow .3s;
+        }
+         & .button.secondary {
+            background-color: var(--body-background);
+            color: var(--font-main);
+          }
+          & .button:hover {
+             box-shadow: 0px 8px 16px -8px rgba(0, 0, 0, 0.3);
+             transform: translateY(-1px);
+          }
       }
     }
     & .roles {
