@@ -19,13 +19,13 @@ In the fall of 2017, the awesome team over at [Blockstack](https://blockstack.or
 <!-- #### The Process
 To work at a quick pace, basic designs were made in Sketch, shared and approved in Abstract, and then iterated upon in the code. For the development process, Alec focused on getting the app code structure solid -->
 
-##### The Landing Page
+<!-- ##### The Landing Page
 
 ##### The Portfolio Overview
 
 ##### The Breakdowns
 
-##### The History Page
+##### The History Page -->
 
 #### Results
 Did we win the contest? No. But it was a lot of fun to build, and the team who reviewed or app at Blockstack ranked the design and code highly.
