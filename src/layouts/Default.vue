@@ -3,7 +3,11 @@
     <header class="header">
       <Navbar></Navbar>
     </header>
-    <slot />
+    <transition name="fade" appear>
+      <main>
+        <slot />
+      </main>
+    </transition>
     <Footer></Footer>
   </div>
 </template>
@@ -34,7 +38,7 @@ export default {
   padding-left: 16px; */
 }
 
-.layout > * {
+.layout > header,.layout > main > * {
   padding-right: 16px;
   padding-left: 16px;
 }
@@ -43,7 +47,7 @@ export default {
   .layout {
   margin: 24px 0px;
 }
-.layout > * {
+.layout > header,.layout > main > * {
   padding-right: 24px;
   padding-left: 24px;
 }
