@@ -54,6 +54,9 @@ export default {
   color: currentColor;
   cursor: pointer;
   margin-left: 24px;
+  transition-property: color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
   &:hover {
     color: var(--green);
   }
