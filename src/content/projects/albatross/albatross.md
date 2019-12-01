@@ -6,7 +6,7 @@ website: no
 description: Redesigning the buy flow for a GrandPad tablet
 role: UX Research, UX Design, UI Design, Frontend Development
 thumbnail: ./images/albatross-thumbnail.svg
-hero: ./images/albatross-hero@2x.png
+hero: ./images/albatross-hero.png
 mockuptype: desktop
 mockupimage: ./images/mockup-desktop.png
 casestudy: yes
