@@ -42,7 +42,7 @@ When it comes to getting musicians to play together over a distance, such as a m
 
 The Remote feature allows users to control an instance of Subdivide running on another device by pairing the two devices together over a wifi network. This removes the need for a person to be in the back of the field controlling the metronome. A band can plug a device into a speaker in the back of the field, and instructors can control a track or normal metronome from a device in the front of the field. Not only is this more convenient, but it also gives instructors greater control over the pace of rehearsal, and minimizes the number of mistakes that happen during practice due to a person missing a tempo change with a hardware metronome.
 <br /><br />
-![tracks screens](./images/tracks.png)
+![tracks screens](./images/remote.png)
 <br />
 
 #### What I'm Learning from This Project
