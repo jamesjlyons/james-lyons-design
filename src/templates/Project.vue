@@ -113,7 +113,7 @@ h6 {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 8px;
+    border-radius: 18px;
     /* border: 4px solid #fff; */
     box-shadow: 0px 12px 24px -9px rgba(0, 0, 0, 0.5);
     /* cursor: url('/assets/cursor.png') 39 39, auto;
