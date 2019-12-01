@@ -160,4 +160,12 @@ h6 {
   min-height: 60vh;
 }
 }
+
+/* XSmall (xsm) */
+@media (max-width: 320px) {
+   iframe {
+      transform: scale(0.85);
+      transform-origin: left;
+   }
+}
 </style>
