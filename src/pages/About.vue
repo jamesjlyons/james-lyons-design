@@ -2,6 +2,7 @@
   <Layout>
     <section>
       <h2>About me</h2>
+      <h5>A brief history of my design career</h5>
       <p>I am a Product Designer at Liferay in Southern California. I'm currently designing on the Analytics Cloud product team, and made a handy Figma plugin to help our process.
         <br /> <br />
       I also currently design and code stuff like Subdivide and Lio with Tap Five, a team of two who likes to make things that don't suck.
