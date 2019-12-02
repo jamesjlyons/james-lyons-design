@@ -42,15 +42,16 @@ When it comes to getting musicians to play together over a distance, such as a m
 
 The Remote feature allows users to control an instance of Subdivide running on another device by pairing the two devices together over a wifi network. This removes the need for a person to be in the back of the field controlling the metronome. A band can plug a device into a speaker in the back of the field, and instructors can control a track or normal metronome from a device in the front of the field. Not only is this more convenient, but it also gives instructors greater control over the pace of rehearsal, and minimizes the number of mistakes that happen during practice due to a person missing a tempo change with a hardware metronome.
 <br /><br />
-![tracks screens](./images/remote.png)
+![remote screens](./images/remote.png)
+<br />
+
+##### The App Icon
+This is the second iteration of Subdivide's icon, and it was made to support the adaptive icon feature on Android. It evolved from exploring a combination of the mathematical division symbol and a musical repeat symbol while playing off of the visual design of the different states of the metronome dots. The result was simple enough to scale down to small sizes, hold its ground when surrounded by other app icons, and provide some branding elements to work with.
+<br /><br />
+![subdivide icon](./images/icon.png)
 <br />
 
 #### What I'm Learning from This Project
 This app was one of my first attempts at tackling an entire product design from scratch, from the UX to the UI to the branding, so it continues to mature as my design skills also mature. It's been a project that pushes me to learn new things and continues to have new needs like a better pricing model and a marketing strategy. Subdivide stemmed out of frustrations and needs from the marching arts community. Being heavily involved with it as an instructor, it was easy to get feedback on ideas and quickly test interfaces with other people. It has been rewarding to see a small side project turn into something real with a small but loyal user-base.
 
 Check out Subdivide [here](https://subdivide.io)
-
-
-<!-- ![](./images/subdivide-cover.png) -->
-
-<!-- <img src="/assets/static/content/projects/subdivide/subdivide-cover.png" > -->
