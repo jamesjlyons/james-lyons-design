@@ -160,13 +160,12 @@ select {
   }
 }
 
-* {
+/* * {
   transition:
-  /* color 0.5s ease, */
   background-color 0.5s ease,
   background 0.5s ease,
   border 0.5s ease;
-}
+} */
 
 html {
   font-size: 18px;
@@ -189,7 +188,8 @@ h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+h6 {
   margin: 2.75rem 0 1rem;
   font-family: "Barlow", sans-serif;
   font-weight: 500;
@@ -218,6 +218,10 @@ h5 {
   font-size: 1.5em;
 }
 
+h6 {
+  font-size: 1.2em;
+}
+
 small,
 .text_small {
   font-size: 0.667em;
@@ -228,10 +232,40 @@ small,
   color: var(--dark);
 }
 
+.fadepage-active {
+  transition: opacity 0.3s ease-in;
+}
+
+.fadepage-enter {
+  opacity: 0;
+}
+
+.fade-enter-active {
+  transition: opacity 0.8s ease-in;
+}
+
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-delay-enter-active {
+  transition: opacity 0.8s ease-in-out 0.75s;
+}
+
+.fade-delay-enter {
+  opacity: 0;
+  /* transform: translateY(10%); */
+}
+
 /* media queries */
 
-/* Small (sm) */
-@media (max-width: 640px) {
+/* Extra Large (xl) */
+@media (max-width: 1280px) {
+  /* ... */
+}
+
+/* Large (lg) */
+@media (max-width: 1024px) {
   /* ... */
 }
 
@@ -242,12 +276,10 @@ small,
   }
 }
 
-/* Large (lg) */
-@media (max-width: 1024px) {
-  /* ... */
-}
-
-/* Extra Large (xl) */
-@media (max-width: 1280px) {
-  /* ... */
+/* Small (sm) */
+@media (max-width: 640px) {
+  h2 {
+    font-size: 4em;
+    font-weight: 800;
+  }
 }

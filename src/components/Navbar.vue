@@ -45,5 +45,8 @@ nav {
   & .nav__link:hover {
     text-decoration: underline var(--green);
   }
+  & .active--exact {
+    text-decoration: underline var(--green);
+  }
 }
 </style>

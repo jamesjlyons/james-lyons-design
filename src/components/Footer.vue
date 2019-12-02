@@ -1,22 +1,43 @@
 <template>
   <footer>
-    <small>©{{ new Date().getFullYear() }}</small>
+    <small>{{ new Date().getFullYear() }} JAMES LYONS</small>
+    <small class="backToTop" @click.prevent="backToTop()">☝️ BACK TO TOP</small>
   </footer>
 </template>
 
 <script>
 export default {
-  name: "Footer"
+  name: "Footer",
+  methods: {
+    backToTop() {
+      const topElement = document.getElementById('app');
+      topElement.scrollIntoView({behavior:"smooth"});
+    }
+  }
 };
 </script>
 
 <style lang="postcss">
 footer {
   color: var(--medium);
-  max-width: 980px;
-  margin: 0 auto;
+  /* max-width: 980px; */
+  width: auto;
+  margin: 0 40px;
   padding-top: 40px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+  & .backToTop {
+    cursor: pointer;
+    color: var(--font-main);
+    text-decoration: underline var(--background);
+    text-decoration-skip-ink: auto;
+    transition-property: text-decoration, color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+  }
+  & .backToTop:hover {
+    color: var(--font-main);
+    text-decoration: underline var(--green);
+  }
 }
 </style>

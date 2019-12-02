@@ -3,7 +3,7 @@
     <section class="intro">
       <div class="intro-hero">
         <div class="intro-graphic">
-          <transition name="fade" appear>
+          <!-- <transition name="fade" appear> -->
             <div id="intro-frame" class="intro-frame">
               <div class="frame-wave">
                 <span class="wave">👋</span>
@@ -18,8 +18,8 @@
                 <g-image src="~/assets/grandpad-logo.svg" width="96" immediate="true" />
               </div>
             </div>
-          </transition>
-          <transition name="fade" appear>
+          <!-- </transition> -->
+          <!-- <transition name="fade" appear> -->
             <div class="intro-links">
               <a href="https://dribbble.com/jamesjlyons" target="_blank" class="button-link">
                 <g-image src="~/assets/icon-dribbble.svg" width="24" immediate="true" />
@@ -31,9 +31,9 @@
                 <g-image src="~/assets/icon-email.svg" width="24" immediate="true" />
               </a>
             </div>
-          </transition>
+          <!-- </transition> -->
         </div>
-        <transition name="fade-delay" appear>
+        <!-- <transition name="fade-delay" appear> -->
           <div class="intro-type">
             <h5 class="small-margin">Hello, I'm</h5>
             <h2 class="small-margin">James Lyons</h2>
@@ -65,11 +65,11 @@
               >GrandPad</a>.
             </h5>
           </div>
-        </transition>
+        <!-- </transition> -->
       </div>
     </section>
     <section class="projects">
-      <transition name="fade-delay" appear>
+      <!-- <transition name="fade-delay" appear> -->
         <div class="project-list">
           <h5>Selected Work</h5>
           <ProjectListItem2
@@ -78,7 +78,7 @@
             :project="project.node"
           />
         </div>
-      </transition>
+      <!-- </transition> -->
     </section>
   </Layout>
 </template>
@@ -340,8 +340,13 @@ span.wave:hover {
 
 /* media queries */
 
-/* Small (sm) */
-@media (min-width: 640px) {
+/* Extra Large (xl) */
+@media (min-width: 1280px) {
+  /* ... */
+}
+
+/* Large (lg) */
+@media (min-width: 1024px) {
   /* ... */
 }
 
@@ -370,30 +375,10 @@ span.wave:hover {
   }
 }
 
-/* Large (lg) */
-@media (min-width: 1024px) {
+/* Small (sm) */
+@media (min-width: 640px) {
   /* ... */
 }
 
-/* Extra Large (xl) */
-@media (min-width: 1280px) {
-  /* ... */
-}
 
-.fade-enter-active {
-  transition: opacity 0.8s ease-in;
-}
-
-.fade-enter {
-  opacity: 0;
-}
-
-.fade-delay-enter-active {
-  transition: opacity 0.8s ease-in-out 0.75s;
-}
-
-.fade-delay-enter {
-  opacity: 0;
-  /* transform: translateY(10%); */
-}
 </style>
