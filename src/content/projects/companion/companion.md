@@ -71,6 +71,6 @@ Another much-used feature of GrandPad's platform was video calling. The platform
 <br /><br /><br />
 
 #### Results
-Both projects successfully launched and are live on the App Store and Google Play Store. You can see the listing here:
-[App Store](/project/grandpad-checkout)
-[Play Store](/project/grandpad-checkout)
+Both projects successfully launched and are live on the App Store and Google Play Store. You can see the listings here:<br />
+[App Store](https://apps.apple.com/us/app/grandpad/id904069946)<br />
+[Play Store](https://play.google.com/store/apps/details?id=net.grandpad.puma)
