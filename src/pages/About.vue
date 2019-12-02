@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <section>
+    <section class="about-me">
       <h2>About me</h2>
       <h5>A brief history of my design career</h5>
       <p>
@@ -48,24 +48,24 @@ export default {
 </script>
 
 <style lang="postcss">
-section {
+.about-me {
   max-width: 980px;
   margin: auto;
   min-height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-a {
-  color: var(--font-main);
-  text-decoration: underline var(--medium);
-  text-decoration-skip-ink: auto;
-  transition-property: text-decoration, color;
-  transition-duration: 0.3s;
-  transition-timing-function: ease-in-out;
-}
-a:hover {
-  color: var(--font-main);
-  text-decoration: underline var(--green);
+  & a {
+    color: var(--font-main);
+    text-decoration: underline var(--medium);
+    text-decoration-skip-ink: auto;
+    transition-property: text-decoration, color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+  }
+  & a:hover {
+    color: var(--font-main);
+    text-decoration: underline var(--green);
+  }
 }
 </style>
