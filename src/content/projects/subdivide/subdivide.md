@@ -3,7 +3,7 @@ slug: subdivide-metronome
 title: Subdivide
 company: Tap Five
 website: http://subdivide.io
-description: It's time for a better metronome
+description: An advanced metronome app
 role: Product Design, Frontend Development
 thumbnail: ./images/subdivide-thumbnail.svg
 hero: ./images/subdivide-hero.png
