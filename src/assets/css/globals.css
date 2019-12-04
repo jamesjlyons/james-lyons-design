@@ -182,6 +182,7 @@ body {
 
 p {
   margin-bottom: 1.25em;
+  opacity: 0.85;
 }
 
 h1,
