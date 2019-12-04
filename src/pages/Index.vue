@@ -139,7 +139,8 @@ export default {
 <style lang="postcss">
 span.wave {
   animation-name: wave-animation;
-  animation-duration: 2.5s;
+  animation-delay: 0.6s;
+  animation-duration: 2s;
   animation-iteration-count: 1;
   transform-origin: 70% 70%;
   display: inline-block;
