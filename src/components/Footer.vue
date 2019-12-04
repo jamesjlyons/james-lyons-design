@@ -20,10 +20,12 @@ export default {
 <style lang="postcss">
 footer {
   color: var(--medium);
-  /* max-width: 980px; */
+  max-width: 980px;
   width: auto;
-  margin: 0 40px;
+  margin: 0 auto;
   padding-top: 40px;
+  padding-left: 16px;
+  padding-right: 16px;
   display: flex;
   justify-content: space-between;
   & .backToTop {
