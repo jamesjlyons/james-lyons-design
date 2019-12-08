@@ -58,6 +58,7 @@ export default {
   justify-content: center;
   & a {
     color: var(--font-main);
+    font-weight: 600;
     text-decoration: underline var(--medium);
     text-decoration-skip-ink: auto;
     transition-property: text-decoration, color;

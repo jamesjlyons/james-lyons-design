@@ -4,80 +4,119 @@
       <div class="intro-hero">
         <div class="intro-graphic">
           <!-- <transition name="fade" appear> -->
-            <div id="intro-frame" class="intro-frame">
-              <div class="frame-wave">
-                <span class="wave">👋</span>
-              </div>
-              <div class="frame-liferay">
-                <g-image src="~/assets/liferay-icon-white.svg" width="88" immediate="true" />
-              </div>
-              <div class="frame-tapfive">
-                <g-image src="~/assets/tap5-logo.svg" width="120" immediate="true" />
-              </div>
-              <div class="frame-grandpad">
-                <g-image src="~/assets/grandpad-logo.svg" width="96" immediate="true" />
-              </div>
+          <div id="intro-frame" class="intro-frame">
+            <div class="frame-wave">
+              <span class="wave">👋</span>
             </div>
+            <div class="frame-liferay">
+              <g-image
+                src="~/assets/liferay-icon-white.svg"
+                width="88"
+                immediate="true"
+              />
+            </div>
+            <div class="frame-tapfive">
+              <g-image
+                src="~/assets/tap5-logo.svg"
+                width="120"
+                immediate="true"
+              />
+            </div>
+            <div class="frame-grandpad">
+              <g-image
+                src="~/assets/grandpad-logo.svg"
+                width="96"
+                immediate="true"
+              />
+            </div>
+          </div>
           <!-- </transition> -->
           <!-- <transition name="fade" appear> -->
-            <div class="intro-links">
-              <a href="https://dribbble.com/jamesjlyons" target="_blank" class="button-link">
-                <g-image src="~/assets/icon-dribbble.svg" width="24" immediate="true" />
-              </a>
-              <a href="https://github.com/jamesjlyons" target="_blank" class="button-link">
-                <g-image src="~/assets/icon-github.svg" width="24" immediate="true" />
-              </a>
-              <a href="mailto:jamesjlyons29@gmail.com" target="_blank" class="button-link">
-                <g-image src="~/assets/icon-email.svg" width="24" immediate="true" />
-              </a>
-            </div>
+          <div class="intro-links">
+            <a
+              href="https://dribbble.com/jamesjlyons"
+              target="_blank"
+              class="button-link"
+            >
+              <g-image
+                src="~/assets/icon-dribbble.svg"
+                width="24"
+                immediate="true"
+              />
+            </a>
+            <a
+              href="https://github.com/jamesjlyons"
+              target="_blank"
+              class="button-link"
+            >
+              <g-image
+                src="~/assets/icon-github.svg"
+                width="24"
+                immediate="true"
+              />
+            </a>
+            <a
+              href="mailto:jamesjlyons29@gmail.com"
+              target="_blank"
+              class="button-link"
+            >
+              <g-image
+                src="~/assets/icon-email.svg"
+                width="24"
+                immediate="true"
+              />
+            </a>
+          </div>
           <!-- </transition> -->
         </div>
         <!-- <transition name="fade-delay" appear> -->
-          <div class="intro-type">
-            <h5 class="small-margin">Hello, I'm</h5>
-            <h2 class="small-margin">James Lyons</h2>
-            <h4 class="small-margin">
-              Product Designer at
-              <a
-                href="https://liferay.design"
-                target="_blank"
-                v-on:mouseenter="liferay"
-                v-on:mouseleave="wave"
-              >Liferay</a>.
-            </h4>
-            <h4 class="small-margin">
-              Making things with
-              <a
-                href="http://tapfive.io/"
-                target="_blank"
-                v-on:mouseenter="tapfive"
-                v-on:mouseleave="wave"
-              >Tap&nbsp;Five</a>.
-            </h4>
-            <h5 class="small-margin previous">
-              Previously Lead Designer at
-              <a
-                href="https://www.grandpad.net"
-                target="_blank"
-                v-on:mouseenter="grandpad"
-                v-on:mouseleave="wave"
-              >GrandPad</a>.
-            </h5>
-          </div>
+        <div class="intro-type">
+          <h5 class="small-margin">Hello, I'm</h5>
+          <h2 class="small-margin">James Lyons</h2>
+          <h4 class="small-margin">
+            Product Designer at
+            <a
+              href="https://liferay.design"
+              target="_blank"
+              v-on:mouseenter="liferay"
+              v-on:mouseleave="wave"
+              >Liferay</a
+            >.
+          </h4>
+          <h4 class="small-margin">
+            Making things with
+            <a
+              href="http://tapfive.io/"
+              target="_blank"
+              v-on:mouseenter="tapfive"
+              v-on:mouseleave="wave"
+              >Tap&nbsp;Five</a
+            >.
+          </h4>
+          <h5 class="small-margin previous">
+            Previously Lead Designer at
+            <a
+              href="https://www.grandpad.net"
+              target="_blank"
+              v-on:mouseenter="grandpad"
+              v-on:mouseleave="wave"
+              >GrandPad</a
+            >.
+          </h5>
+        </div>
         <!-- </transition> -->
       </div>
     </section>
     <section class="projects">
       <!-- <transition name="fade-delay" appear> -->
-        <div class="project-list">
-          <h5>Selected Work</h5>
-          <ProjectListItem2
-            v-for="project in $page.allProject.edges"
-            :key="project.node.id"
-            :project="project.node"
-          />
-        </div>
+      <div class="project-list">
+        <h5>Selected Work</h5>
+        <ProjectListItem2
+          v-for="project in $page.allProject.edges"
+          :key="project.node.id"
+          :project="project.node"
+        />
+      </div>
       <!-- </transition> -->
     </section>
   </Layout>
@@ -133,7 +172,7 @@ export default {
       document.getElementById("intro-frame").classList.add("grandpad");
     }
   }
-}
+};
 </script>
 
 <style lang="postcss">
@@ -311,6 +350,12 @@ span.wave:hover {
     color: var(--font-main);
     text-decoration: underline var(--green);
   }
+  & h4 {
+    font-weight: 500;
+  }
+  & h5 {
+    font-weight: 500;
+  }
 }
 
 .small-margin {
@@ -380,6 +425,4 @@ span.wave:hover {
 @media (min-width: 640px) {
   /* ... */
 }
-
-
 </style>

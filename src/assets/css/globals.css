@@ -81,7 +81,7 @@ select {
   /* font-size: 18px; */
   --black: hsla(0, 0%, 0%, 100%);
   --dark: hsla(240, 14%, 10%, 100%);
-  --medium: hsla(0, 0%, 58%, 100%);
+  --medium: #76757a;
   --light: hsla(0, 0%, 100%, 100%);
   --green: hsla(165, 82%, 52%, 1);
   --gradient: linear-gradient(90deg, #00c9ff 0%, #92fe9d 100%);
@@ -125,11 +125,11 @@ select {
     /* font-size: 18px; */
     --black: hsla(0, 0%, 0%, 100%);
     --dark: hsla(240, 14%, 10%, 100%);
-    --medium: hsla(0, 0%, 58%, 100%);
+    --medium: #76757a;
     --light: hsla(0, 0%, 100%, 100%);
     --green: hsla(165, 82%, 52%, 1);
     --gradient: linear-gradient(90deg, #00c9ff 0%, #92fe9d 100%);
-  
+
     --body-foreground: hsla(0, 0%, 98%, 100%);
     --body-background: hsla(0, 0%, 100%, 100%);
     --font-main: hsla(240, 14%, 10%, 100%);
@@ -137,7 +137,7 @@ select {
     --border: hsl(0, 0%, 92%);
     --frame-links: hsl(0, 0%, 95.3%);
     --invert: invert(0);
-  
+
     --screen-sm: 640px;
     --screen-md: 768px;
     --screen-lg: 1024px;
@@ -152,9 +152,8 @@ select {
     --border: hsl(0, 0%, 92%);
     --frame-links: hsl(0, 0%, 95.3%);
     --invert: invert(0);
-
   }
-  
+
   [data-theme="light"] {
     --body-foreground: hsla(240, 14%, 10%, 100%);
     --body-background: hsl(240, 14%, 14%);
@@ -178,7 +177,7 @@ html {
 }
 
 body {
-  background-color:var(--body-background);
+  background-color: var(--body-background);
   font-family: "Barlow", -apple-system, system-ui, BlinkMacSystemFont,
     "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-weight: 500;
@@ -199,7 +198,7 @@ h5,
 h6 {
   margin: 2.75rem 0 1rem;
   font-family: "Barlow", sans-serif;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 1.15;
 }
 
