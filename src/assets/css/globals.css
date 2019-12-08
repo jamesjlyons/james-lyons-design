@@ -88,9 +88,10 @@ select {
 
   --body-foreground: hsla(0, 0%, 98%, 100%);
   --body-background: hsla(0, 0%, 100%, 100%);
-  --font-main:hsla(240, 14%, 10%, 100%);
-  --border:hsl(0, 0%, 92%);
-  --frame-links: hsl(0,0%,95.3%);
+  --font-main: hsla(240, 14%, 10%, 100%);
+  --font-p: hsl(240, 6%, 23%);
+  --border: hsl(0, 0%, 92%);
+  --frame-links: hsl(0, 0%, 95.3%);
   --invert: invert(0);
 
   --screen-sm: 640px;
@@ -102,18 +103,20 @@ select {
 [data-theme="light"] {
   --body-foreground: hsla(0, 0%, 98%, 100%);
   --body-background: hsla(0, 0%, 100%, 100%);
-  --font-main:hsla(240, 14%, 10%, 100%);
-  --border:hsl(0, 0%, 92%);
-  --frame-links: hsl(0,0%,95.3%);
+  --font-main: hsla(240, 14%, 10%, 100%);
+  --font-p: hsl(240, 6%, 23%);
+  --border: hsl(0, 0%, 92%);
+  --frame-links: hsl(0, 0%, 95.3%);
   --invert: invert(0);
 }
 
 [data-theme="dark"] {
   --body-foreground: hsla(240, 14%, 10%, 100%);
-  --body-background: hsl(220, 7%, 16%);
+  --body-background: hsl(240, 14%, 14%);
   --font-main: hsla(0, 0%, 98%, 100%);
-  --border:hsl(0, 0%, 10%);
-  --frame-links: hsl(240, 14%, 13%);
+  --font-p: hsl(240, 1%, 86%);
+  --border: hsl(240, 14%, 11%);
+  --frame-links: hsl(240, 14%, 11%);
   --invert: invert(1);
 }
 
@@ -129,9 +132,10 @@ select {
   
     --body-foreground: hsla(0, 0%, 98%, 100%);
     --body-background: hsla(0, 0%, 100%, 100%);
-    --font-main:hsla(240, 14%, 10%, 100%);
-    --border:hsl(0, 0%, 92%);
-    --frame-links: hsl(0,0%,95.3%);
+    --font-main: hsla(240, 14%, 10%, 100%);
+    --font-p: hsl(240, 6%, 23%);
+    --border: hsl(0, 0%, 92%);
+    --frame-links: hsl(0, 0%, 95.3%);
     --invert: invert(0);
   
     --screen-sm: 640px;
@@ -143,19 +147,21 @@ select {
   [data-theme="dark"] {
     --body-foreground: hsla(0, 0%, 98%, 100%);
     --body-background: hsla(0, 0%, 100%, 100%);
-    --font-main:hsla(240, 14%, 10%, 100%);
-    --border:hsl(0, 0%, 92%);
-    --frame-links: hsl(0,0%,95.3%);
+    --font-main: hsla(240, 14%, 10%, 100%);
+    --font-p: hsl(240, 6%, 23%);
+    --border: hsl(0, 0%, 92%);
+    --frame-links: hsl(0, 0%, 95.3%);
     --invert: invert(0);
 
   }
   
   [data-theme="light"] {
     --body-foreground: hsla(240, 14%, 10%, 100%);
-    --body-background: hsl(220, 7%, 16%);
+    --body-background: hsl(240, 14%, 14%);
     --font-main: hsla(0, 0%, 98%, 100%);
-    --border:hsl(0, 0%, 10%);
-    --frame-links: hsl(240, 14%, 13%);
+    --font-p: hsl(240, 1%, 86%);
+    --border: hsl(240, 14%, 11%);
+    --frame-links: hsl(240, 14%, 11%);
     --invert: invert(1);
   }
 }
@@ -182,7 +188,7 @@ body {
 
 p {
   margin-bottom: 1.25em;
-  opacity: 0.85;
+  color: var(--font-p);
 }
 
 h1,
