@@ -31,7 +31,8 @@
         designs by establishing cohesive visual patterns across websites and
         mobile apps. I led the process of two different website redesigns,
         launched iOS and Android app redesigns, set up A/B tests, designed and
-        coded emails, and did some minor branding work.
+        coded emails, and did some minor branding work. <br /><br />
+        I graduated from Cal State Fullerton with a BFA in Graphic Design.
       </p>
       <br />
       <br />
