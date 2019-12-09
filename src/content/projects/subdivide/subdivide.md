@@ -28,7 +28,7 @@ Since the idea of having a metronome as an app isn't a new one, there were alrea
 
 <iframe src="https://subdivide-bottomsheet-prototype-9437gia87.now.sh/" width="320" height="640" frameborder="0"></iframe>
 <br />
-<h6 class="center">Prototype with clickable buttons in the bottom bar</h6>
+<p class="center" style="font-style: oblique;">Bottomsheet prototype with clickable spots in the bottom bar</p>
 <br /><br /><br />
 
 ##### Tracks

@@ -75,7 +75,7 @@ I created a prototype to be tested on mobile phones since the amount of data the
 
 <iframe src="https://albatross-wireframe-flow-cls58g9hj.now.sh/" width="320" height="568" frameborder="0"></iframe>
 <br />
-<h6 class="center">Scrollable prototype with clickable buttons at the bottom of each page</h6>
+<p class="center" style="font-style: oblique;">Scrollable prototype with clickable buttons at the bottom of each page</p>
 <br /><br /><br />
 
 Note: Once development started, we found out that to create an order we first needed a name and email address before we could assign payment info to the order. The experience we shipped ended up having only a name and email address collection form on the first page, but to avoid adding another step to the flow I combined the payment info and billing address into one.
