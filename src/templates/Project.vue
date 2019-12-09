@@ -82,10 +82,16 @@ h6 {
     font-weight: 500;
   }
   & ul {
+    color: var(--font-p);
     max-width: 65ch;
   }
   & ol {
+    color: var(--font-p);
     max-width: 65ch;
+  }
+  & strong {
+    font-weight: 700;
+    color: var(--font-main);
   }
   & a {
     color: var(--font-main);
