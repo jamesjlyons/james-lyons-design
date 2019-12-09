@@ -29,7 +29,7 @@ The iOS redesign came first, so it was going to set the direction for the Androi
 <br /><br /><br />
 
 #### The iOS & Android Apps
-Disclaimer: The design of the bottom tabs with an action button over it ended up getting axed towards the end of the iOS development. The shipped version has a standard bottom navigation and a "New Post" button in the top toolbar.
+Disclaimer: The design of the bottom tabs with an action button over it ended up getting axed towards the end of the iOS development. The shipped version has a standard bottom navigation with a "New Post" button in the middle position.
 
 ##### Signup and Login
 ![signup and login screens](./images/signup.png)
