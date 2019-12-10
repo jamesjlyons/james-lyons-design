@@ -24,7 +24,7 @@ My responsibilities for this project included:
 - Working internationally with our development team in Brazil
   <br /><br />
 
-The resulting feature was deeply integrated with Liferay's Digital Experience Platform (DXP). Leveraging the site-building capabilities in DXP, users can quickly make a new A/B test on a page, set a metric to measure, select an element to track click events on if necessary, select a target audience, and run the test. Liferay's Analytics Cloud then does the heavy lifting tracing and reporting the data for the test and eventually gives the user a test result, with the handy option to publish the winning variant directly from the report. Although it was very much an MVP for an A/B testing feature, it meets our customers' basic needs and has laid the groundwork for future enhancements like multivariate and redirect testing.
+The resulting feature was deeply integrated with Liferay's Digital Experience Platform (DXP). Leveraging the site-building capabilities in DXP, users can quickly make a new A/B test on a page, set a metric to measure, select an element to track click events on if necessary, select a target audience, and run the test. Liferay's Analytics Cloud then does the heavy lifting tracking and reporting the data for the test and eventually gives the user a test result, with the handy option to publish the winning variant directly from the report. Although it was very much an MVP for an A/B testing feature, it meets our customers' basic needs and has laid the groundwork for future enhancements like multivariate and redirect testing.
 <br /><br />
 
 #### *Full case study coming soon.*
@@ -38,7 +38,7 @@ The resulting feature was deeply integrated with Liferay's Digital Experience Pl
 <br /><br />
 
 ###### State management
-<iframe src="https://sketch.systems/jamesjlyons/sketch/413f3350c6ae1759c7ce582768ecf8a1" width="100%" height="600" frameborder="0"></iframe>
+<iframe src="https://sketch.systems/jamesjlyons/sketch/413f3350c6ae1759c7ce582768ecf8a1" width="100%" height="900" frameborder="0"></iframe>
 <br />
 <p class="center" style="font-style: oblique;">Interactive statechart for A/B test status</p>
 <br /><br /><br />
