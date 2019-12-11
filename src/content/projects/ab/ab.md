@@ -24,7 +24,7 @@ My responsibilities for this project included:
 - Working internationally with our development team in Brazil
   <br /><br />
 
-The resulting feature was deeply integrated with Liferay's Digital Experience Platform (DXP). Leveraging the site-building capabilities in DXP, users can quickly make a new A/B test on a page, set a metric to measure, select an element to track click events on if necessary, select a target audience, and run the test. Liferay's Analytics Cloud then does the heavy lifting tracking and reporting the data for the test and eventually gives the user a test result, with the handy option to publish the winning variant directly from the report. Although it was very much an MVP for an A/B testing feature, it meets our customers' basic needs and has laid the groundwork for future enhancements like multivariate and redirect testing.
+The resulting feature was deeply integrated with Liferay's Digital Experience Platform (DXP). It solved users' needs for having a way to run A/B tests within Liferay's product ecosystem. Leveraging the site-building capabilities in DXP, users can quickly make a new A/B test on any page and select an element to track click events on if necessary for the desired metric to be measured. Users can also select a target audience built by our audience segment creator, so the can run tests on personalizations of a page. Liferay's Analytics Cloud then does the heavy lifting tracking and reporting the data for the test and eventually gives the user a test result, with the handy option to publish the winning variant directly from the report. Although it was very much an MVP for an A/B testing feature, it meets our customers' basic needs and has laid the groundwork for future enhancements like multivariate and redirect testing.
 <br /><br />
 
 #### *Full case study coming soon.*
@@ -37,24 +37,30 @@ The resulting feature was deeply integrated with Liferay's Digital Experience Pl
 ![high level flow](./images/high-level-flow.png)
 <br /><br />
 
-###### State management
+###### Cross-product User Flow
+![high level flow](./images/user-flow.png)
+<br /><br />
+
+###### Test State Management
 <iframe src="https://sketch.systems/jamesjlyons/sketch/413f3350c6ae1759c7ce582768ecf8a1" width="100%" height="900" frameborder="0"></iframe>
 <br />
 <p class="center" style="font-style: oblique;">Interactive statechart for A/B test status</p>
 <br /><br /><br />
 
-###### A/B Test Interface
-![test list](./images/test-list.png)<p class="center" style="font-style: oblique;">Test List</p>
+##### A/B Test Interface
+<br />
+
+###### Test List
+![test list](./images/test-list.png)
 <br /><br /><br />
 
+###### Test Setup Process
 ![test setup](./images/test-setup.png)
-<p class="center" style="font-style: oblique;">Test Setup Process</p>
 <br /><br /><br />
 
+###### Test Dashboard States
 ![test running](./images/test-running.png)
-<p class="center" style="font-style: oblique;">Test Running Dashboard</p>
 <br /><br /><br />
 
 ![test complete](./images/test-complete.png)
-<p class="center" style="font-style: oblique;">Test Complete Dashboard</p>
 <br /><br /><br />
