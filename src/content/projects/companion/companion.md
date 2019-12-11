@@ -67,7 +67,7 @@ A central place to see all notifications was finally added to the app. This scre
 
 ##### Video Call
 ![video call screens](./images/video-call.png)
-Another much-used feature of GrandPad's platform was video calling. The platform supported video calls between GrandPad tablets and companion apps, in any configuration.
+Another much-used feature of GrandPad's platform was video calling. The platform supported video calls between GrandPad tablets and companion apps in any configuration.
 <br /><br /><br />
 
 #### Results
