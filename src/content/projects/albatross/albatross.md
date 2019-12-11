@@ -15,7 +15,7 @@ order: 4
 
 #### The Problem
 
-99.8% of users bounced when arriving on the first page of GrandPad's buy flow, whether coming from a point in the sales funnel or landing directly on the page. Mobile devices were starting to account for a large percentage of our visitors, and none of the buy flow was optimized well for mobile. To add some spice to this project, GrandPad had recently started working with a marketing firm, and our biggest marketing campaign was scheduled to launch in a little over a month. Somewhat of a crunched timeline.
+The user bounce-rate was 99.8% for the first page of GrandPad's buy flow, whether coming from a point in the sales funnel or landing directly on the page. Mobile devices were starting to account for a large percentage of our visitors, and none of the buy flow was optimized for mobile. To add some spice to this project, GrandPad had recently started working with a marketing firm, and our biggest marketing campaign was scheduled to launch in a little over a month. This created somewhat of a crunched timeline.
 <br /><br /><br />
 
 #### The Goal of the Redesign
@@ -24,7 +24,7 @@ The main goal of this redesign was to improve the bounce rate on the first page 
 
 1. **Minimize the amount of data collection needed.** This would cut back on the number of steps a user would need to take and would make the process feel more manageable.
 2. **Provide users with an indicator of their progress** through the entirety of the checkout process.
-3.  **Ensure users feel secure in making their purchase.** The checkout process was vanilla-bootstrap-styled, which made users feel like they had left the GrandPad website. We wanted a more seamless experience that instilled some trust in users who were about to make a large purchase.
+3.  **Ensure users feel secure in making their purchase.** The checkout process was a standard Bootstrap-styled experience, which made users feel like they had left the GrandPad website due to the difference in the look and feel of the sites. We wanted a more seamless experience that instilled some trust in users who were about to make a large purchase.
 <br /><br /><br />
 
 #### Constraints:
@@ -105,11 +105,11 @@ Me and one developer worked on the implementation together for a couple of weeks
 #### Results
 We launched in time for the marketing campaign, and the redesign was well-received by our team, customer experience, and the marketing firm. Customer experience also pointed out that they were getting fewer calls about the buy flow after we launched.
 
-But sadly, the new site didn't stay up long enough to get significant data for comparison to the metrics from the previous version. Shortly after we launched the redesign, we partnered with Consumer Cellular, who was going to handle all sales through their website.
+Sadly, the new site didn't stay up long enough to get significant data for comparison to the metrics from the previous version. Shortly after we launched the redesign, we partnered with Consumer Cellular, who was going to handle all sales through their website.
 <!-- ![sad parrot](./images/sad-parrot.png) -->
 <!-- <br /><br /> -->
 <br /><br />
 #### Takeaways
-One of my biggest learnings from this project was how to deal with unforeseen snags during the implementation process. When finding out some features or flows couldn't be accomplished due to development or time constraints, it was tempting just to fall back to the way the old version was because we were already set up to support it. But finding compromises in the middle of what was intended and what was possible only required asking the right questions and having good discussions with development. I've found that knowing a bit of code makes me much more empathetic to developers' concerns about implementing a design.
+One of my biggest lessons from this project was how to deal with unforeseen snags during the implementation process. When finding out some features or flows couldn't be accomplished due to development or time constraints, it was tempting just to fall back to the way the old version was because we were already set up to support it. Finding compromises in the middle of what was intended and what was possible only required asking the right questions and having good discussions with development. I've found that knowing a bit of code makes me much more empathetic to developers' concerns about implementing a design.
 
 Another lesson from this project was learning to realize that a product you spend a lot of time and effort on to launch may only be in production for a short while. While it is arguably better than a product never seeing the light of day, it serves as a reminder for me not to get too caught up in the long-term vision or timeline.
