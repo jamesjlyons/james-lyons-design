@@ -19,7 +19,7 @@
         <g-link to="/project/subdivide-metronome">Subdivide</g-link> and
         <g-link to="/project/lio">Lio</g-link> with
         <a href="https://tapfive.io" target="_blank">Tap Five</a>, a team of two
-        who likes to make things that don't suck. <br />
+        who like to make things that don't suck. <br />
         <br />
         I previously worked as the Lead Designer at
         <a href="https://grandpad.net" target="_blank">GrandPad</a>. I was the
