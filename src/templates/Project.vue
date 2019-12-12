@@ -38,7 +38,9 @@ export default {};
 <style lang="postcss">
 .project-intro {
   max-width: 980px;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 62px;
   padding-top: 80px;
   min-height: 60vh;
   display: flex;
