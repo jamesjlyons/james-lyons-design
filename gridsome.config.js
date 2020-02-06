@@ -59,11 +59,14 @@ module.exports = {
       }
     },
     {
-      use: '@gridsome/source-filesystem',
+      use: "@gridsome/vue-remark",
       options: {
-        path: 'src/content/projects/**/*.md',
-        typeName: 'Project',
-        route: '/project/:slug',
+        baseDir: "./src/content/projects/", // Where .md files are located
+        // typeName: "Project", // Required
+        path: "src/content/projects/**/*.md",
+        typeName: "Project",
+        template: "./src/templates/Project.vue",
+        route: "/project/:slug",
         remark: {
           imageQuality: 100
         }
