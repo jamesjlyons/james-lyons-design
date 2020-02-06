@@ -11,7 +11,7 @@
       <g-image v-if="$page.project" :src="$page.project.hero" quality="100" />
     </section>
     <section class="project-content">
-      <div v-if="$page.project" v-html="$page.project.content"></div>
+      <VueRemarkContent v-if="$page.project" />
     </section>
   </Layout>
 </template>
