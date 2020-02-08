@@ -56,7 +56,7 @@
               />
             </a>
             <a
-              href="mailto:jamesjlyons29@gmail.com"
+              href="mailto:hello@jameslyons.design"
               target="_blank"
               class="button-link"
             >
