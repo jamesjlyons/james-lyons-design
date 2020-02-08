@@ -247,7 +247,7 @@ small,
 }
 
 .fade-enter-active {
-  transition: opacity 0.8s ease-in;
+  transition: opacity 0.5s ease-in;
 }
 
 .fade-enter {
@@ -255,7 +255,7 @@ small,
 }
 
 .fade-delay-enter-active {
-  transition: opacity 0.8s ease-in-out 0.75s;
+  transition: opacity 0.5s ease-in-out 0.75s;
 }
 
 .fade-delay-enter {
