@@ -32,7 +32,12 @@
         mobile apps. I led the process of two different website redesigns,
         launched iOS and Android app redesigns, set up A/B tests, designed and
         coded emails, and did some minor branding work. <br /><br />
-        I graduated from Cal State Fullerton with a BFA in Graphic Design.
+        I graduated from Cal State Fullerton with a BFA in Graphic Design.<br /><br />
+        You can find me on
+        <a href="https://dribbble.com/jamesjlyons" target="_blank">Dribbble</a>
+        and <a href="https://github.com/jamesjlyons" target="_blank">GitHub</a>,
+        or you can reach out and
+        <a href="mailto:hello@jameslyons.design" target="_blank">say hello</a>.
       </p>
       <br />
       <br />
