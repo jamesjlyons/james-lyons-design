@@ -227,6 +227,7 @@ span.wave:hover {
 .intro-hero {
   display: flex;
   flex-direction: row;
+  padding-bottom: 8vh;
 }
 
 .intro-graphic {
