@@ -4,22 +4,26 @@
       <h2>About me</h2>
       <h5>A brief history of my design career</h5>
       <p>
-        I am a Product Designer at
-        <a href="https://liferay.com" target="_blank">Liferay</a> in Southern
-        California. I'm currently designing on the Analytics Cloud product team.
-        In my spare time, I made a handy
-        <a
-          href="https://github.com/jamesjlyons/figma-liferay-text-style-switcher"
-          target="_blank"
-          >Figma plugin</a
-        >
-        to help our process. <br />
+        I am a Sr. UI/UX Designer at
+        <a href="https://soberlink.com" target="_blank">Soberlink</a> in Southern
+        California.<br />
         <br />
         I also currently design and code stuff like
         <g-link to="/project/subdivide-metronome">Subdivide</g-link> and
         <g-link to="/project/lio">Lio</g-link> with
         <a href="https://tapfive.io" target="_blank">Tap Five</a>, a team of two
         who like to make things that don't suck. <br />
+        <br />
+
+        Before this was a Product Designer at
+        <a href="https://liferay.com" target="_blank">Liferay</a>. I worked on the Analytics Cloud product team.
+        In my spare time, I made a handy
+        <a
+          href="https://github.com/jamesjlyons/figma-liferay-text-style-switcher"
+          target="_blank"
+          >Figma plugin</a
+        >
+        to help our process there. <br />
         <br />
         I previously worked as the Lead Designer at
         <a href="https://grandpad.net" target="_blank">GrandPad</a>. I was the
