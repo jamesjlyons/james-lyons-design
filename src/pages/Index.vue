@@ -8,6 +8,13 @@
             <div class="frame-wave">
               <span class="wave">👋</span>
             </div>
+            <div class="frame-soberlink">
+              <g-image
+                src="~/assets/liferay-icon-white.svg"
+                width="88"
+                immediate="true"
+              />
+            </div>
             <div class="frame-liferay">
               <g-image
                 src="~/assets/liferay-icon-white.svg"
@@ -74,13 +81,13 @@
           <h5 class="small-margin">Hello, I'm</h5>
           <h2 class="small-margin">James Lyons</h2>
           <h4 class="small-margin">
-            Product Designer at
+            Sr. Product Designer at
             <a
-              href="https://liferay.design"
+              href="https://soberlink.com"
               target="_blank"
-              v-on:mouseenter="liferay"
+              v-on:mouseenter="soberlink"
               v-on:mouseleave="wave"
-              >Liferay</a
+              >Soberlink</a
             >.
           </h4>
           <h4 class="small-margin">
@@ -94,7 +101,14 @@
             >.
           </h4>
           <h5 class="small-margin previous">
-            Previously Lead Designer at
+            Previously at
+            <a
+              href="https://liferay.design"
+              target="_blank"
+              v-on:mouseenter="liferay"
+              v-on:mouseleave="wave"
+              >Liferay</a
+            >,
             <a
               href="https://www.grandpad.net"
               target="_blank"
@@ -157,10 +171,14 @@ export default {
   },
   methods: {
     wave: function(event) {
+      document.getElementById("intro-frame").classList.remove("soberlink");
       document.getElementById("intro-frame").classList.remove("liferay");
       document.getElementById("intro-frame").classList.remove("tapfive");
       document.getElementById("intro-frame").classList.remove("grandpad");
       // console.log("wave");
+    },
+    soberlink: function(event) {
+      document.getElementById("intro-frame").classList.add("soberlink");
     },
     liferay: function(event) {
       document.getElementById("intro-frame").classList.add("liferay");
@@ -260,6 +278,11 @@ span.wave:hover {
     opacity: 1;
     transition: opacity 0.5s ease-in-out;
   }
+  & .frame-soberlink {
+    opacity: 0;
+    background: #0d63ce;
+    transition: opacity 0.5s ease-in-out;
+  }
   & .frame-liferay {
     opacity: 0;
     background: #0d63ce;
@@ -275,6 +298,15 @@ span.wave:hover {
     /* background: #55acee; */
     background: linear-gradient(-135deg, #64b4f0 0%, #55acee 50%, #2795e9 100%);
     transition: opacity 0.5s ease-in-out;
+  }
+}
+
+.intro-frame.soberlink {
+  & .frame-wave {
+    opacity: 0;
+  }
+  & .frame-soberlink {
+    opacity: 1;
   }
 }
 
@@ -306,6 +338,7 @@ span.wave:hover {
 }
 
 .frame-wave,
+.frame-soberlink,
 .frame-liferay,
 .frame-tapfive,
 .frame-grandpad {
