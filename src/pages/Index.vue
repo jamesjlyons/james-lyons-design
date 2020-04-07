@@ -10,8 +10,8 @@
             </div>
             <div class="frame-soberlink">
               <g-image
-                src="~/assets/liferay-icon-white.svg"
-                width="88"
+                src="~/assets/soberlink-logo.svg"
+                width="104"
                 immediate="true"
               />
             </div>
@@ -280,7 +280,7 @@ span.wave:hover {
   }
   & .frame-soberlink {
     opacity: 0;
-    background: #0d63ce;
+    background: linear-gradient(180deg, #f4faff 0%, #cde8ff 100%);
     transition: opacity 0.5s ease-in-out;
   }
   & .frame-liferay {
