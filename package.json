@@ -13,7 +13,7 @@
     "@gridsome/plugin-google-analytics": "^0.1.0",
     "@gridsome/source-filesystem": "^0.6.2",
     "@gridsome/vue-remark": "^0.1.9",
-    "gridsome": "^0.7.13"
+    "gridsome": "^0.7.14"
   },
   "devDependencies": {
     "postcss-loader": "^3.0.0",
