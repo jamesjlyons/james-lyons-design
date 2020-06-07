@@ -1127,13 +1127,6 @@
     parse5 "^5.1.0"
     replacestream "^4.0.3"
 
-"@gridsome/plugin-google-analytics@^0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@gridsome/plugin-google-analytics/-/plugin-google-analytics-0.1.0.tgz#f2fdffdb05dd2928ca85c4a0d64c7e497a36ee49"
-  integrity sha512-IUuIj1z0BMtNa4NPRyBP3rYGyww+RWypsHTJ7WDdIj/BuH1x7BR9cDn7kskfG5azUi1LV0lJX329Te077oG07A==
-  dependencies:
-    vue-analytics "^5.16.1"
-
 "@gridsome/source-filesystem@^0.6.2":
   version "0.6.2"
   resolved "https://registry.yarnpkg.com/@gridsome/source-filesystem/-/source-filesystem-0.6.2.tgz#95f65e9fcf03624ba23f8f0bee0779fe8e8b9021"
@@ -4799,6 +4792,13 @@ gray-matter@^4.0.2:
     section-matter "^1.0.0"
     strip-bom-string "^1.0.0"
 
+gridsome-plugin-plausible@0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/gridsome-plugin-plausible/-/gridsome-plugin-plausible-0.0.1.tgz#3acb3f0e9e8344348a0b576eaebd5c7fd4b9ab7d"
+  integrity sha512-BDHA1V4T3BMrv21yS2KiW3ld4X9q6iFM1QVY5tlk+GajCpYUnq8wGtXkOCNWpWQsKoElk37auteHcH1Fd1NLpw==
+  dependencies:
+    plausible-vue "^0.0.1"
+
 gridsome@^0.7.13:
   version "0.7.13"
   resolved "https://registry.yarnpkg.com/gridsome/-/gridsome-0.7.13.tgz#7b711b34f9abbdb645948048773ce80381d78b6e"
@@ -7546,6 +7546,13 @@ pkg-up@^3.1.0:
   integrity sha512-nDywThFk1i4BQK4twPQ6TA4RT8bDY96yeuCVBWL3ePARCiEKDRSrNGbFIgUJpLp+XeIR65v8ra7WuJOFUBtkMA==
   dependencies:
     find-up "^3.0.0"
+
+plausible-vue@^0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/plausible-vue/-/plausible-vue-0.0.1.tgz#a5f657d920e5f059a12636da77a3d45aed4a7096"
+  integrity sha512-NsLz3Cr1of6mfSourNHgfiiwO+ohOcsj5t5QTLY0reMzHznW86Hdv0ojxB8HSpBofx6XzXoE06/L99RyU4XA7Q==
+  dependencies:
+    vue "^2.6.10"
 
 plugin-error@^1.0.1:
   version "1.0.1"
@@ -10534,11 +10541,6 @@ vm-browserify@^1.0.1:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/vm-browserify/-/vm-browserify-1.1.0.tgz#bd76d6a23323e2ca8ffa12028dc04559c75f9019"
   integrity sha512-iq+S7vZJE60yejDYM0ek6zg308+UZsdtPExWP9VZoCFCz1zkJoXFnAX7aZfd/ZwrkidzdUZL0C/ryW+JwAiIGw==
-
-vue-analytics@^5.16.1:
-  version "5.17.0"
-  resolved "https://registry.yarnpkg.com/vue-analytics/-/vue-analytics-5.17.0.tgz#c9530b82b9b4acd111c9cba7d249adf4089746b3"
-  integrity sha512-1Cn/v06cGjmGDfRlG2hc0RF0sc2rNC88shOeLGNIlllSFv5GDZ9kLXGTPB9z9I+WyvFewyUONPIdQnpOls6h6w==
 
 vue-hot-reload-api@^2.3.0:
   version "2.3.3"
