@@ -20,7 +20,8 @@ function addStyleResource(rule) {
 module.exports = {
   siteName: "James Lyons",
   siteUrl: "https://www.jameslyons.design",
-  titleTemplate: "🦁 %s",
+  titleTemplate: "%s",
+  icon: "./src/favicon.svg",
   chainWebpack(config) {
     // Load variables for all vue-files
     const types = ["vue-modules", "vue", "normal-modules", "normal"];

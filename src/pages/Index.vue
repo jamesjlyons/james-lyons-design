@@ -164,10 +164,10 @@ query {
 import ProjectListItem2 from "~/components/ProjectListItem2.vue";
 export default {
   metaInfo: {
-    title: ""
+    title: "James Lyons",
   },
   components: {
-    ProjectListItem2
+    ProjectListItem2,
   },
   methods: {
     wave: function(event) {
@@ -188,8 +188,8 @@ export default {
     },
     grandpad: function(event) {
       document.getElementById("intro-frame").classList.add("grandpad");
-    }
-  }
+    },
+  },
 };
 </script>
 
