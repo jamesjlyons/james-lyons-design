@@ -9,6 +9,12 @@ export default function(Vue, { router, head, isClient }) {
     head.link.push({
       rel: "stylesheet",
       href:
-        "https://fonts.googleapis.com/css?family=Barlow:500,600,700,800&display=swap"
+        "https://fonts.googleapis.com/css?family=Barlow:500,600,700,800&display=swap",
     });
+  head.script.push({
+    dataDomain: "jameslyons.design",
+    src: "https://plausible.io/js/plausible.js",
+    defer: true,
+    async: true,
+  });
 }
