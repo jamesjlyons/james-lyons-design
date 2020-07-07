@@ -12,9 +12,9 @@ export default function(Vue, { router, head, isClient }) {
         "https://fonts.googleapis.com/css?family=Barlow:500,600,700,800&display=swap",
     });
   head.script.push({
+    spa: "auto",
     site: "SUSMRDEO",
-    src: "https://cdn.usefathom.com/script.js",
+    src: "https://chameleon.jameslyons.design/script.js",
     defer: true,
-    async: true,
   });
 }
