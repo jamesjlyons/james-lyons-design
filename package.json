@@ -12,7 +12,7 @@
     "@gridsome/plugin-critical": "^0.1.6",
     "@gridsome/source-filesystem": "^0.6.2",
     "@gridsome/vue-remark": "^0.2.1",
-    "gridsome": "^0.7.17",
+    "gridsome": "^0.7.18",
     "gridsome-plugin-fathom": "0.0.16",
     "gridsome-plugin-plausible": "0.0.1"
   },
