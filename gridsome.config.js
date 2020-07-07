@@ -44,16 +44,6 @@ module.exports = {
   },
   plugins: [
     {
-      use: "gridsome-plugin-fathom",
-      options: {
-        siteId: "SUSMRDEO",
-        // declare this to ensure your tracking only occurs on a single host
-        host: "jameslyons.design",
-        // set to true for local debugging; defaults to false
-        debug: false,
-      },
-    },
-    {
       use: "@gridsome/plugin-critical",
       options: {
         paths: ["/"],

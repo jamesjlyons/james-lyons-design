@@ -3,7 +3,7 @@
 
 import DefaultLayout from "~/layouts/Default.vue";
 
-export default function (Vue, { router, head, isClient }) {
+export default function(Vue, { router, head, isClient }) {
   // Set default layout as a global component
   Vue.component("Layout", DefaultLayout),
     head.link.push({
@@ -11,10 +11,10 @@ export default function (Vue, { router, head, isClient }) {
       href:
         "https://fonts.googleapis.com/css?family=Barlow:500,600,700,800&display=swap",
     });
-  // head.script.push({
-  //   dataDomain: "jameslyons.design",
-  //   src: "https://plausible.io/js/plausible.js",
-  //   defer: true,
-  //   async: true,
-  // });
+  head.script.push({
+    site: "SUSMRDEO",
+    src: "https://cdn.usefathom.com/script.js",
+    defer: true,
+    async: true,
+  });
 }
