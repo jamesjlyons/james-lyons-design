@@ -6,7 +6,7 @@
           <!-- <transition name="fade" appear> -->
           <div id="intro-frame" class="intro-frame">
             <div class="frame-wave">
-              <span class="wave">👋</span>
+              <span class="wave" v-on:mouseenter="wavetrack">👋</span>
             </div>
             <div class="frame-soberlink">
               <g-image
@@ -170,12 +170,14 @@ export default {
     ProjectListItem2,
   },
   methods: {
+    wavetrack: function() {
+      plausible("Wave");
+    },
     wave: function(event) {
       document.getElementById("intro-frame").classList.remove("soberlink");
       document.getElementById("intro-frame").classList.remove("liferay");
       document.getElementById("intro-frame").classList.remove("tapfive");
       document.getElementById("intro-frame").classList.remove("grandpad");
-      plausible("Wave");
       // console.log("wave");
     },
     soberlink: function(event) {
