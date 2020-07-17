@@ -17,4 +17,8 @@ export default function(Vue, { router, head, isClient }) {
     defer: true,
     async: true,
   });
+  head.script.push({
+    innerHTML:
+      "window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }",
+  });
 }

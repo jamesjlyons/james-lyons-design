@@ -175,6 +175,7 @@ export default {
       document.getElementById("intro-frame").classList.remove("liferay");
       document.getElementById("intro-frame").classList.remove("tapfive");
       document.getElementById("intro-frame").classList.remove("grandpad");
+      plausible("Wave");
       // console.log("wave");
     },
     soberlink: function(event) {
