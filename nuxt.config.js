@@ -62,5 +62,16 @@ export default {
    ** Build configuration
    ** See https://nuxtjs.org/api/configuration-build/
    */
-  build: {},
+  build: {
+    postcss: {
+      plugins: {
+        'postcss-nesting': {},
+      },
+      preset: {
+        autoprefixer: {
+          grid: true,
+        },
+      },
+    },
+  },
 }
