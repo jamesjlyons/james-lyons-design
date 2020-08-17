@@ -51,7 +51,13 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: [],
+  modules: [
+    '@nuxt/content',
+    // '@nuxtjs/feed'
+  ],
+  content: {
+    // Options
+  },
   /*
    ** Build configuration
    ** See https://nuxtjs.org/api/configuration-build/
