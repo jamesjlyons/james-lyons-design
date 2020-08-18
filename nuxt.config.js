@@ -74,4 +74,10 @@ export default {
       },
     },
   },
+  /*
+   ** Storybook configuration
+   */
+  storybook: {
+    // Options
+  },
 }
