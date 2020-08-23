@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="320px" height="240px" viewBox="0 0 320 240" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>lio-thumbnail</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="181.076172%" y1="186.423828%" x2="7.26367188%" y2="9.1171875%" id="linearGradient-1">
+            <stop stop-color="#00FFA2" offset="0%"></stop>
+            <stop stop-color="#004466" offset="100%"></stop>
+        </linearGradient>
+        <radialGradient cx="50%" cy="50%" fx="50%" fy="50%" r="65.9677934%" id="radialGradient-2">
+            <stop stop-color="#00FFA2" offset="0%"></stop>
+            <stop stop-color="#004466" offset="100%"></stop>
+        </radialGradient>
+        <path d="M40.0216216,1.96746865e-16 L87.9783784,1.61692141e-15 C101.894768,-9.39477905e-16 106.941187,1.44898511 112.028811,4.16987624 C117.116435,6.89076737 121.109233,10.8835645 123.830124,15.9711886 C126.551015,21.0588127 128,26.1052319 128,40.0216216 L128,87.9783784 C128,101.894768 126.551015,106.941187 123.830124,112.028811 C121.109233,117.116435 117.116435,121.109233 112.028811,123.830124 C106.941187,126.551015 101.894768,128 87.9783784,128 L40.0216216,128 C26.1052319,128 21.0588127,126.551015 15.9711886,123.830124 C10.8835645,121.109233 6.89076737,117.116435 4.16987624,112.028811 C1.44898511,106.941187 -4.27474896e-16,101.894768 7.3572067e-16,87.9783784 L1.07794761e-15,40.0216216 C-6.26318603e-16,26.1052319 1.44898511,21.0588127 4.16987624,15.9711886 C6.89076737,10.8835645 10.8835645,6.89076737 15.9711886,4.16987624 C21.0588127,1.44898511 26.1052319,-1.14315595e-16 40.0216216,1.96746865e-16 Z" id="path-3"></path>
+        <filter x="-0.8%" y="-0.8%" width="101.6%" height="101.6%" filterUnits="objectBoundingBox" id="filter-4">
+            <feGaussianBlur stdDeviation="0.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="-1" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0.125490196   0 0 0 0 0.188235294  0 0 0 0.556272645 0" type="matrix" in="shadowInnerInner1" result="shadowMatrixInner1"></feColorMatrix>
+            <feGaussianBlur stdDeviation="0.5" in="SourceAlpha" result="shadowBlurInner2"></feGaussianBlur>
+            <feOffset dx="0" dy="0" in="shadowBlurInner2" result="shadowOffsetInner2"></feOffset>
+            <feComposite in="shadowOffsetInner2" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner2"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.540384312   0 0 0 0 0.846794771   0 0 0 0 1  0 0 0 0.247027853 0" type="matrix" in="shadowInnerInner2" result="shadowMatrixInner2"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixInner1"></feMergeNode>
+                <feMergeNode in="shadowMatrixInner2"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="lio-thumbnail" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#FFFFFF" x="0" y="0" width="320" height="240"></rect>
+        <g id="lio_512x512" transform="translate(96.000000, 52.000000)">
+            <g id="Rectangle-Copy-3">
+                <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-3"></use>
+                <use fill="#004466" fill-rule="evenodd" xlink:href="#path-3"></use>
+                <use fill-opacity="0.200000003" fill="url(#radialGradient-2)" fill-rule="evenodd" xlink:href="#path-3"></use>
+                <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+            </g>
+            <g id="Group" transform="translate(35.520000, 26.560000)" fill="#00FFA2">
+                <polygon id="Path" fill-opacity="0.33" points="28.7078404 43.7527279 54.6816008 58.7941363 28.7106484 73.8327284 2.73408004 58.7941363"></polygon>
+                <polygon id="Path" stroke="#004466" stroke-width="2.72677054" points="28.2521604 64.7175767 0 48.5402331 0 16.1800777 28.2521604 0 56.5043208 16.1800777 56.5043208 48.5402331"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

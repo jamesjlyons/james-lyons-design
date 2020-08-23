@@ -3,7 +3,6 @@
     <section class="intro">
       <div class="intro-hero">
         <div class="intro-graphic">
-          <!-- <transition name="fade" appear> -->
           <div id="intro-frame" class="intro-frame">
             <div class="frame-wave">
               <span class="wave">👋</span>
@@ -33,8 +32,6 @@
               />
             </div>
           </div>
-          <!-- </transition> -->
-          <!-- <transition name="fade" appear> -->
           <div class="intro-links">
             <a
               href="https://dribbble.com/jamesjlyons"
@@ -62,9 +59,7 @@
               <img src="~/assets/icon-email.svg" width="24" immediate="true" />
             </a>
           </div>
-          <!-- </transition> -->
         </div>
-        <!-- <transition name="fade-delay" appear> -->
         <div class="intro-type">
           <h5 class="small-margin">Hello, I'm</h5>
           <h2 class="small-margin">James Lyons</h2>
@@ -106,31 +101,41 @@
             >.
           </h5>
         </div>
-        <!-- </transition> -->
       </div>
     </section>
     <section class="projects">
       <div class="project-list">
         <h5>Selected Work</h5>
-        <!-- <ProjectListItem2
-          v-for="project in $page.allProject.edges"
-          :key="project.node.id"
-          :project="project.node"
-        /> -->
+        <ProjectListItem
+          v-for="project in projects"
+          :key="project.slug"
+          v-bind="project"
+        />
       </div>
     </section>
   </div>
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
-
-export default Vue.extend({
-  metaInfo: {
-    title: 'James Lyons',
-  },
-  components: {
-    // ProjectListItem2,
+export default {
+  async asyncData({ $content, params }) {
+    const projects = await $content('projects', params.slug, { deep: true })
+      .only([
+        'slug',
+        'title',
+        'description',
+        'mockuptype',
+        'mockupimage',
+        'mockupimagetwo',
+        'casestudy',
+        'path',
+        'website',
+      ])
+      .sortBy('order', 'asc')
+      .fetch()
+    return {
+      projects,
+    }
   },
   methods: {
     // wavetrack: function () {
@@ -156,7 +161,7 @@ export default Vue.extend({
       document.getElementById('intro-frame')!.classList.add('grandpad')
     },
   },
-})
+}
 </script>
 
 <style lang="postcss">

@@ -1,95 +1,133 @@
 <template>
-  <a :href="project.website" class="project-list-item">
+  <div class="project-list-item">
     <div class="project-list-frame">
-      <g-image :src="project.thumbnail" />
+      <div v-if="mockuptype === 'mobile'">
+        <DeviceFrameMobile :mockupimage="mockupimage" />
+      </div>
+      <div v-if="mockuptype === 'mobile-two'">
+        <DeviceFrameMobileTwo
+          :mockupimage="mockupimage"
+          :mockupimagetwo="mockupimagetwo"
+        />
+      </div>
+      <div v-if="mockuptype === 'desktop'">
+        <DeviceFrameDesktop :mockupimage="mockupimage" />
+      </div>
     </div>
+
     <div class="project-list-info">
       <div class="project-list-text">
-        <h3 class="title" v-html="project.title" />
-        <p class="description" v-html="project.description" />
-        <!-- <g-link :to="project.path" class="read">Read More...</g-link> -->
+        <h3 class="title">
+          {{ title }}
+        </h3>
+        <p class="description">
+          {{ description }}
+        </p>
+        <!-- <h6 class="roles" v-html="project.role"/> -->
+        <div class="project-links">
+          <nuxt-link
+            v-if="casestudy === 'yes'"
+            :to="`/projects/${slug}`"
+            class="button"
+            >View Case Study</nuxt-link
+          >
+          <a
+            v-if="website != 'no'"
+            :href="`${website}`"
+            class="button secondary"
+            >View Website</a
+          >
+        </div>
       </div>
-      <g-image
-        class="project-list-arrow"
-        src="~/assets/icon-arrow-right.svg"
-        width="24"
-        immediate="true"
-      />
     </div>
-  </a>
+  </div>
 </template>
 
 <script>
 export default {
-  props: {
-    project: {
-      type: String,
-      required: true,
-    },
-  },
+  props: [
+    'slug',
+    'mockuptype',
+    'mockupimage',
+    'mockupimagetwo',
+    'title',
+    'description',
+    'website',
+    'casestudy',
+    'project',
+    // 'imagepath',
+    // 'imagepathtwo',
+  ],
+  // data() {
+  //   return {
+  //     item: '',
+  //   }
+  // },
 }
 </script>
 
-<style lang="postcss">
+<style lang="postcss" scoped>
 .project-list-item {
-  /* padding: 56px 44px 56px 0px;
-  display: flex; */
-  display: grid;
-  grid-template-columns: repeat(2, 160px) 1fr;
-  grid-template-rows: 240px;
-  grid-column-gap: 0;
-  grid-row-gap: 0;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin: 40px 0 40px 0;
   text-decoration: none;
   color: unset;
   & .project-list-info {
-    /* margin-left: 44px; */
-    background-color: #fafafa;
-    grid-area: 1 / 2 / 2 / 4;
-    margin-top: 16px;
-    margin-bottom: 16px;
-    padding-right: 24px;
+    text-align: center;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding-left: calc(160px + 44px);
-    border-radius: 16px;
-    box-shadow: 0 12px 8px -9px rgba(0, 0, 0, 0);
-    transition-property: box-shadow background-color;
-    transition-duration: 0.1s;
-    transition-timing-function: ease-in-out;
-
-    & .project-list-text {
+    & a {
+      color: var(--font-main);
+      text-decoration: underline var(--medium);
+      text-decoration-skip-ink: auto;
+      transition-property: text-decoration, color;
+      transition-duration: 0.3s;
+      transition-timing-function: ease-in-out;
+    }
+    & a:hover {
+      color: var(--font-main);
+      text-decoration: underline var(--green);
+    }
+    & .project-links {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      & .title {
-        margin: 0;
+      align-items: center;
+      margin-top: 24px;
+      & .button {
+        background-color: var(--green);
+        color: var(--dark);
+        border-radius: 8px;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding: 8px 24px;
+        width: fit-content;
+        margin: 8px 0;
+        box-shadow: 0 8px 8px -8px rgba(0, 0, 0, 0.4);
+        transform: translateY(0);
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+      & .button.secondary {
+        background-color: var(--body-background);
+        color: var(--font-main);
+      }
+      & .button:hover {
+        box-shadow: 0 8px 16px -8px rgba(0, 0, 0, 0.3);
+        transform: translateY(-1px);
       }
     }
   }
-  & .project-list-frame {
-    grid-area: 1 / 1 / 2 / 3;
-    z-index: 1;
-    overflow: hidden;
-    background: rgb(255, 255, 255);
-    border: 4px solid rgb(235, 235, 235);
-    box-shadow: 0 8px 16px -9px rgba(0, 0, 0, 0.5);
-    border-radius: 42px;
-    transition-property: box-shadow;
-    transition-duration: 0.3s;
-    transition-timing-function: ease-in-out;
-  }
-}
-
-.project-list-item:hover {
-  & .project-list-info {
-    background-color: white;
-    box-shadow: 0 12px 8px -9px rgba(0, 0, 0, 0.2);
-  }
-  & .project-list-frame {
-    box-shadow: 0 12px 24px -9px rgba(0, 0, 0, 0.5);
+  & .roles {
+    margin-top: 24px;
   }
 }
 
@@ -100,43 +138,6 @@ export default {
 
 /* Medium (md) */
 @media (max-width: 768px) {
-  .project-list-item {
-    grid-template-columns: 320px;
-    grid-template-rows: repeat(2, 120px) 1fr;
-    & .project-list-info {
-      grid-area: 2 / 1 / 4 / 2;
-      margin-top: 16px;
-      margin-bottom: 16px;
-      padding-left: 0;
-      padding-right: 0;
-      padding-bottom: 24px;
-      padding-top: calc(120px + 24px);
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-around;
-      background-color: white;
-      box-shadow: 0 12px 8px -9px rgba(0, 0, 0, 0.2);
-
-      & .project-list-text {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        max-width: 240px;
-        text-align: center;
-        & .title {
-          margin: 0;
-        }
-      }
-
-      & .project-list-arrow {
-        display: none;
-      }
-    }
-    & .project-list-frame {
-      grid-area: 1 / 1 / 3 / 2;
-      box-shadow: 0 12px 24px -9px rgba(0, 0, 0, 0.5);
-    }
-  }
+  /* ... */
 }
 </style>

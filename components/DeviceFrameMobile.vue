@@ -1,21 +1,22 @@
 <template>
   <div class="frame">
-    <g-image :src="imagepath" />
+    <img :src="mockupimage" />
   </div>
 </template>
 
 <script>
 export default {
-  props: {
-    project: {
-      type: String,
-      required: true,
-    },
-    imagepath: {
-      type: String,
-      required: true,
-    },
-  },
+  props: [
+    // 'mockuptype',
+    'mockupimage',
+    // 'title',
+    // 'description',
+    // 'website',
+    // 'casestudy',
+    // 'project',
+    // 'imagepath',
+    // 'imagepathtwo',
+  ],
 }
 </script>
 

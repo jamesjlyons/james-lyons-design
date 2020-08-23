@@ -1,23 +1,23 @@
 <template>
   <div class="device-border">
     <div class="frame">
-      <g-image :src="imagepath" />
+      <img :src="mockupimage" />
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  props: {
-    project: {
-      type: String,
-      required: true,
-    },
-    imagepath: {
-      type: String,
-      required: true,
-    },
-  },
+  props: [
+    // 'mockuptype',
+    'mockupimage',
+    // 'mockupimagetwo',
+    // 'title',
+    // 'description',
+    // 'website',
+    // 'casestudy',
+    // 'project',
+  ],
 }
 </script>
 

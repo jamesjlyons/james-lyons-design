@@ -1,30 +1,26 @@
 <template>
   <div class="mockup-row">
     <div class="frame">
-      <g-image :src="imagepath" />
+      <img :src="mockupimage" />
     </div>
     <div class="frame">
-      <g-image :src="imagepathtwo" />
+      <img :src="mockupimagetwo" />
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  props: {
-    project: {
-      type: String,
-      required: true,
-    },
-    imagepath: {
-      type: String,
-      required: true,
-    },
-    imagepathtwo: {
-      type: String,
-      required: true,
-    },
-  },
+  props: [
+    // 'mockuptype',
+    'mockupimage',
+    'mockupimagetwo',
+    // 'title',
+    // 'description',
+    // 'website',
+    // 'casestudy',
+    // 'project',
+  ],
 }
 </script>
 
