@@ -8,8 +8,8 @@
       California.<br />
       <br />
       I also currently design and code stuff like
-      <g-link to="/project/subdivide-metronome">Subdivide</g-link> and
-      <g-link to="/project/lio">Lio</g-link> with
+      <nuxt-link to="/projects/subdivide">Subdivide</nuxt-link> and
+      <nuxt-link to="/projects/lio">Lio</nuxt-link> with
       <a href="https://tapfive.io" target="_blank">Tap Five</a>, a team of two
       who like to make things that don't suck. <br />
       <br />

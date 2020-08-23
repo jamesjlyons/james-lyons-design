@@ -31,6 +31,6 @@ To work at a quick pace, basic designs were made in Sketch, shared and approved 
 #### Results
 
 Did we win the contest? No, but it was a lot of fun to build, and the team who reviewed our app at Blockstack ranked the design and code highly.
-Lio is also what ultimately gave us the idea to have a business name to work under since we would have two projects now (the other being [Subdivide](/project/subdivide). Lio is live in the Blockstack app listings, so feel free to give it a spin [here](https://lioapp.io).
+Lio is also what ultimately gave us the idea to have a business name to work under since we would have two projects now (the other being [Subdivide](/projects/subdivide). Lio is live in the Blockstack app listings, so feel free to give it a spin [here](https://lioapp.io).
 
 <!-- ![Alternative text](/lio-img/lio-cover.png) -->

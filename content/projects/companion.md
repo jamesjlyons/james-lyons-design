@@ -16,7 +16,7 @@ order: 2
 
 #### The Problem
 
-As a complement to the tablet for seniors, GrandPad provided mobile apps for family members to communicate and share photos with the tablet user. Essentially, they were social media apps meant to privately communicate with family. The iOS and Android companion apps were both functional but were in dire need of a more cohesive user experience between both platforms. And they honestly needed a fresh coat of paint to match with the newer website and [checkout process](/project/grandpad-checkout) UI. The Android app had also fallen behind in terms of features, so it was time to bring it up to speed.
+As a complement to the tablet for seniors, GrandPad provided mobile apps for family members to communicate and share photos with the tablet user. Essentially, they were social media apps meant to privately communicate with family. The iOS and Android companion apps were both functional but were in dire need of a more cohesive user experience between both platforms. And they honestly needed a fresh coat of paint to match with the newer website and [checkout process](/projects/grandpad-checkout) UI. The Android app had also fallen behind in terms of features, so it was time to bring it up to speed.
 <br /><br /><br />
 
 #### The Goal of the Redesign
