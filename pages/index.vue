@@ -6,7 +6,7 @@
           <!-- <transition name="fade" appear> -->
           <div id="intro-frame" class="intro-frame">
             <div class="frame-wave">
-              <span class="wave" @:mouseenter="wavetrack">👋</span>
+              <span class="wave">👋</span>
             </div>
             <div class="frame-soberlink">
               <img
@@ -73,8 +73,8 @@
             <a
               href="https://soberlink.com"
               target="_blank"
-              @:mouseenter="soberlink"
-              @:mouseleave="wave"
+              @mouseenter="soberlink"
+              @mouseleave="wave"
               >Soberlink</a
             >.
           </h4>
@@ -83,8 +83,8 @@
             <a
               href="http://tapfive.io/"
               target="_blank"
-              @:mouseenter="tapfive"
-              @:mouseleave="wave"
+              @mouseenter="tapfive"
+              @mouseleave="wave"
               >Tap&nbsp;Five</a
             >.
           </h4>
@@ -93,15 +93,15 @@
             <a
               href="https://liferay.design"
               target="_blank"
-              @:mouseenter="liferay"
-              @:mouseleave="wave"
+              @mouseenter="liferay"
+              @mouseleave="wave"
               >Liferay</a
             >,
             <a
               href="https://www.grandpad.net"
               target="_blank"
-              @:mouseenter="grandpad"
-              @:mouseleave="wave"
+              @mouseenter="grandpad"
+              @mouseleave="wave"
               >GrandPad</a
             >.
           </h5>
