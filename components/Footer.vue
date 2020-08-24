@@ -10,8 +10,8 @@ export default {
   name: 'Footer',
   methods: {
     backToTop() {
-      const topElement = document.getElementById('app')
-      topElement.scrollIntoView({ behavior: 'smooth' })
+      const topHtml = document.querySelector('html')
+      topHtml.scrollIntoView({ behavior: 'smooth' })
     },
   },
 }
