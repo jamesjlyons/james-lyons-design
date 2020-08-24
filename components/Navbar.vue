@@ -3,7 +3,7 @@
     <div class="nav-items">
       <nuxt-link class="nav__link" to="/">Work</nuxt-link>
       <nuxt-link class="nav__link" to="/about">About Me</nuxt-link>
-      <!-- <ToggleTheme /> -->
+      <ToggleTheme />
     </div>
   </nav>
 </template>
