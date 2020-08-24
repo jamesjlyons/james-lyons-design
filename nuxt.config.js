@@ -33,6 +33,18 @@ export default {
           'https://fonts.googleapis.com/css?family=Barlow:500,600,700,800&display=swap',
       },
     ],
+    script: [
+      {
+        dataDomain: 'jameslyons.design',
+        src: 'https://plausible.io/js/plausible.js',
+        async: true,
+        defer: true,
+      },
+      {
+        innerHTML:
+          'window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }',
+      },
+    ],
   },
   /*
    ** Global CSS
