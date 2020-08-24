@@ -3,11 +3,9 @@
     <header class="header">
       <Navbar></Navbar>
     </header>
-    <transition name="fade" appear>
-      <main>
-        <nuxt />
-      </main>
-    </transition>
+    <main>
+      <nuxt />
+    </main>
     <Footer></Footer>
   </div>
 </template>

@@ -1,107 +1,121 @@
 <template>
   <div>
     <section class="intro">
-      <div class="intro-hero">
-        <div class="intro-graphic">
-          <div id="intro-frame" class="intro-frame">
-            <div class="frame-wave">
-              <span class="wave">👋</span>
+      <transition name="fade" appear>
+        <div class="intro-hero">
+          <div class="intro-graphic">
+            <div id="intro-frame" class="intro-frame">
+              <div class="frame-wave">
+                <span class="wave">👋</span>
+              </div>
+              <div class="frame-soberlink">
+                <img
+                  src="~/assets/soberlink-logo.svg"
+                  width="104"
+                  immediate="true"
+                />
+              </div>
+              <div class="frame-liferay">
+                <img
+                  src="~/assets/liferay-icon-white.svg"
+                  width="88"
+                  immediate="true"
+                />
+              </div>
+              <div class="frame-tapfive">
+                <img
+                  src="~/assets/tap5-logo.svg"
+                  width="120"
+                  immediate="true"
+                />
+              </div>
+              <div class="frame-grandpad">
+                <img
+                  src="~/assets/grandpad-logo.svg"
+                  width="96"
+                  immediate="true"
+                />
+              </div>
             </div>
-            <div class="frame-soberlink">
-              <img
-                src="~/assets/soberlink-logo.svg"
-                width="104"
-                immediate="true"
-              />
-            </div>
-            <div class="frame-liferay">
-              <img
-                src="~/assets/liferay-icon-white.svg"
-                width="88"
-                immediate="true"
-              />
-            </div>
-            <div class="frame-tapfive">
-              <img src="~/assets/tap5-logo.svg" width="120" immediate="true" />
-            </div>
-            <div class="frame-grandpad">
-              <img
-                src="~/assets/grandpad-logo.svg"
-                width="96"
-                immediate="true"
-              />
+            <div class="intro-links">
+              <a
+                href="https://dribbble.com/jamesjlyons"
+                target="_blank"
+                class="button-link"
+              >
+                <img
+                  src="~/assets/icon-dribbble.svg"
+                  width="24"
+                  immediate="true"
+                />
+              </a>
+              <a
+                href="https://github.com/jamesjlyons"
+                target="_blank"
+                class="button-link"
+              >
+                <img
+                  src="~/assets/icon-github.svg"
+                  width="24"
+                  immediate="true"
+                />
+              </a>
+              <a
+                href="mailto:hello@jameslyons.design"
+                target="_blank"
+                class="button-link"
+              >
+                <img
+                  src="~/assets/icon-email.svg"
+                  width="24"
+                  immediate="true"
+                />
+              </a>
             </div>
           </div>
-          <div class="intro-links">
-            <a
-              href="https://dribbble.com/jamesjlyons"
-              target="_blank"
-              class="button-link"
-            >
-              <img
-                src="~/assets/icon-dribbble.svg"
-                width="24"
-                immediate="true"
-              />
-            </a>
-            <a
-              href="https://github.com/jamesjlyons"
-              target="_blank"
-              class="button-link"
-            >
-              <img src="~/assets/icon-github.svg" width="24" immediate="true" />
-            </a>
-            <a
-              href="mailto:hello@jameslyons.design"
-              target="_blank"
-              class="button-link"
-            >
-              <img src="~/assets/icon-email.svg" width="24" immediate="true" />
-            </a>
+          <div class="intro-type">
+            <h5 class="small-margin">Hello, I'm</h5>
+            <h2 class="small-margin">James Lyons</h2>
+            <h4 class="small-margin">
+              Sr. Product Designer at
+              <a
+                href="https://soberlink.com"
+                target="_blank"
+                @mouseenter="soberlink"
+                @mouseleave="wave"
+                >Soberlink</a
+              >.
+            </h4>
+            <h4 class="small-margin">
+              Making things with
+              <a
+                href="http://tapfive.io/"
+                target="_blank"
+                @mouseenter="tapfive"
+                @mouseleave="wave"
+                >Tap&nbsp;Five</a
+              >.
+            </h4>
+            <h5 class="small-margin previous">
+              Previously at
+              <a
+                href="https://liferay.design"
+                target="_blank"
+                @mouseenter="liferay"
+                @mouseleave="wave"
+                >Liferay</a
+              >,
+              <a
+                href="https://www.grandpad.net"
+                target="_blank"
+                @mouseenter="grandpad"
+                @mouseleave="wave"
+                >GrandPad</a
+              >.
+            </h5>
           </div>
         </div>
-        <div class="intro-type">
-          <h5 class="small-margin">Hello, I'm</h5>
-          <h2 class="small-margin">James Lyons</h2>
-          <h4 class="small-margin">
-            Sr. Product Designer at
-            <a
-              href="https://soberlink.com"
-              target="_blank"
-              @mouseenter="soberlink"
-              @mouseleave="wave"
-              >Soberlink</a
-            >.
-          </h4>
-          <h4 class="small-margin">
-            Making things with
-            <a
-              href="http://tapfive.io/"
-              target="_blank"
-              @mouseenter="tapfive"
-              @mouseleave="wave"
-              >Tap&nbsp;Five</a
-            >.
-          </h4>
-          <h5 class="small-margin previous">
-            Previously at
-            <a
-              href="https://liferay.design"
-              target="_blank"
-              @mouseenter="liferay"
-              @mouseleave="wave"
-              >Liferay</a
-            >,
-            <a
-              href="https://www.grandpad.net"
-              target="_blank"
-              @mouseenter="grandpad"
-              @mouseleave="wave"
-              >GrandPad</a
-            >.
-          </h5>
-        </div>
-      </div>
+      </transition>
     </section>
     <section class="projects">
       <div class="project-list">
@@ -118,6 +132,7 @@
 
 <script lang="ts">
 export default {
+  transition: 'home',
   async asyncData({ $content, params }) {
     const projects = await $content('projects', params.slug, { deep: true })
       .only([

@@ -109,17 +109,7 @@ small,
   color: var(--dark);
 }
 
-.fadepage-active {
-  transition: opacity 0.3s ease-in;
-}
-
-.fadepage-enter {
-  opacity: 0;
-}
-
-.fade-enter-active {
-  transition: opacity 0.5s ease-in;
-}
+/* component fade transiion */
 
 .fade-enter {
   opacity: 0;
@@ -131,8 +121,28 @@ small,
 
 .fade-delay-enter {
   opacity: 0;
+}
 
-  /* transform: translateY(10%); */
+/* page transiions */
+
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.3s ease-in;
+}
+.page-enter,
+.page-leave-to {
+  opacity: 0;
+}
+
+.home-enter-active,
+.home-enter-to,
+.home-leave-active {
+  transition: opacity 0.3s;
+}
+.home-enter,
+.home-leave-to,
+.home-leave-active {
+  opacity: 0;
 }
 
 /* media queries */
