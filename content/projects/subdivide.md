@@ -16,7 +16,7 @@ order: 1
 
 #### How Subdivide Began
 
-Subdivide is a side project that developed out of the clear need for a better metronome with features specifically designed for the marching arts. With the industry standard being a clunky hardware metronome that costs \$200, my developer friend and I saw an opportunity to upgrade the experience of using a metronome during practice via a user friendly app. Subdivide has gone through a few iterations now, and is currently in the process of being designed and developed for iOS too.
+Subdivide is a side project that developed out of the clear need for a better metronome with features specifically designed for the marching arts. With the industry standard being a clunky hardware metronome that costs $200, my developer friend and I saw an opportunity to upgrade the experience of using a metronome during practice via a user friendly app. Subdivide has gone through a few iterations now, and is currently in the process of being designed and developed for iOS too.
 <br /><br /><br />
 
 #### The Features
