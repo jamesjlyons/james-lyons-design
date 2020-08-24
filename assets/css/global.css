@@ -24,25 +24,23 @@
   --screen-xl: 1280px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    /* color vars */
-    --black: hsla(0, 0%, 0%, 100%);
-    --dark: hsla(240, 14%, 10%, 100%);
-    --medium: #76757a;
-    --light: hsla(0, 0%, 100%, 100%);
-    --green: hsla(165, 82%, 52%, 1);
-    --gradient: linear-gradient(90deg, #00c9ff 0%, #92fe9d 100%);
+.dark-mode {
+  /* color vars */
+  --black: hsla(0, 0%, 0%, 100%);
+  --dark: hsla(240, 14%, 10%, 100%);
+  --medium: #76757a;
+  --light: hsla(0, 0%, 100%, 100%);
+  --green: hsla(165, 82%, 52%, 1);
+  --gradient: linear-gradient(90deg, #00c9ff 0%, #92fe9d 100%);
 
-    /* semantic color vars */
-    --body-foreground: hsla(240, 14%, 10%, 100%);
-    --body-background: hsl(240, 14%, 14%);
-    --font-main: hsla(0, 0%, 98%, 100%);
-    --font-p: hsl(240, 1%, 86%);
-    --border: hsl(240, 14%, 11%);
-    --frame-links: hsl(240, 14%, 11%);
-    --invert: invert(1);
-  }
+  /* semantic color vars */
+  --body-foreground: hsla(240, 14%, 10%, 100%);
+  --body-background: hsl(240, 14%, 14%);
+  --font-main: hsla(0, 0%, 98%, 100%);
+  --font-p: hsl(240, 1%, 86%);
+  --border: hsl(240, 14%, 11%);
+  --frame-links: hsl(240, 14%, 11%);
+  --invert: invert(1);
 }
 
 html {
