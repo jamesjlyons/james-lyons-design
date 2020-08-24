@@ -34,6 +34,11 @@ export default {
   padding-left: 16px;
 }
 
+.layout > main > div:first-of-type {
+  padding-right: 0;
+  padding-left: 0;
+}
+
 /* Small (sm) */
 @media (max-width: 640px) {
   .layout {
