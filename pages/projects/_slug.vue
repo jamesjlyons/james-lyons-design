@@ -26,11 +26,6 @@ export default {
       project,
     }
   },
-  data() {
-    return {
-      project: '',
-    }
-  },
 }
 </script>
 
