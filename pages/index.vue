@@ -226,6 +226,8 @@ span.wave:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-right: 16px;
+  padding-left: 16px;
 }
 
 .intro-hero {
