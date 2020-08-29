@@ -41,7 +41,10 @@ nav {
   & .nav__link:hover {
     text-decoration: underline var(--green);
   }
-  & .active--exact {
+  & .nuxt-link-exact-active {
+    text-decoration: underline var(--green);
+  }
+  .nuxt-link-active {
     text-decoration: underline var(--green);
   }
 }
