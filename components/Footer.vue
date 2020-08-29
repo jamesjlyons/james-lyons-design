@@ -21,13 +21,14 @@ export default {
 footer {
   color: var(--medium);
   max-width: 980px;
-  width: auto;
+  width: 100%;
+  height: 80px;
   margin: 0 auto;
-  padding-top: 40px;
   padding-left: 16px;
   padding-right: 16px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   & .backToTop {
     cursor: pointer;
     color: var(--font-main);

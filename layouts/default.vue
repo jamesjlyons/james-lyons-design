@@ -23,7 +23,26 @@ export default {
 
 <style>
 .layout {
-  margin: 40px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  min-height: 100%;
+  padding-bottom: 80px;
+}
+
+footer {
+  /* flex-shrink: 0; */
+  margin-top: -80px;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background-color: var(--nav-background);
+  backdrop-filter: blur(8px);
+  z-index: 9;
 }
 
 .layout > header,

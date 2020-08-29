@@ -11,6 +11,7 @@
   /* semantic color vars */
   --body-foreground: hsla(0, 0%, 98%, 100%);
   --body-background: hsla(0, 0%, 100%, 100%);
+  --nav-background: hsla(0, 0%, 100%, 90%);
   --font-main: hsla(240, 14%, 10%, 100%);
   --font-p: hsl(240, 6%, 23%);
   --border: hsl(0, 0%, 92%);
@@ -36,11 +37,18 @@
   /* semantic color vars */
   --body-foreground: hsla(240, 14%, 10%, 100%);
   --body-background: hsl(240, 14%, 14%);
+  --nav-background: hsla(240, 14%, 14%, 90%);
   --font-main: hsla(0, 0%, 98%, 100%);
   --font-p: hsl(240, 1%, 86%);
   --border: hsl(240, 14%, 11%);
   --frame-links: hsl(240, 14%, 11%);
   --invert: invert(1);
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
 }
 
 html {
