@@ -72,47 +72,50 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: ['@nuxt/content', '@nuxtjs/feed'],
+  modules: [
+    '@nuxt/content',
+    // '@nuxtjs/feed'
+  ],
   content: {
     // Options
   },
-  feed() {
-    const baseUrlPosts = 'https://jameslyons.design/some-thoughts'
-    const baseLinkFeedPosts = '/feed/blog'
-    const feedFormats = {
-      rss: { type: 'rss2', file: 'rss.xml' },
-      json: { type: 'json1', file: 'feed.json' },
-    }
-    const { $content } = require('@nuxt/content')
+  // feed() {
+  //   const baseUrlPosts = 'https://jameslyons.design/some-thoughts'
+  //   const baseLinkFeedPosts = '/feed/blog'
+  //   const feedFormats = {
+  //     rss: { type: 'rss2', file: 'rss.xml' },
+  //     json: { type: 'json1', file: 'feed.json' },
+  //   }
+  //   const { $content } = require('@nuxt/content')
 
-    const createFeedPosts = async function (feed) {
-      feed.options = {
-        title: "I Have No Idea What I'm Doing - James Lyons",
-        description: 'Some thoughts about design and life',
-        link: baseUrlPosts,
-      }
-      const posts = await $content('blog').fetch()
+  //   const createFeedPosts = async function (feed) {
+  //     feed.options = {
+  //       title: "I Have No Idea What I'm Doing - James Lyons",
+  //       description: 'Some thoughts about design and life',
+  //       link: baseUrlPosts,
+  //     }
+  //     const posts = await $content('blog').fetch()
 
-      posts.forEach((post) => {
-        const url = `https://jameslyons.design/thoughts/${post.slug}`
+  //     posts.forEach((post) => {
+  //       const url = `https://jameslyons.design/thoughts/${post.slug}`
 
-        feed.addItem({
-          title: post.title,
-          id: url,
-          link: url,
-          date: post.published,
-          description: post.summary,
-          content: post.summary,
-          author: post.authors,
-        })
-      })
-    }
-    return Object.values(feedFormats).map(({ file, type }) => ({
-      path: `${baseLinkFeedPosts}/${file}`,
-      type,
-      create: createFeedPosts,
-    }))
-  },
+  //       feed.addItem({
+  //         title: post.title,
+  //         id: url,
+  //         link: url,
+  //         date: post.published,
+  //         description: post.summary,
+  //         content: post.summary,
+  //         author: post.authors,
+  //       })
+  //     })
+  //   }
+  //   return Object.values(feedFormats).map(({ file, type }) => ({
+  //     path: `${baseLinkFeedPosts}/${file}`,
+  //     type,
+  //     create: createFeedPosts,
+  //   }))
+  // },
 
   /*
    ** Build configuration
