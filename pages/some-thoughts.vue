@@ -30,7 +30,6 @@ export default {
       .fetch()
     return {
       blog,
-      default: () => null,
     }
   },
 }
