@@ -1,7 +1,8 @@
 <template>
   <section class="about-me">
-    <h2>About me</h2>
-    <h5>A brief history of my design career</h5>
+    <h3>About me</h3>
+    <h6>What I do and what I've done</h6>
+    <br /><br />
     <p>
       I am a Sr. UI/UX Designer at
       <a href="https://soberlink.com" target="_blank">Soberlink</a> in Southern
@@ -58,8 +59,10 @@ export default {
 <style lang="postcss">
 .about-me {
   max-width: 980px;
-  margin: auto;
-  min-height: 80vh;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 62px;
+  padding-top: 80px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -75,6 +78,10 @@ export default {
   & a:hover {
     color: var(--font-main);
     text-decoration: underline var(--green);
+  }
+
+  & h6 {
+    color: var(--medium);
   }
 }
 </style>

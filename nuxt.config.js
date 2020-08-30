@@ -76,6 +76,42 @@ export default {
     '@nuxt/content',
     // '@nuxtjs/feed'
   ],
+  // feed() {
+  //   const baseUrlArticles = 'https://jameslyons.design/some-thoughts'
+  //   const baseLinkFeedArticles = '/feed/blog'
+  //   const feedFormats = {
+  //     rss: { type: 'rss2', file: 'rss.xml' },
+  //     json: { type: 'json1', file: 'feed.json' },
+  //   }
+  //   const { $content } = require('@nuxt/content')
+
+  //   const createFeedArticles = async function (feed) {
+  //     feed.options = {
+  //       title: "I Have No Idea What I'm Doing - James Lyons",
+  //       description: 'Some thoughts about design and life',
+  //       link: baseUrlArticles,
+  //     }
+  //     const articles = await $content('blog').fetch()
+
+  //     articles.forEach((article) => {
+  //       const url = `https://jameslyons.design/thoughts/${article.slug}`
+
+  //       feed.addItem({
+  //         title: article.title,
+  //         id: url,
+  //         link: url,
+  //         date: article.published,
+  //         description: article.subtitle,
+  //       })
+  //     })
+  //   }
+
+  //   return Object.values(feedFormats).map(({ file, type }) => ({
+  //     path: `${baseLinkFeedArticles}/${file}`,
+  //     type: type,
+  //     create: createFeedArticles,
+  //   }))
+  // },
   content: {
     // Options
   },
