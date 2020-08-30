@@ -13,6 +13,9 @@
           >Read
         </nuxt-link>
       </div>
+      <div class="empty-state">
+        <h4>Doesn't look like anything to me.</h4>
+      </div>
     </div>
   </main>
 </template>
@@ -27,6 +30,7 @@ export default {
       .fetch()
     return {
       blog,
+      default: () => null,
     }
   },
 }
@@ -62,6 +66,10 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.empty-state {
+  opacity: 0.3;
 }
 
 /* media queries */
