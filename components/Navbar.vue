@@ -30,7 +30,7 @@ nav {
 .nav-items {
   display: flex;
   & .nav__link {
-    color: var(---font-main);
+    color: var(--font-main);
     margin-left: 24px;
     text-decoration: underline var(--body-background);
     text-decoration-skip-ink: auto;
@@ -42,10 +42,8 @@ nav {
     text-decoration: underline var(--green);
   }
   & .nuxt-link-exact-active {
-    text-decoration: underline var(--green);
-  }
-  .nuxt-link-active {
-    text-decoration: underline var(--green);
+    font-weight: 600;
+    text-decoration: underline var(--medium);
   }
 }
 </style>
