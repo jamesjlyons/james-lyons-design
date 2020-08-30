@@ -7,7 +7,9 @@
     </div>
     <article class="post-content">
       <nuxt-content :document="post" />
-      <p>Last updated: {{ new Date(post.updatedAt).toDateString() }}</p>
+      <p class="last-updated">
+        Last updated: {{ new Date(post.updatedAt).toDateString() }}
+      </p>
     </article>
   </div>
 </template>
@@ -107,6 +109,10 @@ h6 {
     border-radius: 18px;
     box-shadow: 0 12px 24px -9px rgba(0, 0, 0, 0.5);
   }
+}
+
+.last-updated {
+  color: var(--medium);
 }
 
 /* media queries */
