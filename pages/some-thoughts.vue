@@ -17,9 +17,9 @@
         <h6>{{ post.subtitle }}</h6>
         <p class="date">{{ new Date(post.createdAt).toDateString() }}</p>
       </div>
-      <div class="empty-state">
+      <!-- <div class="empty-state">
         <h4>Doesn't look like anything to me.</h4>
-      </div>
+      </div> -->
     </div>
   </main>
 </template>
