@@ -1,17 +1,17 @@
 <template>
-  <div>
+  <article>
     <div class="post-intro">
       <h6>{{ new Date(post.createdAt).toDateString() }}</h6>
       <h2>{{ post.title }}</h2>
       <h4>{{ post.subtitle }}</h4>
     </div>
-    <article class="post-content">
+    <div class="post-content">
       <nuxt-content :document="post" />
       <p class="last-updated">
         Last updated: {{ new Date(post.updatedAt).toDateString() }}
       </p>
-    </article>
-  </div>
+    </div>
+  </article>
 </template>
 
 <script>
