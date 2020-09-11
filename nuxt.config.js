@@ -36,7 +36,7 @@ export default {
     script: [
       {
         dataDomain: 'jameslyons.design',
-        src: 'https://plausible.io/js/plausible.js',
+        src: 'https://stats.jameslyons.design/js/index.js',
         async: true,
         defer: true,
       },
