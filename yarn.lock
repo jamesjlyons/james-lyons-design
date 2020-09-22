@@ -1783,10 +1783,10 @@
     consola "^2.12.1"
     feed "^4.2.0"
 
-"@nuxtjs/storybook@^2.2.0":
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/@nuxtjs/storybook/-/storybook-2.2.0.tgz#a32ef9a165b752b4662c7bcb3a8e482ad9d7f5f6"
-  integrity sha512-zp6KWoKL4sSLbqJsGbj6CZbFuORQM9JacU1ckppyTlmVNWdO2gMtDZu6RZ6b+uY01fpL0ulEkKbzuIH6SCZgrg==
+"@nuxtjs/storybook@^2.2.1":
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/@nuxtjs/storybook/-/storybook-2.2.1.tgz#fe69cd2af076f7af1a60b7b5282dd243f0a2a742"
+  integrity sha512-l5XmvgU54wQf36jLkyjhhNl54dLpLXoZvf6dMLhV5HMr3BPLuLysLhGuFEfXYaYgWBu+i2AbeyBS1qtjpBaPzw==
   dependencies:
     "@nuxt/devalue" "^1.2.4"
     "@storybook/addon-actions" "^6.0.21"
