@@ -75,7 +75,7 @@ The next iteration of the flow I tested grouped name, email, and payment informa
 I created a prototype to be tested on mobile phones since the amount of data the user had to input was going to feel like more on a small screen. I used one of the more popular small device sizes, 320x568, to do a quick test on how much scrolling would be needed on each page of the flow to get through the checkout.
 <br /><br /><br />
 
-<iframe src="https://albatross-wireframe-flow-cls58g9hj.now.sh/" width="320" height="568" frameborder="0"></iframe>
+<iframe src="/prototypes/albatross-wireframe-flow/index.html" width="320" height="568" frameborder="0"></iframe>
 <br />
 <p class="center" style="font-style: oblique;">Scrollable prototype with clickable buttons at the bottom of each page</p>
 <br /><br /><br />
