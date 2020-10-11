@@ -63,6 +63,9 @@ h6 {
   width: 100%;
   height: auto;
   display: flex;
+
+  /* fix for safari stretching flexed img */
+  align-items: flex-start;
   justify-content: center;
   & img {
     width: inherit;
