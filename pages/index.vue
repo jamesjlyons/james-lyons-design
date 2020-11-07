@@ -49,6 +49,13 @@
                   immediate="true"
                 />
               </a>
+              <a href="https://www.figma.com/@jameslyons">
+                <img
+                  src="~/assets/icon-figma.svg"
+                  width="24"
+                  immediate="true"
+                />
+              </a>
               <a
                 href="https://github.com/jamesjlyons"
                 target="_blank"
@@ -338,7 +345,9 @@ span.wave:hover {
 .intro-links {
   grid-area: 2 / 1 / 4 / 2;
   width: 196px;
-  padding-bottom: 12px;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-bottom: 15px;
   background: var(--frame-links);
   border-radius: 0 0 16px 16px;
   display: flex;
