@@ -49,7 +49,11 @@
                   immediate="true"
                 />
               </a>
-              <a href="https://www.figma.com/@jameslyons">
+              <a
+                href="https://www.figma.com/@jameslyons"
+                target="_blank"
+                class="button-link"
+              >
                 <img
                   src="~/assets/icon-figma.svg"
                   width="24"
