@@ -45,7 +45,7 @@
     "lint-staged": "^10.5.1",
     "postcss-loader": "^3.0.0",
     "postcss-nesting": "^7.0.1",
-    "prettier": "^2.1.2",
+    "prettier": "^2.2.0",
     "stylelint": "^13.7.2",
     "stylelint-config-prettier": "^8.0.2",
     "stylelint-config-standard": "^20.0.0"
