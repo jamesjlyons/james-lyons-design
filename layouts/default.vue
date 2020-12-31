@@ -25,11 +25,13 @@ export default {
 .layout {
   display: flex;
   flex-direction: column;
+  min-height: 99vh;
 }
 
 main {
   min-height: 100%;
   padding-bottom: 80px;
+  flex-grow: 1;
 }
 
 footer {
