@@ -1,5 +1,10 @@
 <template>
-  <a role="button" class="toggle-theme" @click="setCurrentTheme">
+  <a
+    role="button"
+    title="Cycle system/light/dark color modes"
+    class="toggle-theme"
+    @click="setCurrentTheme"
+  >
     <transition name="from-bottom-to-bottom" mode="out-in">
       <svg
         v-if="$colorMode.preference === 'system'"
