@@ -62,7 +62,8 @@ export default {
 }
 
 .frame {
-  margin-right: 24px;
+  margin-right: 48px;
+  margin-bottom: 48px;
   display: grid;
   grid-template-columns: 196px;
   grid-template-rows: 140px repeat(2, 56px);
@@ -111,5 +112,12 @@ a.frame:hover {
 
 .frame-etch {
   background: #363e4a;
+}
+
+/* Small (sm) */
+@media (max-width: 640px) {
+  .playground-list {
+    justify-content: center;
+  }
 }
 </style>
