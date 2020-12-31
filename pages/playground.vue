@@ -1,15 +1,15 @@
 <template>
   <section class="playground">
     <h3>Playground</h3>
-    <h6>Fun stuff</h6>
+    <h6>Stuff made for fun</h6>
     <br /><br />
     <div class="playground-list">
-      <div class="frame">
-        <div class="frame-img">
-          <img src="~/assets/etch.png" width="96" immediate="true" />
+      <a href="https://etch.jameslyons.design" class="frame">
+        <div class="frame-img frame-etch">
+          <img src="~/assets/etch.svg" width="200" immediate="true" />
         </div>
         <div class="frame-link">Etch</div>
-      </div>
+      </a>
       <div class="frame more">
         <div class="frame-img"></div>
         <div class="frame-link">more to come</div>
@@ -81,6 +81,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: box-shadow 300ms ease, transform 300ms ease;
 }
 
 .frame-link {
@@ -95,20 +96,20 @@ export default {
   flex-wrap: nowrap;
   justify-content: space-around;
   align-items: flex-end;
+}
 
-  /* & a {
-    text-decoration: none;
-    transition-property: transform;
-    transition-duration: 0.1s;
-    transition-timing-function: ease-in-out;
-    filter: var(--invert);
+a.frame:hover {
+  & .frame-img {
+    box-shadow: 0 18px 32px -9px rgba(0, 0, 0, 0.9);
+    transform: translateY(-1px);
   }
-  & a:hover {
-    transform: scale(1.1);
-  } */
 }
 
 .more {
   opacity: 0.3;
+}
+
+.frame-etch {
+  background: #363e4a;
 }
 </style>
