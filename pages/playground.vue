@@ -26,7 +26,7 @@ export default {
 }
 </script>
 
-<style lang="postcss">
+<style lang="postcss" scoped>
 .playground {
   max-width: 980px;
   margin-left: auto;
