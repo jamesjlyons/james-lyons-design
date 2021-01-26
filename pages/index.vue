@@ -6,7 +6,7 @@
           <div class="intro-graphic">
             <div id="intro-frame" class="intro-frame">
               <div class="frame-wave">
-                <span class="wave">👋</span>
+                <span class="wave" @mouseenter="wavetrack">👋</span>
               </div>
               <div class="frame-soberlink">
                 <img
@@ -164,9 +164,9 @@ export default {
     }
   },
   methods: {
-    // wavetrack: function () {
-    //   plausible('Wave')
-    // },
+    wavetrack() {
+      plausible('Wave')
+    },
     wave() {
       document.getElementById('intro-frame')!.classList.remove('soberlink')
       document.getElementById('intro-frame')!.classList.remove('liferay')
