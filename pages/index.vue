@@ -166,13 +166,13 @@ export default {
   methods: {
     wavetrack() {
       plausible('Wave')
+      console.log('👋 Hello')
     },
     wave() {
       document.getElementById('intro-frame')!.classList.remove('soberlink')
       document.getElementById('intro-frame')!.classList.remove('liferay')
       document.getElementById('intro-frame')!.classList.remove('tapfive')
       document.getElementById('intro-frame')!.classList.remove('grandpad')
-      // console.log("wave");
     },
     soberlink() {
       document.getElementById('intro-frame')!.classList.add('soberlink')
