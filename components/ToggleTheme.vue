@@ -76,6 +76,7 @@ export default {
   },
   methods: {
     setCurrentTheme() {
+      plausible('ThemeToggle')
       this.$colorMode.preference =
         this.$colorMode.preference === 'system'
           ? 'light'
