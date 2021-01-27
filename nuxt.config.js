@@ -34,12 +34,12 @@ export default {
       },
     ],
     script: [
-      {
-        dataDomain: 'jameslyons.design',
-        src: 'https://stats.jameslyons.design/js/index.js',
-        async: true,
-        defer: true,
-      },
+      // {
+      //   dataDomain: 'jameslyons.design',
+      //   src: 'https://stats.jameslyons.design/js/index.js',
+      //   async: true,
+      //   defer: true,
+      // },
       {
         innerHTML:
           'window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }',
@@ -75,6 +75,7 @@ export default {
   modules: [
     '@nuxt/content',
     // '@nuxtjs/feed'
+    'vue-plausible',
   ],
   // feed() {
   //   const baseUrlArticles = 'https://jameslyons.design/some-thoughts'
@@ -136,5 +137,10 @@ export default {
    */
   storybook: {
     // Options
+  },
+  plausible: {
+    domain: 'jameslyons.design',
+    apihost: 'https://stats.jameslyons.design/js/',
+    trackLocalhost: true,
   },
 }

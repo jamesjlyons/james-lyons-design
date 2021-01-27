@@ -62,6 +62,10 @@
 </template>
 
 <script>
+import Plausible from 'plausible-tracker'
+
+const { trackEvent } = Plausible()
+
 export default {
   // components: {
   //   SunIcon,
@@ -76,7 +80,7 @@ export default {
   },
   methods: {
     setCurrentTheme() {
-      plausible('ThemeToggle')
+      trackEvent('ThemeToggle')
       this.$colorMode.preference =
         this.$colorMode.preference === 'system'
           ? 'light'

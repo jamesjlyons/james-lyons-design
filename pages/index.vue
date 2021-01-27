@@ -142,6 +142,10 @@
 </template>
 
 <script lang="ts">
+import Plausible from 'plausible-tracker'
+
+const { trackEvent } = Plausible()
+
 export default {
   transition: 'home',
   async asyncData({ $content, params }) {
@@ -165,7 +169,7 @@ export default {
   },
   methods: {
     wavetrack() {
-      plausible('Wave')
+      trackEvent('Wave')
       console.log('👋 Hello')
     },
     wave() {
