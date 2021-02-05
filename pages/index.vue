@@ -399,7 +399,7 @@ span.wave:hover {
 }
 
 .small-margin {
-  margin: 4px 0;
+  margin: 12px 0;
 }
 
 .previous {
@@ -463,6 +463,20 @@ span.wave:hover {
 
 /* Small (sm) */
 @media (min-width: 640px) {
-  /* ... */
+  .small-margin {
+    margin: 4px 0;
+  }
+}
+
+/* intro type only */
+@media (max-width: 420px) {
+  .intro-type {
+    & h2 {
+      font-size: calc(44px + (64 - 44) * ((100vw - 320px) / (440 - 320)));
+    }
+    & h4 {
+      font-size: calc(28px + (36 - 28) * ((100vw - 320px) / (440 - 320)));
+    }
+  }
 }
 </style>
