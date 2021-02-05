@@ -32,7 +32,7 @@ export default {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 62px;
-  padding-top: 80px;
+  padding-top: 40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -118,6 +118,12 @@ a.frame:hover {
 @media (max-width: 640px) {
   .playground-list {
     justify-content: center;
+  }
+}
+
+@media (min-width: 640px) {
+  .about-me {
+    padding-top: 80px;
   }
 }
 </style>

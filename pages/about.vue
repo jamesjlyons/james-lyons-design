@@ -62,7 +62,7 @@ export default {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 62px;
-  padding-top: 80px;
+  padding-top: 40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -82,6 +82,12 @@ export default {
 
   & h6 {
     color: var(--medium);
+  }
+}
+
+@media (min-width: 640px) {
+  .about-me {
+    padding-top: 80px;
   }
 }
 </style>

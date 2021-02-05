@@ -243,6 +243,7 @@ span.wave:hover {
   align-items: center;
   padding-right: 16px;
   padding-left: 16px;
+  padding-top: 40px;
 }
 
 .intro-hero {
@@ -465,6 +466,9 @@ span.wave:hover {
 @media (min-width: 640px) {
   .small-margin {
     margin: 4px 0;
+  }
+  .intro {
+    padding-top: 0;
   }
 }
 
