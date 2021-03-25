@@ -4,7 +4,7 @@
     <h6>What I do and what I've done</h6>
     <br /><br />
     <p>
-      I am a Sr. UI/UX Designer at
+      I am a Sr. Product Designer and Front-End Developer at
       <a href="https://soberlink.com" target="_blank">Soberlink</a> in Southern
       California.<br />
       <br />
