@@ -381,15 +381,17 @@ span.wave:hover {
 .intro-type {
   & a {
     color: var(--font-main);
-    text-decoration: underline var(--medium);
+    text-decoration: underline;
+    text-decoration-color: var(--medium);
     text-decoration-skip-ink: auto;
-    transition-property: text-decoration, color;
+    transition-property: text-decoration, text-decoraction-color, color;
     transition-duration: 0.3s;
     transition-timing-function: ease-in-out;
   }
   & a:hover {
     color: var(--font-main);
-    text-decoration: underline var(--green);
+    text-decoration: underline;
+    text-decoration-color: var(--green);
   }
   & h4 {
     font-weight: 500;

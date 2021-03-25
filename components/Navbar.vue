@@ -33,18 +33,21 @@ nav {
   & .nav__link {
     color: var(--font-main);
     margin-left: 24px;
-    text-decoration: underline var(--body-background);
+    text-decoration: underline;
+    text-decoration-color: var(--body-background);
     text-decoration-skip-ink: auto;
-    transition-property: text-decoration, color;
+    transition-property: text-decoration, text-decoraction-color, color;
     transition-duration: 0.3s;
     transition-timing-function: ease-in-out;
   }
   & .nav__link:hover {
-    text-decoration: underline var(--green);
+    text-decoration: underline;
+    text-decoration-color: var(--green);
   }
   & .nuxt-link-exact-active {
     font-weight: 600;
-    text-decoration: underline var(--medium);
+    text-decoration: underline;
+    text-decoration-color: var(--medium);
   }
 }
 </style>
