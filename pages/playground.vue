@@ -10,6 +10,12 @@
         </div>
         <div class="frame-link">Etch</div>
       </a>
+      <a href="https://inkstream.jameslyons.design/" class="frame">
+        <div class="frame-img frame-inkstream">
+          <img src="~/assets/inkstream.svg" width="40" immediate="true" />
+        </div>
+        <div class="frame-link">InkStream</div>
+      </a>
       <div class="frame more">
         <div class="frame-img"></div>
         <div class="frame-link">more to come</div>
@@ -112,6 +118,10 @@ a.frame:hover {
 
 .frame-etch {
   background: #363e4a;
+}
+
+.frame-inkstream {
+  background: #121217;
 }
 
 /* Small (sm) */
