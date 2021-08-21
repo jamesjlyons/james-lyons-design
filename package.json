@@ -46,7 +46,7 @@
     "postcss-loader": "^4.1.0",
     "postcss-nesting": "^7.0.1",
     "prettier": "^2.2.1",
-    "stylelint": "^13.8.0",
+    "stylelint": "^13.13.1",
     "stylelint-config-prettier": "^8.0.2",
     "stylelint-config-standard": "^20.0.0"
   }
