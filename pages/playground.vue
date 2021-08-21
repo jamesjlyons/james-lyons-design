@@ -4,13 +4,27 @@
     <h6>Stuff made for fun</h6>
     <br /><br />
     <div class="playground-list">
-      <a href="https://etch.jameslyons.design" class="frame">
+      <a
+        href="https://www.figma.com/community/plugin/892202130569280122/Teleport"
+        target="_blank"
+        class="frame"
+      >
+        <div class="frame-img frame-teleport">
+          <img src="~/assets/teleport.svg" width="200" immediate="true" />
+        </div>
+        <div class="frame-link">Teleport</div>
+      </a>
+      <a href="https://etch.jameslyons.design" target="_blank" class="frame">
         <div class="frame-img frame-etch">
           <img src="~/assets/etch.svg" width="200" immediate="true" />
         </div>
         <div class="frame-link">Etch</div>
       </a>
-      <a href="https://inkstream.jameslyons.design/" class="frame">
+      <a
+        href="https://inkstream.jameslyons.design/"
+        target="_blank"
+        class="frame"
+      >
         <div class="frame-img frame-inkstream">
           <img src="~/assets/inkstream.svg" width="40" immediate="true" />
         </div>
@@ -65,11 +79,10 @@ export default {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  gap: 48px;
 }
 
 .frame {
-  margin-right: 48px;
-  margin-bottom: 48px;
   display: grid;
   grid-template-columns: 196px;
   grid-template-rows: 140px repeat(2, 56px);
