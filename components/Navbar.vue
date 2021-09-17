@@ -3,6 +3,12 @@
     <div class="nav-items">
       <nuxt-link class="nav__link" to="/">Work</nuxt-link>
       <!-- <nuxt-link class="nav__link" to="/some-thoughts">Thoughts</nuxt-link> -->
+      <a
+        class="nav__link"
+        href="https://timeline.jameslyons.design/"
+        target="_blank"
+        >Timeline</a
+      >
       <nuxt-link class="nav__link" to="/playground">Play</nuxt-link>
       <nuxt-link class="nav__link" to="/about">About</nuxt-link>
       <ToggleTheme />
