@@ -7,9 +7,9 @@ description: An advanced metronome app
 role: Product Design, Frontend Development
 thumbnail: /subdivide-img/subdivide-thumbnail.svg
 hero: /subdivide-img/subdivide-hero.png
-mockuptype: mobile
-mockupimage: /subdivide-img/mockup-mobile.png
-mockupimagetwo: null
+mockuptype: mobile-two
+mockupimage: /subdivide-img/mockup-ios.png
+mockupimagetwo: /subdivide-img/mockup-mobile.png
 casestudy: yes
 order: 1
 ---
@@ -54,6 +54,17 @@ The Remote feature allows users to control an instance of Subdivide running on a
 This is the second iteration of Subdivide's icon. It was made to support the adaptive icon feature on Android. It evolved from exploring a combination of the mathematical division symbol and a musical repeat symbol while playing off of the visual design of the different states of the metronome dots. The result was simple enough to scale down to small sizes, hold its ground when surrounded by other app icons, and provide some branding elements to work with.
 <br /><br />
 ![subdivide icon](/subdivide-img/icon.png)
+<br />
+
+#### Expanding to iOS
+
+During the course of 2020 we started designing and building out an iOS version, something that's been a goal of ours for a long time now. And what's a modern app without dark mode?
+<br /><br />
+![subdivide icon](/subdivide-img/ios-1.png)
+
+We brought the same ethos to the iOS version: leverage system components and make the app feel at home on the platform. This meant re-thinking some layouts and interactions from the Android version to make them closer to what an iOS user would expect. I also redrew the note icons to match the SF Symbols better. We've yet to launch on the App Store, but it's coming Soon™️.
+<br /><br />
+![subdivide icon](/subdivide-img/ios-2.png)
 <br />
 
 #### Project Takeaways
