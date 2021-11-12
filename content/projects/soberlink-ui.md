@@ -11,7 +11,7 @@ mockuptype: desktop
 mockupimage: /sui-img/sui-cover.png
 mockupimagetwo: null
 casestudy: yes
-order: 1.1
+order: 2
 ---
 
 Before I dove into my first project at Soberlink, the [Identity Management](https://id.soberlink.com/) project, I began work on a small design system to help future me manage styles and components across projects. The goal was to start in Figma, and then extend to a front-end component library in Vue powered by Storybook.

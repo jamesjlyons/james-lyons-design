@@ -10,7 +10,7 @@ hero: /lio-img/lio-hero.png
 mockuptype: desktop
 mockupimage: /lio-img/mockup-desktop.png
 casestudy: yes
-order: 5
+order: 6
 ---
 
 #### Why we built Lio

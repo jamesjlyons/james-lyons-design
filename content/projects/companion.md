@@ -11,7 +11,7 @@ mockuptype: mobile-two
 mockupimage: /companion-img/mockup-mobile.png
 mockupimagetwo: /companion-img/mockup-mobile-android.png
 casestudy: yes
-order: 2
+order: 3
 ---
 
 #### The Problem
