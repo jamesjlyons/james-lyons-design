@@ -10381,10 +10381,10 @@ pkg-up@3.1.0, pkg-up@^3.1.0:
   dependencies:
     find-up "^3.0.0"
 
-plausible-tracker@^0.3.1:
-  version "0.3.1"
-  resolved "https://registry.yarnpkg.com/plausible-tracker/-/plausible-tracker-0.3.1.tgz#dd4e1f59cafc7bf1b00e30890567287b3f204efd"
-  integrity sha512-oXnVyfTF2gzkfK3iOZCRZEnf8sH4gBASaJhY+clwWW1orIybfQpfbgg4U5Bwj5dW/4iNstM4tx4jMCVUfMCUbg==
+plausible-tracker@^0.3.4:
+  version "0.3.4"
+  resolved "https://registry.yarnpkg.com/plausible-tracker/-/plausible-tracker-0.3.4.tgz#6c4fb5888f62d0ab9b069fef7e3a06e2e728c65c"
+  integrity sha512-pc5fMmtagAlTYKOUcMk+AfV0t3bVpYv+zTEsBTFQL6n8frExxK54GBauxzbKF1hLZ16ggx/84mA4/ujLgbvvmQ==
 
 please-upgrade-node@^3.2.0:
   version "3.2.0"
@@ -14129,13 +14129,12 @@ vue-no-ssr@^1.1.1:
   resolved "https://registry.yarnpkg.com/vue-no-ssr/-/vue-no-ssr-1.1.1.tgz#875f3be6fb0ae41568a837f3ac1a80eaa137b998"
   integrity sha512-ZMjqRpWabMPqPc7gIrG0Nw6vRf1+itwf0Itft7LbMXs2g3Zs/NFmevjZGN1x7K3Q95GmIjWbQZTVerxiBxI+0g==
 
-vue-plausible@^1.1.2:
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/vue-plausible/-/vue-plausible-1.1.2.tgz#8ad4cda6a4932a04f4a6d84616cdea80ced96191"
-  integrity sha512-qK9ktd4Fyc6L2+MlKIEH6jJl//vaMcOiOTOmdVsRJM12mMJIMFy8doCKHEA/n1Ot+VDhe7gSiFhzzFQgn6crzA==
+vue-plausible@^1.3.1:
+  version "1.3.1"
+  resolved "https://registry.yarnpkg.com/vue-plausible/-/vue-plausible-1.3.1.tgz#c8d5906566433c7f5a0a27878745f355eccf9172"
+  integrity sha512-OqZiScz/7glitE4XSJTwGUHO31VEbba2efmLki0+rIGDx3NysSOBJMyFz6yBFPWKms4jb1lDmx1wCsbAl7mrtA==
   dependencies:
-    defu "^2.0.4"
-    plausible-tracker "^0.3.1"
+    plausible-tracker "^0.3.4"
 
 vue-router@^3.4.9:
   version "3.4.9"
