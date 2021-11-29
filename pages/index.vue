@@ -100,7 +100,7 @@
             <h4 class="small-margin">
               Making things with
               <a
-                href="http://tapfive.io/"
+                href="http://tapfive.dev/"
                 target="_blank"
                 @mouseenter="tapfive"
                 @mouseleave="wave"
