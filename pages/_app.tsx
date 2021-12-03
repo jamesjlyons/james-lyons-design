@@ -3,6 +3,7 @@ import { globalCss } from "@stitches/react";
 import type { AppProps } from "next/app";
 
 const globalStyles = globalCss({
+  // reset
   "*": {
     margin: "0",
     "::before": {
@@ -14,6 +15,13 @@ const globalStyles = globalCss({
   },
   html: {
     height: "100%",
+    //  not reset
+    maxWidth: "70ch",
+    padding: "3em 1em",
+    margin: "auto",
+    lineHeight: "1.75",
+    fontSize: "1.25em",
+    backgroundColor: "$bg",
   },
   body: {
     lineHeight: "1.5",
@@ -79,14 +87,6 @@ const globalStyles = globalCss({
     isolation: "isolate",
   },
   // end reset
-  html: {
-    maxWidth: "70ch",
-    padding: "3em 1em",
-    margin: "auto",
-    lineHeight: "1.75",
-    fontSize: "1.25em",
-    backgroundColor: "$bg",
-  },
   a: {
     color: "$accent",
   },
