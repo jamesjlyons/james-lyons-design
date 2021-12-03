@@ -8,10 +8,8 @@
       <a href="https://soberlink.com" target="_blank">Soberlink</a> in Southern
       California.<br />
       <br />
-      I also currently design and code stuff like
-      <nuxt-link to="/projects/subdivide">Subdivide</nuxt-link> and
-      <nuxt-link to="/projects/lio">Lio</nuxt-link> with
-      <a href="https://tapfive.io" target="_blank">Tap Five</a>, a team of two
+      I also currently design and code stuff with
+      <a href="https://tapfive.dev" target="_blank">Tap Five</a>, a team of two
       who like to make things that don't suck. <br />
       <br />
 
