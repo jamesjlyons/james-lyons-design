@@ -35,7 +35,7 @@ export default function Home() {
           name="description"
           content="Product Designer & Frontend Developer"
         />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.svg" />
       </Head>
       <Text as="h1" size="3">
         James Lyons
