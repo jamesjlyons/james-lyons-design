@@ -6,13 +6,16 @@ export const { styled, getCssText } = createStitches({
       system: "system-ui",
     },
     colors: {
-      hiContrast: "hsl(206,10%,5%)",
-      loContrast: "white",
+      bg: "hsla(0, 0%, 7%, 1)",
+      text1: "hsla(0, 0%, 100%, 1)",
+      text2: "hsla(0, 0%, 100%, 0.51)",
+      text3: "hsla(0, 0%, 100%, 0.67)",
+      accent: "hsla(165, 82%, 51%, 1);",
     },
     fontSizes: {
-      1: "13px",
-      2: "15px",
-      3: "17px",
+      1: "16px",
+      2: "24px",
+      3: "32px",
     },
   },
 });
