@@ -5,22 +5,19 @@ import Image from "next/image";
 import { styled } from "../stitches.config";
 
 const Text = styled("p", {
-  fontFamily: "$system",
+  fontFamily: "$sans",
   color: "$text1",
 
   variants: {
-    size: {
+    color: {
       1: {
-        fontSize: "$1",
-        color: "$text3",
+        color: "$text1",
       },
       2: {
-        fontSize: "$2",
         color: "$text2",
       },
       3: {
-        fontSize: "$3",
-        color: "$text1",
+        color: "$text3",
       },
     },
   },
@@ -36,14 +33,28 @@ export default function Home() {
           content="Product Designer & Frontend Developer"
         />
         <link rel="icon" href="/favicon.svg" />
+        <link
+          rel="preload"
+          href="/fonts/Supreme-Variable.woff"
+          as="font"
+          type="font/woff"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="preload"
+          href="/fonts/Supreme-Variable.woff2"
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
+        />
       </Head>
-      <Text as="h1" size="3">
+      <Text as="h1" color="1">
         James Lyons
       </Text>
-      <Text as="h2" size="2">
+      <Text as="h2" color="2">
         Product Designer & Frontend Developer
       </Text>
-      <Text size="1">
+      <Text color="3">
         I&apos;m currently a Sr. Product Designer and Front-End Developer at{" "}
         <a href="https://soberlink.com" target="_blank" rel="noreferrer">
           Soberlink

@@ -3,6 +3,13 @@ import { globalCss } from "@stitches/react";
 import type { AppProps } from "next/app";
 
 const globalStyles = globalCss({
+  // font import
+  "@font-face": {
+    fontFamily: "Supreme Variable",
+    fontWeight: "1 999",
+    fontDisplay: "swap",
+    src: "url(/fonts/Supreme-Variable.woff2) format('woff2'), url(/fonts/Supreme-Variable.woff) format('woff')",
+  },
   // reset
   "*": {
     margin: "0",
@@ -14,16 +21,18 @@ const globalStyles = globalCss({
     },
   },
   html: {
-    height: "100%",
+    // height: "100%",
     //  not reset
     maxWidth: "70ch",
-    padding: "3em 1em",
+    // padding: "3em 1em",
+    paddingTop: "$6",
     margin: "auto",
     lineHeight: "1.75",
     fontSize: "1.25em",
     backgroundColor: "$bg",
   },
   body: {
+    // height: "100%",
     lineHeight: "1.5",
     WebkitFontSmoothing: "antialiased",
   },
@@ -61,24 +70,33 @@ const globalStyles = globalCss({
   },
   p: {
     overflowWrap: "break-word",
+    fontWeight: "400",
   },
   h1: {
     overflowWrap: "break-word",
+    fontWeight: "700",
+    letterSpacing: "-0.02em",
   },
   h2: {
     overflowWrap: "break-word",
+    fontWeight: "700",
+    letterSpacing: "-0.02em",
   },
   h3: {
     overflowWrap: "break-word",
+    letterSpacing: "-0.02em",
   },
   h4: {
     overflowWrap: "break-word",
+    letterSpacing: "-0.02em",
   },
   h5: {
     overflowWrap: "break-word",
+    letterSpacing: "-0.02em",
   },
   h6: {
     overflowWrap: "break-word",
+    letterSpacing: "-0.02em",
   },
   root: {
     isolation: "isolate",
@@ -89,6 +107,9 @@ const globalStyles = globalCss({
   // end reset
   a: {
     color: "$accent",
+    "&:hover": {
+      color: "$text1",
+    },
   },
 });
 
