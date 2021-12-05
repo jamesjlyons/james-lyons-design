@@ -1,6 +1,7 @@
 // import '../styles/globals.css'
 import { globalCss } from "@stitches/react";
 import type { AppProps } from "next/app";
+import Layout from "../components/layout";
 
 const globalStyles = globalCss({
   // font import
@@ -23,18 +24,31 @@ const globalStyles = globalCss({
   html: {
     // height: "100%",
     //  not reset
-    maxWidth: "70ch",
-    // padding: "3em 1em",
-    paddingTop: "$6",
-    margin: "auto",
-    lineHeight: "1.75",
-    fontSize: "1.25em",
-    backgroundColor: "$bg",
+    // lineHeight: "1.75",
+    // fontSize: "1.25em",
+    // backgroundColor: "$bg",
+    background:
+      "radial-gradient(100% 256% at 0% 0%, #1BE9B7 0%, rgba(27, 233, 183, 0) 42.71%), $bg",
+    backgroundBlendMode: "color, normal",
+    backgroundRepeat: "no-repeat",
+    backgroundPosition: "top center",
+    backgroundSize: "cover",
   },
   body: {
-    // height: "100%",
+    // height: "-webkit-fill-available",
+    // display: "flex",
+    // flexFlow: "column",
+    height:
+      "calc(100vh - en(safe-area-inset-top) - env(safe-area-inset-bottom))",
+    maxWidth: "640px",
+    paddingTop: "$6",
+    padding: "$6 $3",
+    margin: "auto",
     lineHeight: "1.5",
     WebkitFontSmoothing: "antialiased",
+  },
+  main: {
+    paddingBottom: "160px",
   },
   img: {
     display: "block",
@@ -71,14 +85,17 @@ const globalStyles = globalCss({
   p: {
     overflowWrap: "break-word",
     fontWeight: "400",
+    fontSize: "$3",
   },
   h1: {
     overflowWrap: "break-word",
+    fontSize: "$6",
     fontWeight: "700",
     letterSpacing: "-0.02em",
   },
   h2: {
     overflowWrap: "break-word",
+    fontSize: "$5",
     fontWeight: "700",
     letterSpacing: "-0.02em",
   },
@@ -101,8 +118,11 @@ const globalStyles = globalCss({
   root: {
     isolation: "isolate",
   },
-  __next: {
+  "#__next": {
     isolation: "isolate",
+    position: "relative",
+    maxWidth: "640px",
+    // width: "100%",
   },
   // end reset
   a: {
@@ -115,7 +135,11 @@ const globalStyles = globalCss({
 
 function MyApp({ Component, pageProps }: AppProps) {
   globalStyles();
-  return <Component {...pageProps} />;
+  return (
+    <Layout>
+      <Component {...pageProps} />
+    </Layout>
+  );
 }
 
 export default MyApp;

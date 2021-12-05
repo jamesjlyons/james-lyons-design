@@ -52,9 +52,11 @@ export default function Home() {
         James Lyons
       </Text>
       <Text as="h2" color="2">
-        Product Designer & Frontend Developer
+        Product Designer
+        <br />
+        &amp; Frontend Developer
       </Text>
-      <Text color="3">
+      <Text color="3" css={{ marginTop: "$4" }}>
         I&apos;m currently a Sr. Product Designer and Front-End Developer at{" "}
         <a href="https://soberlink.com" target="_blank" rel="noreferrer">
           Soberlink
