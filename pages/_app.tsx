@@ -2,6 +2,7 @@
 import { globalCss } from "@stitches/react";
 import type { AppProps } from "next/app";
 import Layout from "../components/layout";
+import Head from "next/head";
 
 const globalStyles = globalCss({
   // font import
@@ -24,9 +25,6 @@ const globalStyles = globalCss({
   html: {
     // height: "100%",
     //  not reset
-    // lineHeight: "1.75",
-    // fontSize: "1.25em",
-    // backgroundColor: "$bg",
     background:
       "radial-gradient(100% 256% at 0% 0%, #1BE9B7 0%, rgba(27, 233, 183, 0) 42.71%), $bg",
     backgroundBlendMode: "color, normal",
@@ -35,21 +33,14 @@ const globalStyles = globalCss({
     backgroundSize: "cover",
   },
   body: {
-    // height: "-webkit-fill-available",
-    // display: "flex",
-    // flexFlow: "column",
-    height:
-      "calc(100vh - en(safe-area-inset-top) - env(safe-area-inset-bottom))",
-    maxWidth: "640px",
-    paddingTop: "$6",
-    padding: "$6 $3",
-    margin: "auto",
+    // height: "100%",
+    fontFamily: "$sans",
     lineHeight: "1.5",
     WebkitFontSmoothing: "antialiased",
   },
-  main: {
-    paddingBottom: "160px",
-  },
+  // main: {
+  //   paddingBottom: "160px",
+  // },
   img: {
     display: "block",
     maxWidth: "100%",
@@ -120,9 +111,6 @@ const globalStyles = globalCss({
   },
   "#__next": {
     isolation: "isolate",
-    position: "relative",
-    maxWidth: "640px",
-    // width: "100%",
   },
   // end reset
   a: {
@@ -137,6 +125,28 @@ function MyApp({ Component, pageProps }: AppProps) {
   globalStyles();
   return (
     <Layout>
+      <Head>
+        <title>James Lyons</title>
+        <meta
+          name="description"
+          content="Product Designer & Frontend Developer"
+        />
+        <link rel="icon" href="/favicon.svg" />
+        <link
+          rel="preload"
+          href="/fonts/Supreme-Variable.woff"
+          as="font"
+          type="font/woff"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="preload"
+          href="/fonts/Supreme-Variable.woff2"
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
+        />
+      </Head>
       <Component {...pageProps} />
     </Layout>
   );

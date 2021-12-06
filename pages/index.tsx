@@ -5,7 +5,6 @@ import Image from "next/image";
 import { styled } from "../stitches.config";
 
 const Text = styled("p", {
-  fontFamily: "$sans",
   color: "$text1",
 
   variants: {
@@ -26,7 +25,7 @@ const Text = styled("p", {
 export default function Home() {
   return (
     <div>
-      <Head>
+      {/* <Head>
         <title>James Lyons</title>
         <meta
           name="description"
@@ -47,7 +46,7 @@ export default function Home() {
           type="font/woff2"
           crossOrigin="anonymous"
         />
-      </Head>
+      </Head> */}
       <Text as="h1" color="1">
         James Lyons
       </Text>
