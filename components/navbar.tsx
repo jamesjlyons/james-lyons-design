@@ -1,24 +1,11 @@
-// export default function Nav() {
-//   return (
-//     <nav>
-//       <a href="#">Home</a>
-//       <a href="#">Work</a>
-//     </nav>
-//   );
-// }
 import React from "react";
 import { styled } from "../stitches.config";
-import Link from "next/link";
 import ActiveLink from "./activelink";
 
 const Nav = styled("nav", {
   display: "flex",
   alignItems: "center",
   justifyContent: "space-between",
-  // position: "fixed",
-  // bottom: "$4",
-  // maxWidth: "inherit",
-  // width: "100%",
   background: "rgba(25, 25, 25, 0.7)",
   border: "1px solid #484848",
   boxShadow: "0px 9px 30px rgba(0, 0, 0, 0.16)",
@@ -27,16 +14,7 @@ const Nav = styled("nav", {
   padding: "24px $4",
   fontSize: "$4",
   color: "$text1",
-  //
-  // width: "calc(100% - 64px)",
-  // paddingLeft: "10px",
-  // paddingRight: "10px",
-  // position: "fixed",
-  // bottom: "-8px",
-  // left: "50%",
-  // opacity: "0",
   zIndex: "10",
-  // transform: "translate(-50%, -50%) translateY(64px)",
 
   "& .links": { display: "flex", gap: "$3" },
 

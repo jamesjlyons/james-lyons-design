@@ -33,14 +33,10 @@ const globalStyles = globalCss({
     backgroundSize: "cover",
   },
   body: {
-    // height: "100%",
     fontFamily: "$sans",
     lineHeight: "1.5",
     WebkitFontSmoothing: "antialiased",
   },
-  // main: {
-  //   paddingBottom: "160px",
-  // },
   img: {
     display: "block",
     maxWidth: "100%",

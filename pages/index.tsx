@@ -1,7 +1,4 @@
 import type { NextPage } from "next";
-import Head from "next/head";
-import Image from "next/image";
-// import styles from '../styles/Home.module.css'
 import { styled } from "../stitches.config";
 
 const Text = styled("p", {
@@ -25,28 +22,6 @@ const Text = styled("p", {
 export default function Home() {
   return (
     <div>
-      {/* <Head>
-        <title>James Lyons</title>
-        <meta
-          name="description"
-          content="Product Designer & Frontend Developer"
-        />
-        <link rel="icon" href="/favicon.svg" />
-        <link
-          rel="preload"
-          href="/fonts/Supreme-Variable.woff"
-          as="font"
-          type="font/woff"
-          crossOrigin="anonymous"
-        />
-        <link
-          rel="preload"
-          href="/fonts/Supreme-Variable.woff2"
-          as="font"
-          type="font/woff2"
-          crossOrigin="anonymous"
-        />
-      </Head> */}
       <Text as="h1" color="1">
         James Lyons
       </Text>
