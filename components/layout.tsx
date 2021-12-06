@@ -27,10 +27,7 @@ export default function Layout({ children }) {
   return (
     <Wrap>
       <main>{children}</main>
-      <Navbar>
-        <a href="#">Home</a>
-        <a href="#">Work</a>
-      </Navbar>
+      <Navbar />
     </Wrap>
   );
 }
