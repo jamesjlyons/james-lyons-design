@@ -10,17 +10,38 @@ const Wrap = styled("div", {
   paddingLeft: "$3",
   paddingRight: "$3",
   margin: "0px auto",
+  // backgroundColor: "red",
+  // "@sm": {
+  //   backgroundColor: "blue",
+  // },
   "& main": {
-    paddingTop: "$6",
-    paddingBottom: "$6",
+    paddingTop: "$4",
+    paddingBottom: "$4",
+    "@media (min-width: 680px)": {
+      paddingTop: "$6",
+      paddingBottom: "$6",
+    },
   },
   "& nav": {
     position: "fixed",
     bottom: "$3",
-    width: "calc(320px - $3)",
+    width: "calc(250px - $3)",
     left: "50%",
     transform: "translate(-50%, 0%)",
   },
+
+  // variants: {
+  //   size: {
+  //     small: {
+  //       paddingTop: "$3",
+  //       paddingBottom: "$3",
+  //     },
+  //     large: {
+  //       paddingTop: "$6",
+  //       paddingBottom: "$6",
+  //     },
+  //   },
+  // },
 });
 
 export default function Layout({ children }) {

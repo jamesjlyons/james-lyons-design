@@ -1,6 +1,6 @@
 import { createStitches } from "@stitches/react";
 
-export const { styled, getCssText } = createStitches({
+export const { styled, css, getCssText } = createStitches({
   theme: {
     colors: {
       bg: "hsla(0, 0%, 7%, 1)",
@@ -42,6 +42,11 @@ export const { styled, getCssText } = createStitches({
       2: "4px",
       3: "8px",
       round: "9999px",
+    },
+    media: {
+      sm: "(min-width: 340px)",
+      md: "(min-width: 680px)",
+      lg: "(min-width: 1160px)",
     },
     fontWeights: {},
     lineHeights: {},
