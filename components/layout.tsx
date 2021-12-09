@@ -17,7 +17,7 @@ const Wrap = styled("div", {
   "& main": {
     paddingTop: "$4",
     paddingBottom: "$4",
-    "@media (min-width: 680px)": {
+    "@sm": {
       paddingTop: "$6",
       paddingBottom: "$6",
     },
@@ -28,6 +28,9 @@ const Wrap = styled("div", {
     width: "calc(250px - $3)",
     left: "50%",
     transform: "translate(-50%, 0%)",
+    "@sm": {
+      width: "calc(570px - $3)",
+    },
   },
 
   // variants: {

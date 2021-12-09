@@ -43,11 +43,6 @@ export const { styled, css, getCssText } = createStitches({
       3: "8px",
       round: "9999px",
     },
-    media: {
-      sm: "(min-width: 340px)",
-      md: "(min-width: 680px)",
-      lg: "(min-width: 1160px)",
-    },
     fontWeights: {},
     lineHeights: {},
     letterSpacings: {},
@@ -56,5 +51,10 @@ export const { styled, css, getCssText } = createStitches({
     shadows: {},
     zIndices: {},
     transitions: {},
+  },
+  media: {
+    sm: "(min-width: 640px)",
+    md: "(min-width: 768px)",
+    lg: "(min-width: 1024px)",
   },
 });
