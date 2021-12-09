@@ -1,5 +1,5 @@
 // import '../styles/globals.css'
-import { globalCss } from "@stitches/react";
+import { globalCss } from "../stitches.config";
 import type { AppProps } from "next/app";
 import Layout from "../components/layout";
 import Head from "next/head";
