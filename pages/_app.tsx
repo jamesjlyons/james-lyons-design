@@ -26,7 +26,7 @@ const globalStyles = globalCss({
     // height: "100%",
     //  not reset
     background:
-      "radial-gradient(100% 256% at 0% 0%, #1BE9B7 0%, rgba(27, 233, 183, 0) 42.71%), $bg",
+      "radial-gradient(100% 256% at 0% 0%, #1BE9B7 0%, rgba(27, 233, 183, 0) 42.71%), $backgroundDefault",
     backgroundBlendMode: "color, normal",
     backgroundRepeat: "no-repeat",
     backgroundPosition: "top center",
@@ -110,9 +110,9 @@ const globalStyles = globalCss({
   },
   // end reset
   a: {
-    color: "$accent",
+    color: "$accentPrimaryDefault",
     "&:hover": {
-      color: "$text1",
+      color: "$foregroundDefault",
     },
   },
 });

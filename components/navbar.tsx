@@ -6,7 +6,7 @@ const Nav = styled("nav", {
   display: "flex",
   alignItems: "center",
   justifyContent: "space-between",
-  background: "rgba(25, 25, 25, 0.7)",
+  background: "$backgroundHigherTransparent",
   border: "1px solid #484848",
   boxShadow: "0px 9px 30px rgba(0, 0, 0, 0.16)",
   backdropFilter: "blur(20px)",
@@ -14,15 +14,14 @@ const Nav = styled("nav", {
   padding: "24px $4",
   fontSize: "$4",
   color: "$text1",
-  zIndex: "10",
 
   "& .links": { display: "flex", gap: "$3" },
 
   "& .nav-link": {
-    color: "$text1",
+    color: "$foregroundDefault",
     textDecoration: "none",
     "&:hover": {
-      color: "$accent",
+      color: "$accentPrimaryDefault",
     },
     "&.active": {
       textDecoration: "underline",

@@ -2,18 +2,18 @@ import type { NextPage } from "next";
 import { styled } from "../stitches.config";
 
 const Text = styled("p", {
-  color: "$text1",
+  color: "$foregroundDefault",
 
   variants: {
     color: {
       1: {
-        color: "$text1",
+        color: "$foregroundDefault",
       },
       2: {
-        color: "$text2",
+        color: "$foregroundDimmer",
       },
       3: {
-        color: "$text3",
+        color: "$foregroundDimmest",
       },
     },
   },

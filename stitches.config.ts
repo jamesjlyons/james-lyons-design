@@ -3,11 +3,18 @@ import { createStitches } from "@stitches/react";
 export const { styled, css, getCssText, globalCss } = createStitches({
   theme: {
     colors: {
-      bg: "hsla(0, 0%, 7%, 1)",
+      backgroundDefault: "hsla(0, 0%, 7%, 1)",
+      backgroundHigher: "hsla(0, 0%, 10%, 1)",
+      backgroundHigherTransparent: "hsla(0, 0%, 10%, 0.7)",
+
+      foregroundDefault: "hsla(0, 0%, 100%, 1)",
+      foregroundDimmer: "hsla(0, 0%, 100%, 0.67)",
+      foregroundDimmest: "hsla(0, 0%, 100%, 0.51)",
+
       text1: "hsla(0, 0%, 100%, 1)",
       text2: "hsla(0, 0%, 100%, 0.67)",
       text3: "hsla(0, 0%, 100%, 0.51)",
-      accent: "hsla(165, 82%, 51%, 1);",
+      accentPrimaryDefault: "hsla(165, 82%, 51%, 1);",
     },
     fonts: {
       system: "system-ui, sans-serif",
