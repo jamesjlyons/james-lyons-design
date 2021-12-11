@@ -10,10 +10,6 @@ const Wrap = styled("div", {
   paddingLeft: "$3",
   paddingRight: "$3",
   margin: "0px auto",
-  // backgroundColor: "red",
-  // "@sm": {
-  //   backgroundColor: "blue",
-  // },
   "& main": {
     paddingTop: "$4",
     paddingBottom: "$4",
@@ -28,6 +24,7 @@ const Wrap = styled("div", {
     width: "calc(250px - $3)",
     left: "50%",
     transform: "translate(-50%, 0%)",
+    transition: "width 0.2s ease-in-out",
     "@sm": {
       width: "calc(570px - $3)",
     },

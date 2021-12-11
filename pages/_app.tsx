@@ -36,6 +36,7 @@ const globalStyles = globalCss({
     fontFamily: "$sans",
     lineHeight: "1.5",
     WebkitFontSmoothing: "antialiased",
+    // scrollbarGutter: "stable",
   },
   img: {
     display: "block",
@@ -111,6 +112,7 @@ const globalStyles = globalCss({
   // end reset
   a: {
     color: "$accentPrimaryDefault",
+    transition: "color 0.1s ease-in-out",
     "&:hover": {
       color: "$foregroundDefault",
     },
