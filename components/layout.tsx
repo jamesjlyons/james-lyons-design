@@ -11,12 +11,12 @@ const Wrap = styled("div", {
   paddingRight: "$3",
   margin: "0px auto",
   "& main": {
-    paddingTop: "$4",
-    paddingBottom: "$4",
-    "@sm": {
-      paddingTop: "$6",
-      paddingBottom: "$6",
-    },
+    paddingTop: "$6",
+    paddingBottom: "$6",
+    // "@sm": {
+    //   paddingTop: "$6",
+    //   paddingBottom: "$6",
+    // },
   },
   "& nav": {
     position: "fixed",
