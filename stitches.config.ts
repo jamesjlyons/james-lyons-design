@@ -6,6 +6,7 @@ export const { styled, css, getCssText, globalCss } = createStitches({
       backgroundDefault: "hsla(0, 0%, 7%, 1)",
       backgroundHigher: "hsla(0, 0%, 10%, 1)",
       backgroundHigherTransparent: "hsla(0, 0%, 10%, 0.7)",
+      backgroundHighest: "hsla(0, 0%, 17%, 1)",
 
       foregroundDefault: "hsla(0, 0%, 100%, 1)",
       foregroundDimmer: "hsla(0, 0%, 100%, 0.67)",
