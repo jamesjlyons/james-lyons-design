@@ -36,6 +36,7 @@ const globalStyles = globalCss({
     fontFamily: "$sans",
     lineHeight: "1.5",
     WebkitFontSmoothing: "antialiased",
+    color: "$text1",
     // scrollbarGutter: "stable",
   },
   img: {
