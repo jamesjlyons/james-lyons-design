@@ -34,7 +34,7 @@ The idea of having a metronome as an app isn't a new one, so, there were already
 <br />
 <br />
 
-<!-- ![](/subdivide-img/metronome.png) -->
+![](/subdivide-img/metronome.png)
 
 <iframe
   src="/prototypes/subdivide-bottomsheet-prototype/index.html"
@@ -57,6 +57,9 @@ The Tracks feature allows users to string together a series of sections with dif
 <br />
 <br />
 ![tracks screens](/subdivide-img/tracks.png)
+<Image src="/work/subdivide/tracks.png" width="1587" height=" 1436">
+  tracks screens
+</Image>
 <br />
 
 We leveraged Android's Nearby API to allow users to quickly share tracks without the need for file management or an account. If two users enter Subdivide’s share mode, a list of tracks from the other device will show up on both devices. A quick tap will copy the selected track to the other device.

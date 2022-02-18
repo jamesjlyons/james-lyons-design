@@ -1,5 +1,6 @@
 import Head from "next/head";
 import type { FC } from "react";
+import { useMDXComponent } from "next-contentlayer/hooks";
 
 // import { FormattedDate } from "../../components/date";
 // import { Layout } from "../../components/layout";
