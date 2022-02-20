@@ -1,7 +1,7 @@
 import { compareDesc } from "date-fns";
 import type { InferGetStaticPropsType } from "next";
 import { styled } from "../stitches.config";
-import { allPosts } from ".contentlayer/data";
+import { allPosts } from ".contentlayer/generated";
 import Head from "next/head";
 import Link from "next/link";
 import type { FC } from "react";

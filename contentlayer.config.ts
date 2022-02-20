@@ -5,7 +5,7 @@ export const Post = defineDocumentType(() => ({
   name: "Post",
   // filePathPattern: `**/*.md`,
   filePathPattern: "**/*.md",
-  // bodyType: "mdx",
+  // contentType: "mdx",
   fields: {
     title: {
       type: "string",
