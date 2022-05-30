@@ -29,10 +29,6 @@ My responsibilities for this project included:
 The resulting feature was deeply integrated with Liferay's Digital Experience Platform (DXP). It solved users' needs for having a way to run A/B tests within Liferay's product ecosystem. Leveraging the site-building capabilities in DXP, users can quickly make a new A/B test on any page and select an element to track click events on if necessary for the desired metric to be measured. Users can also select a target audience built by our audience segment creator, so the can run tests on personalizations of a page. Liferay's Analytics Cloud then does the heavy lifting tracking and reporting the data for the test and eventually gives the user a test result, with the handy option to publish the winning variant directly from the report. Although it was very much an MVP for an A/B testing feature, it meets our customers' basic needs and has laid the groundwork for future enhancements like multivariate and redirect testing.
 <br /><br />
 
-#### _Full case study coming soon._
-
-<br /><br />
-
 ###### Some sketches from the sprint
 
 ![high level flow](/ab-img/design-sprint.png)
