@@ -11,7 +11,8 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^1.2.6"
+    "astro": "^1.2.6",
+    "the-new-css-reset": "^1.7.3"
   },
   "devDependencies": {
     "prettier": "^2.7.1",
