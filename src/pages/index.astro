@@ -1,0 +1,17 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Welcome to Astro.">
+	<main>
+		<h1>Welcome to <span class="text-highlight">Astro Portfolio</span></h1>
+	</main>
+</Layout>
+
+<style>
+.text-highlight {
+	background: linear-gradient(90deg, var(--color-text) 0%, var(--color-accent) 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+</style>
