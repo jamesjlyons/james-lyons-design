@@ -68,45 +68,39 @@ import IconItem from "../components/IconItem.astro";
           <IconItem title="elsewhere" body="github">
             <g clip-path="url(#a)">
               <path
-                fill="#fff"
-                fill-opacity=".5"
                 fill-rule="evenodd"
                 d="M4.343 15.657A8 8 0 1 0 15.657 4.343 8 8 0 0 0 4.343 15.657Zm2.829-3.889a.75.75 0 0 0 1.06 1.06l3.246-3.245-.106 2.864a.75.75 0 0 0 1.499.056l.177-4.773a.75.75 0 0 0-.778-.777l-4.773.176a.75.75 0 1 0 .056 1.5l2.864-.107-3.245 3.246Z"
                 clip-rule="evenodd"></path>
             </g>
             <defs>
               <clipPath id="a">
-                <path fill="#fff" d="M0 0h20v20H0z"></path>
+                <path d="M0 0h20v20H0z"></path>
               </clipPath>
             </defs>
           </IconItem>
           <IconItem body="figma">
             <g clip-path="url(#a)">
               <path
-                fill="#fff"
-                fill-opacity=".5"
                 fill-rule="evenodd"
                 d="M4.343 15.657A8 8 0 1 0 15.657 4.343 8 8 0 0 0 4.343 15.657Zm2.829-3.889a.75.75 0 0 0 1.06 1.06l3.246-3.245-.106 2.864a.75.75 0 0 0 1.499.056l.177-4.773a.75.75 0 0 0-.778-.777l-4.773.176a.75.75 0 1 0 .056 1.5l2.864-.107-3.245 3.246Z"
                 clip-rule="evenodd"></path>
             </g>
             <defs>
               <clipPath id="a">
-                <path fill="#fff" d="M0 0h20v20H0z"></path>
+                <path d="M0 0h20v20H0z"></path>
               </clipPath>
             </defs>
           </IconItem>
           <IconItem body="raycast">
             <g clip-path="url(#a)">
               <path
-                fill="#fff"
-                fill-opacity=".5"
                 fill-rule="evenodd"
                 d="M4.343 15.657A8 8 0 1 0 15.657 4.343 8 8 0 0 0 4.343 15.657Zm2.829-3.889a.75.75 0 0 0 1.06 1.06l3.246-3.245-.106 2.864a.75.75 0 0 0 1.499.056l.177-4.773a.75.75 0 0 0-.778-.777l-4.773.176a.75.75 0 1 0 .056 1.5l2.864-.107-3.245 3.246Z"
                 clip-rule="evenodd"></path>
             </g>
             <defs>
               <clipPath id="a">
-                <path fill="#fff" d="M0 0h20v20H0z"></path>
+                <path d="M0 0h20v20H0z"></path>
               </clipPath>
             </defs>
           </IconItem>
@@ -138,7 +132,6 @@ import IconItem from "../components/IconItem.astro";
     margin-top: 33vh;
     gap: 48px;
   }
-
   .intro-heading {
     display: flex;
     align-items: center;
@@ -153,7 +146,7 @@ import IconItem from "../components/IconItem.astro";
   .intro-heading > svg {
     width: 20px;
     height: 20px;
-    color: var(--color-accent);
+    color: accent.solid;
   }
 
   .row {
@@ -166,5 +159,336 @@ import IconItem from "../components/IconItem.astro";
     display: flex;
     flex-direction: column;
     gap: 12px;
+  }
+
+  .intro {
+    animation: 2.3s slide linear;
+    animation-fill-mode: both;
+    animation-delay: 10ms;
+  }
+
+  .row:nth-of-type(2) {
+    animation: 2.3s slide linear;
+    animation-fill-mode: both;
+    animation-delay: 50ms;
+  }
+
+  .row:nth-of-type(3) {
+    animation: 2.3s slide linear;
+    animation-fill-mode: both;
+    animation-delay: 100ms;
+  }
+
+  @keyframes slide {
+    0% {
+      translate: 0px 16px;
+      opacity: 0;
+    }
+    1% {
+      translate: 0px 10.768px;
+    }
+    2% {
+      translate: 0px 6.176px;
+    }
+    3% {
+      translate: 0px 2.208px;
+    }
+    4% {
+      translate: 0px -1.136px;
+    }
+    5% {
+      translate: 0px -3.856px;
+    }
+    6% {
+      translate: 0px -6px;
+    }
+    7% {
+      translate: 0px -7.616px;
+    }
+    8% {
+      translate: 0px -8.736px;
+    }
+    9% {
+      translate: 0px -9.44px;
+    }
+    10% {
+      translate: 0px -9.76px;
+    }
+    11% {
+      translate: 0px -9.776px;
+    }
+    12% {
+      translate: 0px -9.52px;
+    }
+    13% {
+      translate: 0px -9.056px;
+    }
+    14% {
+      translate: 0px -8.432px;
+    }
+    15% {
+      translate: 0px -7.696px;
+    }
+    16% {
+      translate: 0px -6.88px;
+    }
+    17% {
+      translate: 0px -6.016px;
+    }
+    18% {
+      translate: 0px -5.152px;
+    }
+    19% {
+      translate: 0px -4.288px;
+    }
+    20% {
+      translate: 0px -3.472px;
+    }
+    21% {
+      translate: 0px -2.704px;
+    }
+    22% {
+      translate: 0px -2px;
+    }
+    23% {
+      translate: 0px -1.36px;
+    }
+    24% {
+      translate: 0px -0.8px;
+    }
+    25% {
+      translate: 0px -0.304px;
+    }
+    26% {
+      translate: 0px 0.096px;
+    }
+    27% {
+      translate: 0px 0.432px;
+    }
+    28% {
+      translate: 0px 0.704px;
+    }
+    29% {
+      translate: 0px 0.896px;
+    }
+    29% {
+      translate: 0px 1.04px;
+    }
+    31% {
+      translate: 0px 1.136px;
+    }
+    32% {
+      translate: 0px 1.184px;
+    }
+    33% {
+      translate: 0px 1.184px;
+    }
+    34% {
+      translate: 0px 1.152px;
+    }
+    35% {
+      translate: 0px 1.104px;
+    }
+    36% {
+      translate: 0px 1.024px;
+    }
+    37% {
+      translate: 0px 0.944px;
+    }
+    38% {
+      translate: 0px 0.848px;
+    }
+    39% {
+      translate: 0px 0.736px;
+    }
+    40% {
+      translate: 0px 0.624px;
+    }
+    41% {
+      translate: 0px 0.528px;
+    }
+    42% {
+      translate: 0px 0.432px;
+    }
+    43% {
+      translate: 0px 0.336px;
+    }
+    44% {
+      translate: 0px 0.256px;
+    }
+    45% {
+      translate: 0px 0.176px;
+    }
+    46% {
+      translate: 0px 0.096px;
+    }
+    47% {
+      translate: 0px 0.048px;
+    }
+    48% {
+      translate: 0px -0.016px;
+    }
+    49% {
+      translate: 0px -0.048px;
+    }
+    50% {
+      translate: 0px -0.08px;
+    }
+    51% {
+      translate: 0px -0.112px;
+    }
+    52% {
+      translate: 0px -0.128px;
+    }
+    53% {
+      translate: 0px -0.144px;
+    }
+    54% {
+      translate: 0px -0.144px;
+    }
+    55% {
+      translate: 0px -0.144px;
+    }
+    56% {
+      translate: 0px -0.144px;
+      opacity: 1;
+    }
+    57% {
+      translate: 0px -0.128px;
+    }
+    57% {
+      translate: 0px -0.128px;
+    }
+    58% {
+      translate: 0px -0.112px;
+    }
+    60% {
+      translate: 0px -0.096px;
+    }
+    61% {
+      translate: 0px -0.096px;
+    }
+    62% {
+      translate: 0px -0.08px;
+    }
+    63% {
+      translate: 0px -0.064px;
+    }
+    64% {
+      translate: 0px -0.048px;
+    }
+    65% {
+      translate: 0px -0.048px;
+    }
+    66% {
+      translate: 0px -0.032px;
+    }
+    67% {
+      translate: 0px -0.016px;
+    }
+    68% {
+      translate: 0px -0.016px;
+    }
+    69% {
+      translate: 0px 0px;
+    }
+    70% {
+      translate: 0px 0px;
+    }
+    71% {
+      translate: 0px 0px;
+    }
+    72% {
+      translate: 0px 0.016px;
+    }
+    73% {
+      translate: 0px 0.016px;
+    }
+    74% {
+      translate: 0px 0.016px;
+    }
+    75% {
+      translate: 0px 0.016px;
+    }
+    76% {
+      translate: 0px 0.016px;
+    }
+    77% {
+      translate: 0px 0.016px;
+    }
+    78% {
+      translate: 0px 0.016px;
+    }
+    79% {
+      translate: 0px 0.016px;
+    }
+    80% {
+      translate: 0px 0.016px;
+    }
+    81% {
+      translate: 0px 0.016px;
+    }
+    82% {
+      translate: 0px 0.016px;
+    }
+    83% {
+      translate: 0px 0.016px;
+    }
+    84% {
+      translate: 0px 0.016px;
+    }
+    85% {
+      translate: 0px 0px;
+    }
+    86% {
+      translate: 0px 0px;
+    }
+    87% {
+      translate: 0px 0px;
+    }
+    88% {
+      translate: 0px 0px;
+    }
+    89% {
+      translate: 0px 0px;
+    }
+    90% {
+      translate: 0px 0px;
+    }
+    91% {
+      translate: 0px 0px;
+    }
+    92% {
+      translate: 0px 0px;
+    }
+    93% {
+      translate: 0px 0px;
+    }
+    94% {
+      translate: 0px 0px;
+    }
+    95% {
+      translate: 0px 0px;
+    }
+    96% {
+      translate: 0px 0px;
+    }
+    97% {
+      translate: 0px 0px;
+    }
+    98% {
+      translate: 0px 0px;
+    }
+    99% {
+      translate: 0px 0px;
+    }
+    100% {
+      translate: 0px 0px;
+    }
+  }
+
+  .slideAnimation {
+    animation: 2.3s slide linear;
+    animation-fill-mode: both;
   }
 </style>

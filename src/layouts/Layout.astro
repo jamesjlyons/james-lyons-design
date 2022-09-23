@@ -1,7 +1,7 @@
 ---
-import "the-new-css-reset/css/reset.css"
+import "the-new-css-reset/css/reset.css";
 export interface Props {
-	title: string;
+  title: string;
 }
 
 const { title } = Astro.props;
@@ -9,99 +9,81 @@ const { title } = Astro.props;
 
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-	</head>
-	<body>
-		<slot />
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <slot />
+    <style is:global>
+      /**
+	* This is a variable font
+	* You can controll variable axes as shown below:
+	* font-variation-settings: 'wght' 800.0;
+	*
+	* available axes:
+
+	* 'wght' (range from 100.0 to 800.0)
+
+	*/
+
+      @font-face {
+        font-family: "Supreme-Variable";
+        src: url("/fonts/Supreme-Variable.woff2") format("woff2"),
+          url("/fonts/Supreme-Variable.woff") format("woff"),
+          url("/fonts/Supreme-Variable.ttf") format("truetype");
+        font-weight: 100 800;
+        font-display: swap;
+        font-style: normal;
+      }
+
+      /**
+	* This is a variable font
+	* You can controll variable axes as shown below:
+	* font-variation-settings: 'wght' 800.0;
+	*
+	* available axes:
+	
+	* 'wght' (range from 100.0 to 800.0)
+	
+	*/
+
+      @font-face {
+        font-family: "Supreme-VariableItalic";
+        src: url("/fonts/Supreme-VariableItalic.woff2") format("woff2"),
+          url("/fonts/Supreme-VariableItalic.woff") format("woff"),
+          url("/fonts/Supreme-VariableItalic.ttf") format("truetype");
+        font-weight: 100 800;
+        font-display: swap;
+        font-style: italic;
+      }
+
+      html {
+        font-family: "Supreme Variable", system-ui, sans-serif;
+        font-size: default;
+        color: text.base;
+        background-color: bg.0;
+      }
+
+      h1 {
+        font-size: xl;
+        font-variation-settings: "wght" 700;
+        letter-spacing: -0.02em;
+      }
+
+      h2 {
+        font-size: default;
+      }
+
+      h3 {
+        font-size: xs;
+        font-variation-settings: "wght" 350;
+        letter-spacing: 0.03em;
+        color: text.muted;
+      }
+    </style>
+  </body>
 </html>
-<style is:global>
-	/**
-	* This is a variable font
-	* You can controll variable axes as shown below:
-	* font-variation-settings: 'wght' 800.0;
-	*
-	* available axes:
-
-	* 'wght' (range from 100.0 to 800.0)
-
-	*/
-
-	@font-face {
-		font-family: 'Supreme-Variable';
-		src: url('./fonts/Supreme-Variable.woff2') format('woff2'),
-			url('./fonts/Supreme-Variable.woff') format('woff'),
-			url('./fonts/Supreme-Variable.ttf') format('truetype');
-			font-weight: 100 800;
-			font-display: swap;
-			font-style: normal;
-	}
-	
-	
-	/**
-	* This is a variable font
-	* You can controll variable axes as shown below:
-	* font-variation-settings: 'wght' 800.0;
-	*
-	* available axes:
-	
-	* 'wght' (range from 100.0 to 800.0)
-	
-	*/
-	
-	@font-face {
-		font-family: 'Supreme-VariableItalic';
-		src: url('./fonts/Supreme-VariableItalic.woff2') format('woff2'),
-			url('./fonts/Supreme-VariableItalic.woff') format('woff'),
-			url('./fonts/Supreme-VariableItalic.ttf') format('truetype');
-			font-weight: 100 800;
-			font-display: swap;
-			font-style: italic;
-	}
-
-	:root {
-		--font-size-base: 1rem;
-		--font-size-sm: 0.75rem;
-		--font-size-lg: 1.25rem;
-
-		--color-text: hsl(0, 0%, 100%);
-		--color-text-secondary: hsl(0, 0%, 50%);
-		--color-bg: hsl(0, 0%, 0%);
-		--color-border: hsl(0, 0%, 8%);
-		--color-accent: hsl(165, 82%, 51%);
-	}
-
-	html {
-		font-family: "Supreme Variable", system-ui, sans-serif;
-		font-size: var(--font-size-base);
-		color: var(--color-text);
-		background-color: var(--color-bg);
-	}
-
-	h1 {
-		font-size: var(--font-size-lg);
-		font-variation-settings: 'wght' 700.0;
-		letter-spacing: -0.02em;
-	}
-
-	h2 {
-		font-size: var(--font-size-base);
-	}
-
-	h3 {
-		font-size: var(--font-size-sm);
-		font-variation-settings: 'wght' 350.0;
-		letter-spacing: 0.03em;
-		color: var(--color-text-secondary);
-	}
-
-	code {
-		font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-			Bitstream Vera Sans Mono, Courier New, monospace;
-	}
-</style>
