@@ -22,7 +22,7 @@ import IconItem from "../components/IconItem.astro";
         </svg>
 
         <h1 class="text-highlight">james lyons</h1>
-        <h1>[product designer]</h1>
+        <h1>product designer</h1>
       </div>
     </section>
 
@@ -125,11 +125,10 @@ import IconItem from "../components/IconItem.astro";
 
   main {
     display: grid;
-    place-items: center;
+    place-items: left;
     width: 306px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 33vh;
     gap: 48px;
   }
   .intro-heading {
@@ -140,7 +139,7 @@ import IconItem from "../components/IconItem.astro";
   }
 
   .intro-heading > h1:nth-of-type(2) {
-    color: var(--color-text-secondary);
+    color: text.muted;
   }
 
   .intro-heading > svg {
@@ -164,19 +163,19 @@ import IconItem from "../components/IconItem.astro";
   .intro {
     animation: 2.3s slide linear;
     animation-fill-mode: both;
-    animation-delay: 10ms;
+    animation-delay: 50ms;
   }
 
   .row:nth-of-type(2) {
     animation: 2.3s slide linear;
     animation-fill-mode: both;
-    animation-delay: 50ms;
+    animation-delay: 100ms;
   }
 
   .row:nth-of-type(3) {
     animation: 2.3s slide linear;
     animation-fill-mode: both;
-    animation-delay: 100ms;
+    animation-delay: 150ms;
   }
 
   @keyframes slide {
