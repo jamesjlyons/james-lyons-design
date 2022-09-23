@@ -30,17 +30,339 @@ const { href, title, body } = Astro.props;
   svg {
     width: 20px;
     height: 20px;
-    color: var(--color-text-secondary);
+    color: text.muted;
   }
   .icon-item {
     display: flex;
     align-items: center;
     gap: 8px;
-    color: var(--color-text-secondary);
+    color: text.muted;
   }
 
   .icon-item > a {
     text-decoration: none;
-    color: var(--color-text-secondary);
+    color: text.muted;
+    cursor: pointer;
+  }
+
+  .icon-item:hover > .icon {
+    animation: 1.7s beat linear;
+    animation-fill-mode: both;
+    color: accent.solid;
+  }
+
+  .icon-item:hover > a {
+    color: accent.solid;
+  }
+
+  @keyframes beat {
+    0% {
+      rotate: 0deg;
+    }
+    1% {
+      rotate: -10.88deg;
+    }
+    2% {
+      rotate: -18.81deg;
+    }
+    3% {
+      rotate: -23.88deg;
+    }
+    4% {
+      rotate: -26.39deg;
+    }
+    5% {
+      rotate: -26.8deg;
+    }
+    6% {
+      rotate: -25.63deg;
+    }
+    7% {
+      rotate: -23.4deg;
+    }
+    8% {
+      rotate: -20.58deg;
+    }
+    9% {
+      rotate: -17.58deg;
+    }
+    10% {
+      rotate: -14.71deg;
+    }
+    11% {
+      rotate: -12.18deg;
+    }
+    12% {
+      rotate: -10.12deg;
+    }
+    13% {
+      rotate: -8.6deg;
+    }
+    14% {
+      rotate: -7.6deg;
+    }
+    15% {
+      rotate: -7.08deg;
+    }
+    16% {
+      rotate: -6.95deg;
+    }
+    17% {
+      rotate: -7.12deg;
+    }
+    18% {
+      rotate: -7.5deg;
+    }
+    19% {
+      rotate: -8deg;
+    }
+    20% {
+      rotate: -8.54deg;
+    }
+    21% {
+      rotate: -9.07deg;
+    }
+    22% {
+      rotate: -9.54deg;
+    }
+    23% {
+      rotate: -9.92deg;
+    }
+    24% {
+      rotate: -10.22deg;
+    }
+    25% {
+      rotate: -10.41deg;
+    }
+    26% {
+      rotate: -10.52deg;
+    }
+    27% {
+      rotate: -10.55deg;
+    }
+    28% {
+      rotate: -10.53deg;
+    }
+    29% {
+      rotate: -10.47deg;
+    }
+    29% {
+      rotate: -10.38deg;
+    }
+    31% {
+      rotate: -10.28deg;
+    }
+    32% {
+      rotate: -10.18deg;
+    }
+    33% {
+      rotate: -10.1deg;
+    }
+    34% {
+      rotate: -10.02deg;
+    }
+    35% {
+      rotate: -9.97deg;
+    }
+    36% {
+      rotate: -9.93deg;
+    }
+    37% {
+      rotate: -9.91deg;
+    }
+    38% {
+      rotate: -9.9deg;
+    }
+    39% {
+      rotate: -9.9deg;
+    }
+    40% {
+      rotate: -9.91deg;
+    }
+    41% {
+      rotate: -9.93deg;
+    }
+    42% {
+      rotate: -9.95deg;
+    }
+    43% {
+      rotate: -9.96deg;
+    }
+    44% {
+      rotate: -9.98deg;
+    }
+    45% {
+      rotate: -9.99deg;
+    }
+    46% {
+      rotate: -10deg;
+    }
+    47% {
+      rotate: -10.01deg;
+    }
+    48% {
+      rotate: -10.02deg;
+    }
+    49% {
+      rotate: -10.02deg;
+    }
+    50% {
+      rotate: -10.02deg;
+    }
+    51% {
+      rotate: -10.02deg;
+    }
+    52% {
+      rotate: -10.01deg;
+    }
+    53% {
+      rotate: -10.01deg;
+    }
+    54% {
+      rotate: -10.01deg;
+    }
+    55% {
+      rotate: -10deg;
+    }
+    56% {
+      rotate: -10deg;
+    }
+    57% {
+      rotate: -10deg;
+    }
+    57% {
+      rotate: -10deg;
+    }
+    58% {
+      rotate: -10deg;
+    }
+    60% {
+      rotate: -10deg;
+    }
+    61% {
+      rotate: -10deg;
+    }
+    62% {
+      rotate: -10deg;
+    }
+    63% {
+      rotate: -10deg;
+    }
+    64% {
+      rotate: -10deg;
+    }
+    65% {
+      rotate: -10deg;
+    }
+    66% {
+      rotate: -10deg;
+    }
+    67% {
+      rotate: -10deg;
+    }
+    68% {
+      rotate: -10deg;
+    }
+    69% {
+      rotate: -10deg;
+    }
+    70% {
+      rotate: -10deg;
+    }
+    71% {
+      rotate: -10deg;
+    }
+    72% {
+      rotate: -10deg;
+    }
+    73% {
+      rotate: -10deg;
+    }
+    74% {
+      rotate: -10deg;
+    }
+    75% {
+      rotate: -10deg;
+    }
+    76% {
+      rotate: -10deg;
+    }
+    77% {
+      rotate: -10deg;
+    }
+    78% {
+      rotate: -10deg;
+    }
+    79% {
+      rotate: -10deg;
+    }
+    80% {
+      rotate: -10deg;
+    }
+    81% {
+      rotate: -10deg;
+    }
+    82% {
+      rotate: -10deg;
+    }
+    83% {
+      rotate: -10deg;
+    }
+    84% {
+      rotate: -10deg;
+    }
+    85% {
+      rotate: -10deg;
+    }
+    86% {
+      rotate: -10deg;
+    }
+    87% {
+      rotate: -10deg;
+    }
+    88% {
+      rotate: -10deg;
+    }
+    89% {
+      rotate: -10deg;
+    }
+    90% {
+      rotate: -10deg;
+    }
+    91% {
+      rotate: -10deg;
+    }
+    92% {
+      rotate: -10deg;
+    }
+    93% {
+      rotate: -10deg;
+    }
+    94% {
+      rotate: -10deg;
+    }
+    95% {
+      rotate: -10deg;
+    }
+    96% {
+      rotate: -10deg;
+    }
+    97% {
+      rotate: -10deg;
+    }
+    98% {
+      rotate: -10deg;
+    }
+    99% {
+      rotate: -10deg;
+    }
+    100% {
+      rotate: -10deg;
+    }
+  }
+
+  .beatAnimation {
+    animation: 1.7s beat linear;
+    animation-fill-mode: both;
   }
 </style>
