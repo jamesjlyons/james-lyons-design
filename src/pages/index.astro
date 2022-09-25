@@ -20,9 +20,10 @@ import IconItem from "../components/IconItem.astro";
             d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.536-4.464a.75.75 0 10-1.061-1.061 3.5 3.5 0 01-4.95 0 .75.75 0 00-1.06 1.06 5 5 0 007.07 0zM9 8.5c0 .828-.448 1.5-1 1.5s-1-.672-1-1.5S7.448 7 8 7s1 .672 1 1.5zm3 1.5c.552 0 1-.672 1-1.5S12.552 7 12 7s-1 .672-1 1.5.448 1.5 1 1.5z"
             clip-rule="evenodd"></path>
         </svg>
-
-        <h1 class="text-highlight">james lyons</h1>
-        <h1>[product designer]</h1>
+        <div class="intro-text">
+          <h1 class="text-highlight">james lyons</h1>
+          <h1>[product designer]</h1>
+        </div>
       </div>
     </section>
 
@@ -159,14 +160,20 @@ import IconItem from "../components/IconItem.astro";
     width: 100%;
   }
 
-  .intro-heading > h1:nth-of-type(2) {
-    color: text.muted;
-  }
-
   .intro-heading > svg {
     width: 20px;
     height: 20px;
     color: accent.solid;
+  }
+
+  .intro-text {
+    width: full;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .intro-text > h1:nth-of-type(2) {
+    color: text.muted;
   }
 
   .row {
