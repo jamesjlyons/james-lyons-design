@@ -145,6 +145,9 @@ import IconItem from "../components/IconItem.astro";
         </IconItem>
       </ul>
     </section>
+    <section class="construction">
+      <p>Currently under construction</p>
+    </section>
   </main>
 </Layout>
 
@@ -220,6 +223,15 @@ import IconItem from "../components/IconItem.astro";
     animation: 2.3s slide linear;
     animation-fill-mode: both;
     animation-delay: 350ms;
+  }
+
+  .construction {
+    animation: 2.3s slide linear;
+    animation-fill-mode: both;
+    animation-delay: 450ms;
+    font-variation-settings: "wght" 500;
+    color: accent.solid;
+    opacity: 0.2 !important;
   }
 
   @keyframes slide {
