@@ -22,7 +22,7 @@ import IconItem from "../components/IconItem.astro";
         </svg>
 
         <h1 class="text-highlight">james lyons</h1>
-        <h1>product designer</h1>
+        <h1>[product designer]</h1>
       </div>
     </section>
 
@@ -150,6 +150,7 @@ import IconItem from "../components/IconItem.astro";
     margin-left: auto;
     margin-right: auto;
     gap: 48px;
+    translate: 0px -10%;
   }
   .intro-heading {
     display: flex;
@@ -183,25 +184,28 @@ import IconItem from "../components/IconItem.astro";
   .intro {
     animation: 2.3s slide linear;
     animation-fill-mode: both;
-    animation-delay: 50ms;
+    animation-delay: 150ms;
   }
 
   .row:nth-of-type(2) {
     animation: 2.3s slide linear;
     animation-fill-mode: both;
-    animation-delay: 100ms;
+    animation-delay: 250ms;
   }
 
   .row:nth-of-type(3) {
     animation: 2.3s slide linear;
     animation-fill-mode: both;
-    animation-delay: 150ms;
+    animation-delay: 350ms;
   }
 
   @keyframes slide {
     0% {
       translate: 0px 16px;
       opacity: 0;
+      filter: brightness(2) blur(5px);
+      mask: linear-gradient(90deg, #000 25%, #000000e6 50%, #00000000) 150% 0 /
+        400% no-repeat;
     }
     1% {
       translate: 0px 10.768px;
@@ -247,6 +251,7 @@ import IconItem from "../components/IconItem.astro";
     }
     15% {
       translate: 0px -7.696px;
+      filter: brightness(2) blur(5px);
     }
     16% {
       translate: 0px -6.88px;
@@ -301,6 +306,7 @@ import IconItem from "../components/IconItem.astro";
     }
     33% {
       translate: 0px 1.184px;
+      filter: brightness(1) blur(0px);
     }
     34% {
       translate: 0px 1.152px;
@@ -371,6 +377,9 @@ import IconItem from "../components/IconItem.astro";
     56% {
       translate: 0px -0.144px;
       opacity: 1;
+      filter: brightness(1) blur(0px);
+      mask: linear-gradient(90deg, #000 25%, #000000e6 50%, #00000000) 0 / 400%
+        no-repeat;
     }
     57% {
       translate: 0px -0.128px;
