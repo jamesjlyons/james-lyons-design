@@ -9,17 +9,26 @@ import IconItem from "../components/IconItem.astro";
       <h3>hello, i’m</h3>
       <div class="intro-heading">
         <svg
+          xmlns="http://www.w3.org/2000/svg"
           aria-hidden="true"
           role="img"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 20 20"
           fill="currentColor"
+          viewBox="0 0 20 20"
+          class="wave"
         >
-          <path
-            fill-rule="evenodd"
-            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.536-4.464a.75.75 0 10-1.061-1.061 3.5 3.5 0 01-4.95 0 .75.75 0 00-1.06 1.06 5 5 0 007.07 0zM9 8.5c0 .828-.448 1.5-1 1.5s-1-.672-1-1.5S7.448 7 8 7s1 .672 1 1.5zm3 1.5c.552 0 1-.672 1-1.5S12.552 7 12 7s-1 .672-1 1.5.448 1.5 1 1.5z"
-            clip-rule="evenodd"></path>
+          <g clip-path="url(#a)">
+            <path
+              fill-rule="evenodd"
+              d="M6.866 2.572a1 1 0 0 0-1.732 1l3.25 5.63a.5.5 0 1 1-.866.5l-2.75-4.764a1 1 0 1 0-1.732 1l2.75 4.763a.5.5 0 0 1-.866.5l-1.75-3.03a1 1 0 1 0-1.732 1l3.5 6.061a7 7 0 1 0 12.124-7l-2-3.464a1 1 0 0 0-1.732 1L15.08 8.8a.5.5 0 1 1-.866.5l-4.25-7.36a1 1 0 1 0-1.732 1l2.75 4.762a.5.5 0 1 1-.866.5l-3.25-5.629Z"
+              clip-rule="evenodd"></path>
+          </g>
+          <defs>
+            <clipPath id="a">
+              <path d="M0 0h20v20H0z"></path>
+            </clipPath>
+          </defs>
         </svg>
+
         <div class="intro-text">
           <h1 class="text-highlight">james lyons</h1>
           <h1>[product designer]</h1>
@@ -164,6 +173,9 @@ import IconItem from "../components/IconItem.astro";
     width: 20px;
     height: 20px;
     color: accent.solid;
+    animation: 3.3s wave linear;
+    animation-fill-mode: both;
+    animation-delay: 800ms;
   }
 
   .intro-text {
@@ -185,7 +197,11 @@ import IconItem from "../components/IconItem.astro";
   .col {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 8px;
+  }
+
+  .col:nth-of-type(2) {
+    width: 96px;
   }
 
   .intro {
@@ -524,6 +540,317 @@ import IconItem from "../components/IconItem.astro";
 
   .slideAnimation {
     animation: 2.3s slide linear;
+    animation-fill-mode: both;
+  }
+
+  @keyframes wave {
+    0% {
+      rotate: -25deg;
+    }
+    1% {
+      rotate: -13.3deg;
+    }
+    2% {
+      rotate: -1.125deg;
+    }
+    3% {
+      rotate: 9.7deg;
+    }
+    4% {
+      rotate: 17.8deg;
+    }
+    5% {
+      rotate: 22.375deg;
+    }
+    6% {
+      rotate: 23.2deg;
+    }
+    7% {
+      rotate: 20.575deg;
+    }
+    8% {
+      rotate: 15.35deg;
+    }
+    9% {
+      rotate: 8.575deg;
+    }
+    10% {
+      rotate: 1.4deg;
+    }
+    11% {
+      rotate: -5.1deg;
+    }
+    12% {
+      rotate: -10.075deg;
+    }
+    13% {
+      rotate: -12.975deg;
+    }
+    14% {
+      rotate: -13.675deg;
+    }
+    15% {
+      rotate: -12.35deg;
+    }
+    16% {
+      rotate: -9.4deg;
+    }
+    17% {
+      rotate: -5.475deg;
+    }
+    18% {
+      rotate: -1.25deg;
+    }
+    19% {
+      rotate: 2.625deg;
+    }
+    20% {
+      rotate: 5.675deg;
+    }
+    21% {
+      rotate: 7.525deg;
+    }
+    22% {
+      rotate: 8.05deg;
+    }
+    23% {
+      rotate: 7.4deg;
+    }
+    24% {
+      rotate: 5.75deg;
+    }
+    25% {
+      rotate: 3.475deg;
+    }
+    26% {
+      rotate: 1deg;
+    }
+    27% {
+      rotate: -1.325deg;
+    }
+    28% {
+      rotate: -3.175deg;
+    }
+    29% {
+      rotate: -4.35deg;
+    }
+    29% {
+      rotate: -4.75deg;
+    }
+    31% {
+      rotate: -4.425deg;
+    }
+    32% {
+      rotate: -3.5deg;
+    }
+    33% {
+      rotate: -2.2deg;
+    }
+    34% {
+      rotate: -0.725deg;
+    }
+    35% {
+      rotate: 0.65deg;
+    }
+    36% {
+      rotate: 1.775deg;
+    }
+    37% {
+      rotate: 2.5deg;
+    }
+    38% {
+      rotate: 2.775deg;
+    }
+    39% {
+      rotate: 2.625deg;
+    }
+    40% {
+      rotate: 2.125deg;
+    }
+    41% {
+      rotate: 1.375deg;
+    }
+    42% {
+      rotate: 0.525deg;
+    }
+    43% {
+      rotate: -0.3deg;
+    }
+    44% {
+      rotate: -0.975deg;
+    }
+    45% {
+      rotate: -1.425deg;
+    }
+    46% {
+      rotate: -1.625deg;
+    }
+    47% {
+      rotate: -1.575deg;
+    }
+    48% {
+      rotate: -1.3deg;
+    }
+    49% {
+      rotate: -0.85deg;
+    }
+    50% {
+      rotate: -0.35deg;
+    }
+    51% {
+      rotate: 0.125deg;
+    }
+    52% {
+      rotate: 0.55deg;
+    }
+    53% {
+      rotate: 0.825deg;
+    }
+    54% {
+      rotate: 0.95deg;
+    }
+    55% {
+      rotate: 0.925deg;
+    }
+    56% {
+      rotate: 0.775deg;
+    }
+    57% {
+      rotate: 0.525deg;
+    }
+    57% {
+      rotate: 0.25deg;
+    }
+    58% {
+      rotate: -0.05deg;
+    }
+    60% {
+      rotate: -0.3deg;
+    }
+    61% {
+      rotate: -0.475deg;
+    }
+    62% {
+      rotate: -0.55deg;
+    }
+    63% {
+      rotate: -0.55deg;
+    }
+    64% {
+      rotate: -0.475deg;
+    }
+    65% {
+      rotate: -0.325deg;
+    }
+    66% {
+      rotate: -0.15deg;
+    }
+    67% {
+      rotate: 0deg;
+    }
+    68% {
+      rotate: 0.15deg;
+    }
+    69% {
+      rotate: 0.275deg;
+    }
+    70% {
+      rotate: 0.325deg;
+    }
+    71% {
+      rotate: 0.325deg;
+    }
+    72% {
+      rotate: 0.275deg;
+    }
+    73% {
+      rotate: 0.2deg;
+    }
+    74% {
+      rotate: 0.1deg;
+    }
+    75% {
+      rotate: 0deg;
+    }
+    76% {
+      rotate: -0.075deg;
+    }
+    77% {
+      rotate: -0.15deg;
+    }
+    78% {
+      rotate: -0.2deg;
+    }
+    79% {
+      rotate: -0.2deg;
+    }
+    80% {
+      rotate: -0.175deg;
+    }
+    81% {
+      rotate: -0.125deg;
+    }
+    82% {
+      rotate: -0.075deg;
+    }
+    83% {
+      rotate: 0deg;
+    }
+    84% {
+      rotate: 0.05deg;
+    }
+    85% {
+      rotate: 0.075deg;
+    }
+    86% {
+      rotate: 0.1deg;
+    }
+    87% {
+      rotate: 0.125deg;
+    }
+    88% {
+      rotate: 0.1deg;
+    }
+    89% {
+      rotate: 0.075deg;
+    }
+    90% {
+      rotate: 0.05deg;
+    }
+    91% {
+      rotate: 0deg;
+    }
+    92% {
+      rotate: -0.025deg;
+    }
+    93% {
+      rotate: -0.05deg;
+    }
+    94% {
+      rotate: -0.075deg;
+    }
+    95% {
+      rotate: -0.075deg;
+    }
+    96% {
+      rotate: -0.05deg;
+    }
+    97% {
+      rotate: -0.05deg;
+    }
+    98% {
+      rotate: -0.025deg;
+    }
+    99% {
+      rotate: 0deg;
+    }
+    100% {
+      rotate: 0deg;
+    }
+  }
+
+  .waveAnimation {
+    animation: 3.3s wave linear;
     animation-fill-mode: both;
   }
 </style>

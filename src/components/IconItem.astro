@@ -44,7 +44,6 @@ const { href, title, body } = Astro.props;
     color: text.muted;
     cursor: pointer;
   }
-
   .icon-item:hover > .icon {
     animation: 1.7s beat linear;
     animation-fill-mode: both;
@@ -53,6 +52,12 @@ const { href, title, body } = Astro.props;
 
   .icon-item:hover > a {
     color: accent.solid;
+  }
+
+  .icon-item:hover > a > h1 {
+    color: accent.solid;
+    animation: 1.7s expand linear;
+    animation-fill-mode: both;
   }
 
   @keyframes beat {
@@ -364,5 +369,311 @@ const { href, title, body } = Astro.props;
   .beatAnimation {
     animation: 1.7s beat linear;
     animation-fill-mode: both;
+  }
+
+  @keyframes expand {
+    0% {
+      font-variation-settings: "wght" 700;
+    }
+    1% {
+      font-variation-settings: "wght" 754.4;
+    }
+    2% {
+      font-variation-settings: "wght" 794.05;
+    }
+    3% {
+      font-variation-settings: "wght" 819.4;
+    }
+    4% {
+      font-variation-settings: "wght" 831.95;
+    }
+    5% {
+      font-variation-settings: "wght" 834;
+    }
+    6% {
+      font-variation-settings: "wght" 828.15;
+    }
+    7% {
+      font-variation-settings: "wght" 817;
+    }
+    8% {
+      font-variation-settings: "wght" 802.9;
+    }
+    9% {
+      font-variation-settings: "wght" 787.9;
+    }
+    10% {
+      font-variation-settings: "wght" 773.55;
+    }
+    11% {
+      font-variation-settings: "wght" 760.9;
+    }
+    12% {
+      font-variation-settings: "wght" 750.6;
+    }
+    13% {
+      font-variation-settings: "wght" 743;
+    }
+    14% {
+      font-variation-settings: "wght" 738;
+    }
+    15% {
+      font-variation-settings: "wght" 735.4;
+    }
+    16% {
+      font-variation-settings: "wght" 734.75;
+    }
+    17% {
+      font-variation-settings: "wght" 735.6;
+    }
+    18% {
+      font-variation-settings: "wght" 737.5;
+    }
+    19% {
+      font-variation-settings: "wght" 740;
+    }
+    20% {
+      font-variation-settings: "wght" 742.7;
+    }
+    21% {
+      font-variation-settings: "wght" 745.35;
+    }
+    22% {
+      font-variation-settings: "wght" 747.7;
+    }
+    23% {
+      font-variation-settings: "wght" 749.6;
+    }
+    24% {
+      font-variation-settings: "wght" 751.1;
+    }
+    25% {
+      font-variation-settings: "wght" 752.05;
+    }
+    26% {
+      font-variation-settings: "wght" 752.6;
+    }
+    27% {
+      font-variation-settings: "wght" 752.75;
+    }
+    28% {
+      font-variation-settings: "wght" 752.65;
+    }
+    29% {
+      font-variation-settings: "wght" 752.35;
+    }
+    29% {
+      font-variation-settings: "wght" 751.9;
+    }
+    31% {
+      font-variation-settings: "wght" 751.4;
+    }
+    32% {
+      font-variation-settings: "wght" 750.9;
+    }
+    33% {
+      font-variation-settings: "wght" 750.5;
+    }
+    34% {
+      font-variation-settings: "wght" 750.1;
+    }
+    35% {
+      font-variation-settings: "wght" 749.85;
+    }
+    36% {
+      font-variation-settings: "wght" 749.65;
+    }
+    37% {
+      font-variation-settings: "wght" 749.55;
+    }
+    38% {
+      font-variation-settings: "wght" 749.5;
+    }
+    39% {
+      font-variation-settings: "wght" 749.5;
+    }
+    40% {
+      font-variation-settings: "wght" 749.55;
+    }
+    41% {
+      font-variation-settings: "wght" 749.65;
+    }
+    42% {
+      font-variation-settings: "wght" 749.75;
+    }
+    43% {
+      font-variation-settings: "wght" 749.8;
+    }
+    44% {
+      font-variation-settings: "wght" 749.9;
+    }
+    45% {
+      font-variation-settings: "wght" 749.95;
+    }
+    46% {
+      font-variation-settings: "wght" 750;
+    }
+    47% {
+      font-variation-settings: "wght" 750.05;
+    }
+    48% {
+      font-variation-settings: "wght" 750.1;
+    }
+    49% {
+      font-variation-settings: "wght" 750.1;
+    }
+    50% {
+      font-variation-settings: "wght" 750.1;
+    }
+    51% {
+      font-variation-settings: "wght" 750.1;
+    }
+    52% {
+      font-variation-settings: "wght" 750.05;
+    }
+    53% {
+      font-variation-settings: "wght" 750.05;
+    }
+    54% {
+      font-variation-settings: "wght" 750.05;
+    }
+    55% {
+      font-variation-settings: "wght" 750;
+    }
+    56% {
+      font-variation-settings: "wght" 750;
+    }
+    57% {
+      font-variation-settings: "wght" 750;
+    }
+    57% {
+      font-variation-settings: "wght" 750;
+    }
+    58% {
+      font-variation-settings: "wght" 750;
+    }
+    60% {
+      font-variation-settings: "wght" 750;
+    }
+    61% {
+      font-variation-settings: "wght" 750;
+    }
+    62% {
+      font-variation-settings: "wght" 750;
+    }
+    63% {
+      font-variation-settings: "wght" 750;
+    }
+    64% {
+      font-variation-settings: "wght" 750;
+    }
+    65% {
+      font-variation-settings: "wght" 750;
+    }
+    66% {
+      font-variation-settings: "wght" 750;
+    }
+    67% {
+      font-variation-settings: "wght" 750;
+    }
+    68% {
+      font-variation-settings: "wght" 750;
+    }
+    69% {
+      font-variation-settings: "wght" 750;
+    }
+    70% {
+      font-variation-settings: "wght" 750;
+    }
+    71% {
+      font-variation-settings: "wght" 750;
+    }
+    72% {
+      font-variation-settings: "wght" 750;
+    }
+    73% {
+      font-variation-settings: "wght" 750;
+    }
+    74% {
+      font-variation-settings: "wght" 750;
+    }
+    75% {
+      font-variation-settings: "wght" 750;
+    }
+    76% {
+      font-variation-settings: "wght" 750;
+    }
+    77% {
+      font-variation-settings: "wght" 750;
+    }
+    78% {
+      font-variation-settings: "wght" 750;
+    }
+    79% {
+      font-variation-settings: "wght" 750;
+    }
+    80% {
+      font-variation-settings: "wght" 750;
+    }
+    81% {
+      font-variation-settings: "wght" 750;
+    }
+    82% {
+      font-variation-settings: "wght" 750;
+    }
+    83% {
+      font-variation-settings: "wght" 750;
+    }
+    84% {
+      font-variation-settings: "wght" 750;
+    }
+    85% {
+      font-variation-settings: "wght" 750;
+    }
+    86% {
+      font-variation-settings: "wght" 750;
+    }
+    87% {
+      font-variation-settings: "wght" 750;
+    }
+    88% {
+      font-variation-settings: "wght" 750;
+    }
+    89% {
+      font-variation-settings: "wght" 750;
+    }
+    90% {
+      font-variation-settings: "wght" 750;
+    }
+    91% {
+      font-variation-settings: "wght" 750;
+    }
+    92% {
+      font-variation-settings: "wght" 750;
+    }
+    93% {
+      font-variation-settings: "wght" 750;
+    }
+    94% {
+      font-variation-settings: "wght" 750;
+    }
+    95% {
+      font-variation-settings: "wght" 750;
+    }
+    96% {
+      font-variation-settings: "wght" 750;
+    }
+    97% {
+      font-variation-settings: "wght" 750;
+    }
+    98% {
+      font-variation-settings: "wght" 750;
+    }
+    99% {
+      font-variation-settings: "wght" 750;
+    }
+    100% {
+      font-variation-settings: "wght" 750;
+    }
   }
 </style>
