@@ -24,7 +24,7 @@
     "@nuxt/content": "^1.11.1",
     "@nuxt/typescript-runtime": "^2.1.0",
     "@nuxtjs/feed": "^2.0.0",
-    "nuxt": "^2.14.7",
+    "nuxt": "^3.2.0",
     "vue-plausible": "^1.1.2"
   },
   "devDependencies": {
