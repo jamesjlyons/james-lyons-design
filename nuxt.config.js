@@ -140,7 +140,6 @@ export default {
   },
   plausible: {
     domain: 'jameslyons.design',
-    apihost: '/stats/api/event',
     trackLocalhost: true,
   },
 }
