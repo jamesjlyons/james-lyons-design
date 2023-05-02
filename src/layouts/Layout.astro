@@ -1,0 +1,108 @@
+---
+import "the-new-css-reset/css/reset.css";
+export interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+    <script
+      defer
+      data-domain="jameslyons.design"
+      src="https://plausible.io/js/script.js"
+    ></script>
+  </head>
+  <body>
+    <slot />
+    <style is:global>
+      /**
+	* This is a variable font
+	* You can controll variable axes as shown below:
+	* font-variation-settings: 'wght' 800.0;
+	*
+	* available axes:
+
+	* 'wght' (range from 100.0 to 800.0)
+
+	*/
+
+      @font-face {
+        font-family: "Supreme-Variable";
+        src: url("/fonts/Supreme-Variable.woff2") format("woff2"),
+          url("/fonts/Supreme-Variable.woff") format("woff"),
+          url("/fonts/Supreme-Variable.ttf") format("truetype");
+        font-weight: 100 800;
+        font-display: swap;
+        font-style: normal;
+      }
+
+      /**
+	* This is a variable font
+	* You can controll variable axes as shown below:
+	* font-variation-settings: 'wght' 800.0;
+	*
+	* available axes:
+	
+	* 'wght' (range from 100.0 to 800.0)
+	
+	*/
+
+      @font-face {
+        font-family: "Supreme-VariableItalic";
+        src: url("/fonts/Supreme-VariableItalic.woff2") format("woff2"),
+          url("/fonts/Supreme-VariableItalic.woff") format("woff"),
+          url("/fonts/Supreme-VariableItalic.ttf") format("truetype");
+        font-weight: 100 800;
+        font-display: swap;
+        font-style: italic;
+      }
+
+      html {
+        font-family: "Supreme Variable", system-ui, sans-serif;
+        font-size: default;
+        color: text.base;
+        background-color: bg.0;
+        /* background: radial-gradient(
+            126.54% 59.61% at 47.56% 35.19%,
+            #1be9b7 0%,
+            rgba(27, 233, 183, 0) 86.04%
+          )
+          #111111;
+        background-repeat: no-repeat;
+        background-blend-mode: color, normal; */
+      }
+
+      body {
+        display: grid;
+        place-items: center;
+        height: 99vh;
+      }
+
+      h1 {
+        font-size: xl;
+        font-variation-settings: "wght" 700;
+        letter-spacing: -0.02em;
+      }
+
+      h2 {
+        font-size: default;
+      }
+
+      h3 {
+        font-size: xs;
+        font-variation-settings: "wght" 350;
+        letter-spacing: 0.03em;
+        color: text.muted;
+      }
+    </style>
+  </body>
+</html>

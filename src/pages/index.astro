@@ -1,0 +1,876 @@
+---
+import Layout from "../layouts/Layout.astro";
+import IconItem from "../components/IconItem.astro";
+---
+
+<Layout title="Welcome to Astro.">
+  <main>
+    <section class="intro">
+      <h3>hello, i’m</h3>
+      <div class="intro-heading">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
+          role="img"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          class="wave"
+        >
+          <g clip-path="url(#a)">
+            <path
+              fill-rule="evenodd"
+              d="M6.866 2.572a1 1 0 0 0-1.732 1l3.25 5.63a.5.5 0 1 1-.866.5l-2.75-4.764a1 1 0 1 0-1.732 1l2.75 4.763a.5.5 0 0 1-.866.5l-1.75-3.03a1 1 0 1 0-1.732 1l3.5 6.061a7 7 0 1 0 12.124-7l-2-3.464a1 1 0 0 0-1.732 1L15.08 8.8a.5.5 0 1 1-.866.5l-4.25-7.36a1 1 0 1 0-1.732 1l2.75 4.762a.5.5 0 1 1-.866.5l-3.25-5.629Z"
+              clip-rule="evenodd"></path>
+          </g>
+          <defs>
+            <clipPath id="a">
+              <path d="M0 0h20v20H0z"></path>
+            </clipPath>
+          </defs>
+        </svg>
+
+        <div class="intro-text">
+          <h1 class="text-highlight">james lyons</h1>
+          <h1>[product designer]</h1>
+        </div>
+      </div>
+    </section>
+
+    <section class="row">
+      <ul class="col">
+        <IconItem
+          title="currently at"
+          body="simplepractice"
+          href="https://simplepractice.com"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M6 3.75A2.75 2.75 0 018.75 1h2.5A2.75 2.75 0 0114 3.75v.443c.572.055 1.14.122 1.706.2C17.053 4.582 18 5.75 18 7.07v3.469c0 1.126-.694 2.191-1.83 2.54-1.952.599-4.024.921-6.17.921s-4.219-.322-6.17-.921C2.694 12.73 2 11.665 2 10.539V7.07c0-1.321.947-2.489 2.294-2.676A41.047 41.047 0 016 4.193V3.75zm6.5 0v.325a41.622 41.622 0 00-5 0V3.75c0-.69.56-1.25 1.25-1.25h2.5c.69 0 1.25.56 1.25 1.25zM10 10a1 1 0 00-1 1v.01a1 1 0 001 1h.01a1 1 0 001-1V11a1 1 0 00-1-1H10z"
+            clip-rule="evenodd"></path>
+          <path
+            d="M3 15.055v-.684c.126.053.255.1.39.142 2.092.642 4.313.987 6.61.987 2.297 0 4.518-.345 6.61-.987.135-.041.264-.089.39-.142v.684c0 1.347-.985 2.53-2.363 2.686a41.454 41.454 0 01-9.274 0C3.985 17.585 3 16.402 3 15.055z"
+          ></path>
+        </IconItem>
+
+        <IconItem
+          title="and making things with"
+          body="tap five"
+          href="https://tapfive.dev/"
+        >
+          <path
+            d="M10 9a3 3 0 100-6 3 3 0 000 6zM6 8a2 2 0 11-4 0 2 2 0 014 0zM1.49 15.326a.78.78 0 01-.358-.442 3 3 0 014.308-3.516 6.484 6.484 0 00-1.905 3.959c-.023.222-.014.442.025.654a4.97 4.97 0 01-2.07-.655zM16.44 15.98a4.97 4.97 0 002.07-.654.78.78 0 00.357-.442 3 3 0 00-4.308-3.517 6.484 6.484 0 011.907 3.96 2.32 2.32 0 01-.026.654zM18 8a2 2 0 11-4 0 2 2 0 014 0zM5.304 16.19a.844.844 0 01-.277-.71 5 5 0 019.947 0 .843.843 0 01-.277.71A6.975 6.975 0 0110 18a6.974 6.974 0 01-4.696-1.81z"
+          ></path>
+        </IconItem>
+      </ul>
+
+      <ul class="col">
+        <IconItem title="view my" body="cv" href="https://read.cv/jameslyons">
+          <path
+            fill-rule="evenodd"
+            d="M4.5 2A1.5 1.5 0 003 3.5v13A1.5 1.5 0 004.5 18h11a1.5 1.5 0 001.5-1.5V7.621a1.5 1.5 0 00-.44-1.06l-4.12-4.122A1.5 1.5 0 0011.378 2H4.5zm2.25 8.5a.75.75 0 000 1.5h6.5a.75.75 0 000-1.5h-6.5zm0 3a.75.75 0 000 1.5h6.5a.75.75 0 000-1.5h-6.5z"
+            clip-rule="evenodd"></path>
+        </IconItem>
+
+        <IconItem
+          title="or reach out"
+          body="say hi"
+          href="mailto:hello@jameslyons.design"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M10 3c-4.31 0-8 3.033-8 7 0 2.024.978 3.825 2.499 5.085a3.478 3.478 0 01-.522 1.756.75.75 0 00.584 1.143 5.976 5.976 0 003.936-1.108c.487.082.99.124 1.503.124 4.31 0 8-3.033 8-7s-3.69-7-8-7zm0 8a1 1 0 100-2 1 1 0 000 2zm-2-1a1 1 0 11-2 0 1 1 0 012 0zm5 1a1 1 0 100-2 1 1 0 000 2z"
+            clip-rule="evenodd"></path>
+        </IconItem>
+      </ul>
+    </section>
+
+    <section class="row">
+      <ul class="col">
+        <div class="stack" aria-hidden="true">
+          <IconItem
+            title="elsewhere"
+            body="github"
+            href="https://github.com/jamesjlyons"
+          >
+            <g clip-path="url(#a)">
+              <path
+                fill-rule="evenodd"
+                d="M4.343 15.657A8 8 0 1 0 15.657 4.343 8 8 0 0 0 4.343 15.657Zm2.829-3.889a.75.75 0 0 0 1.06 1.06l3.246-3.245-.106 2.864a.75.75 0 0 0 1.499.056l.177-4.773a.75.75 0 0 0-.778-.777l-4.773.176a.75.75 0 1 0 .056 1.5l2.864-.107-3.245 3.246Z"
+                clip-rule="evenodd"></path>
+            </g>
+            <defs>
+              <clipPath id="a">
+                <path d="M0 0h20v20H0z"></path>
+              </clipPath>
+            </defs>
+          </IconItem>
+          <IconItem body="figma" href="https://figma.com/@jameslyons">
+            <g clip-path="url(#a)">
+              <path
+                fill-rule="evenodd"
+                d="M4.343 15.657A8 8 0 1 0 15.657 4.343 8 8 0 0 0 4.343 15.657Zm2.829-3.889a.75.75 0 0 0 1.06 1.06l3.246-3.245-.106 2.864a.75.75 0 0 0 1.499.056l.177-4.773a.75.75 0 0 0-.778-.777l-4.773.176a.75.75 0 1 0 .056 1.5l2.864-.107-3.245 3.246Z"
+                clip-rule="evenodd"></path>
+            </g>
+            <defs>
+              <clipPath id="a">
+                <path d="M0 0h20v20H0z"></path>
+              </clipPath>
+            </defs>
+          </IconItem>
+          <IconItem body="raycast" href="https://raycast.com/jameslyons">
+            <g clip-path="url(#a)">
+              <path
+                fill-rule="evenodd"
+                d="M4.343 15.657A8 8 0 1 0 15.657 4.343 8 8 0 0 0 4.343 15.657Zm2.829-3.889a.75.75 0 0 0 1.06 1.06l3.246-3.245-.106 2.864a.75.75 0 0 0 1.499.056l.177-4.773a.75.75 0 0 0-.778-.777l-4.773.176a.75.75 0 1 0 .056 1.5l2.864-.107-3.245 3.246Z"
+                clip-rule="evenodd"></path>
+            </g>
+            <defs>
+              <clipPath id="a">
+                <path d="M0 0h20v20H0z"></path>
+              </clipPath>
+            </defs>
+          </IconItem>
+        </div>
+      </ul>
+
+      <!-- <ul class="col">
+        <IconItem
+          title="case studies"
+          body="view v1"
+          href="https://v1.jameslyons.design/"
+        >
+          <path
+            d="M5.127 3.502L5.25 3.5h9.5c.041 0 .082 0 .123.002A2.251 2.251 0 0012.75 2h-5.5a2.25 2.25 0 00-2.123 1.502zM1 10.25A2.25 2.25 0 013.25 8h13.5A2.25 2.25 0 0119 10.25v5.5A2.25 2.25 0 0116.75 18H3.25A2.25 2.25 0 011 15.75v-5.5zM3.25 6.5c-.04 0-.082 0-.123.002A2.25 2.25 0 015.25 5h9.5c.98 0 1.814.627 2.123 1.502a3.819 3.819 0 00-.123-.002H3.25z"
+          ></path>
+        </IconItem>
+      </ul> -->
+    </section>
+    <section class="construction">
+      <p>Currently under construction</p>
+      <a href="https://jameslyons.design" rel="_blank">
+        View my old portfolio</a
+      >
+    </section>
+  </main>
+</Layout>
+
+<style>
+  .text-highlight {
+    color: var(--color-text);
+  }
+
+  main {
+    display: grid;
+    place-items: left;
+    width: 306px;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 48px;
+    translate: 0px -10%;
+  }
+  .intro-heading {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+  }
+
+  .intro-heading > svg {
+    width: 20px;
+    height: 20px;
+    color: accent.solid;
+    animation: 3.3s wave linear;
+    animation-fill-mode: both;
+    animation-delay: 800ms;
+  }
+
+  .intro-text {
+    width: full;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .intro-text > h1:nth-of-type(2) {
+    color: text.muted;
+  }
+
+  .row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .col {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .col:nth-of-type(2) {
+    width: 96px;
+  }
+
+  .intro {
+    animation: 2.3s slide linear;
+    animation-fill-mode: both;
+    animation-delay: 150ms;
+  }
+
+  .row:nth-of-type(2) {
+    animation: 2.3s slide linear;
+    animation-fill-mode: both;
+    animation-delay: 250ms;
+  }
+
+  .row:nth-of-type(3) {
+    animation: 2.3s slide linear;
+    animation-fill-mode: both;
+    animation-delay: 350ms;
+  }
+
+  .construction {
+    animation: 2.3s slide linear;
+    animation-fill-mode: both;
+    animation-delay: 450ms;
+    font-variation-settings: "wght" 500;
+    color: accent.solid;
+    opacity: 0.5 !important;
+  }
+
+  .construction > a {
+    color: accent.solid;
+    text-decoration: underline;
+  }
+
+  @keyframes slide {
+    0% {
+      translate: 0px 16px;
+      opacity: 0;
+      filter: brightness(2) blur(5px);
+      mask: linear-gradient(90deg, #000 25%, #000000e6 50%, #00000000) 150% 0 /
+        400% no-repeat;
+    }
+    1% {
+      translate: 0px 10.768px;
+    }
+    2% {
+      translate: 0px 6.176px;
+    }
+    3% {
+      translate: 0px 2.208px;
+    }
+    4% {
+      translate: 0px -1.136px;
+    }
+    5% {
+      translate: 0px -3.856px;
+    }
+    6% {
+      translate: 0px -6px;
+    }
+    7% {
+      translate: 0px -7.616px;
+    }
+    8% {
+      translate: 0px -8.736px;
+    }
+    9% {
+      translate: 0px -9.44px;
+    }
+    10% {
+      translate: 0px -9.76px;
+    }
+    11% {
+      translate: 0px -9.776px;
+    }
+    12% {
+      translate: 0px -9.52px;
+    }
+    13% {
+      translate: 0px -9.056px;
+    }
+    14% {
+      translate: 0px -8.432px;
+    }
+    15% {
+      translate: 0px -7.696px;
+      filter: brightness(2) blur(5px);
+    }
+    16% {
+      translate: 0px -6.88px;
+    }
+    17% {
+      translate: 0px -6.016px;
+    }
+    18% {
+      translate: 0px -5.152px;
+    }
+    19% {
+      translate: 0px -4.288px;
+    }
+    20% {
+      translate: 0px -3.472px;
+    }
+    21% {
+      translate: 0px -2.704px;
+    }
+    22% {
+      translate: 0px -2px;
+    }
+    23% {
+      translate: 0px -1.36px;
+    }
+    24% {
+      translate: 0px -0.8px;
+    }
+    25% {
+      translate: 0px -0.304px;
+    }
+    26% {
+      translate: 0px 0.096px;
+    }
+    27% {
+      translate: 0px 0.432px;
+    }
+    28% {
+      translate: 0px 0.704px;
+    }
+    29% {
+      translate: 0px 0.896px;
+    }
+    29% {
+      translate: 0px 1.04px;
+    }
+    31% {
+      translate: 0px 1.136px;
+    }
+    32% {
+      translate: 0px 1.184px;
+    }
+    33% {
+      translate: 0px 1.184px;
+      filter: brightness(1) blur(0px);
+    }
+    34% {
+      translate: 0px 1.152px;
+    }
+    35% {
+      translate: 0px 1.104px;
+    }
+    36% {
+      translate: 0px 1.024px;
+    }
+    37% {
+      translate: 0px 0.944px;
+    }
+    38% {
+      translate: 0px 0.848px;
+    }
+    39% {
+      translate: 0px 0.736px;
+    }
+    40% {
+      translate: 0px 0.624px;
+    }
+    41% {
+      translate: 0px 0.528px;
+    }
+    42% {
+      translate: 0px 0.432px;
+    }
+    43% {
+      translate: 0px 0.336px;
+    }
+    44% {
+      translate: 0px 0.256px;
+    }
+    45% {
+      translate: 0px 0.176px;
+    }
+    46% {
+      translate: 0px 0.096px;
+    }
+    47% {
+      translate: 0px 0.048px;
+    }
+    48% {
+      translate: 0px -0.016px;
+    }
+    49% {
+      translate: 0px -0.048px;
+    }
+    50% {
+      translate: 0px -0.08px;
+    }
+    51% {
+      translate: 0px -0.112px;
+    }
+    52% {
+      translate: 0px -0.128px;
+    }
+    53% {
+      translate: 0px -0.144px;
+    }
+    54% {
+      translate: 0px -0.144px;
+    }
+    55% {
+      translate: 0px -0.144px;
+    }
+    56% {
+      translate: 0px -0.144px;
+      opacity: 1;
+      filter: brightness(1) blur(0px);
+      mask: linear-gradient(90deg, #000 25%, #000000e6 50%, #00000000) 0 / 400%
+        no-repeat;
+    }
+    57% {
+      translate: 0px -0.128px;
+    }
+    57% {
+      translate: 0px -0.128px;
+    }
+    58% {
+      translate: 0px -0.112px;
+    }
+    60% {
+      translate: 0px -0.096px;
+    }
+    61% {
+      translate: 0px -0.096px;
+    }
+    62% {
+      translate: 0px -0.08px;
+    }
+    63% {
+      translate: 0px -0.064px;
+    }
+    64% {
+      translate: 0px -0.048px;
+    }
+    65% {
+      translate: 0px -0.048px;
+    }
+    66% {
+      translate: 0px -0.032px;
+    }
+    67% {
+      translate: 0px -0.016px;
+    }
+    68% {
+      translate: 0px -0.016px;
+    }
+    69% {
+      translate: 0px 0px;
+    }
+    70% {
+      translate: 0px 0px;
+    }
+    71% {
+      translate: 0px 0px;
+    }
+    72% {
+      translate: 0px 0.016px;
+    }
+    73% {
+      translate: 0px 0.016px;
+    }
+    74% {
+      translate: 0px 0.016px;
+    }
+    75% {
+      translate: 0px 0.016px;
+    }
+    76% {
+      translate: 0px 0.016px;
+    }
+    77% {
+      translate: 0px 0.016px;
+    }
+    78% {
+      translate: 0px 0.016px;
+    }
+    79% {
+      translate: 0px 0.016px;
+    }
+    80% {
+      translate: 0px 0.016px;
+    }
+    81% {
+      translate: 0px 0.016px;
+    }
+    82% {
+      translate: 0px 0.016px;
+    }
+    83% {
+      translate: 0px 0.016px;
+    }
+    84% {
+      translate: 0px 0.016px;
+    }
+    85% {
+      translate: 0px 0px;
+    }
+    86% {
+      translate: 0px 0px;
+    }
+    87% {
+      translate: 0px 0px;
+    }
+    88% {
+      translate: 0px 0px;
+    }
+    89% {
+      translate: 0px 0px;
+    }
+    90% {
+      translate: 0px 0px;
+    }
+    91% {
+      translate: 0px 0px;
+    }
+    92% {
+      translate: 0px 0px;
+    }
+    93% {
+      translate: 0px 0px;
+    }
+    94% {
+      translate: 0px 0px;
+    }
+    95% {
+      translate: 0px 0px;
+    }
+    96% {
+      translate: 0px 0px;
+    }
+    97% {
+      translate: 0px 0px;
+    }
+    98% {
+      translate: 0px 0px;
+    }
+    99% {
+      translate: 0px 0px;
+    }
+    100% {
+      translate: 0px 0px;
+    }
+  }
+
+  .slideAnimation {
+    animation: 2.3s slide linear;
+    animation-fill-mode: both;
+  }
+
+  @keyframes wave {
+    0% {
+      rotate: -25deg;
+    }
+    1% {
+      rotate: -13.3deg;
+    }
+    2% {
+      rotate: -1.125deg;
+    }
+    3% {
+      rotate: 9.7deg;
+    }
+    4% {
+      rotate: 17.8deg;
+    }
+    5% {
+      rotate: 22.375deg;
+    }
+    6% {
+      rotate: 23.2deg;
+    }
+    7% {
+      rotate: 20.575deg;
+    }
+    8% {
+      rotate: 15.35deg;
+    }
+    9% {
+      rotate: 8.575deg;
+    }
+    10% {
+      rotate: 1.4deg;
+    }
+    11% {
+      rotate: -5.1deg;
+    }
+    12% {
+      rotate: -10.075deg;
+    }
+    13% {
+      rotate: -12.975deg;
+    }
+    14% {
+      rotate: -13.675deg;
+    }
+    15% {
+      rotate: -12.35deg;
+    }
+    16% {
+      rotate: -9.4deg;
+    }
+    17% {
+      rotate: -5.475deg;
+    }
+    18% {
+      rotate: -1.25deg;
+    }
+    19% {
+      rotate: 2.625deg;
+    }
+    20% {
+      rotate: 5.675deg;
+    }
+    21% {
+      rotate: 7.525deg;
+    }
+    22% {
+      rotate: 8.05deg;
+    }
+    23% {
+      rotate: 7.4deg;
+    }
+    24% {
+      rotate: 5.75deg;
+    }
+    25% {
+      rotate: 3.475deg;
+    }
+    26% {
+      rotate: 1deg;
+    }
+    27% {
+      rotate: -1.325deg;
+    }
+    28% {
+      rotate: -3.175deg;
+    }
+    29% {
+      rotate: -4.35deg;
+    }
+    29% {
+      rotate: -4.75deg;
+    }
+    31% {
+      rotate: -4.425deg;
+    }
+    32% {
+      rotate: -3.5deg;
+    }
+    33% {
+      rotate: -2.2deg;
+    }
+    34% {
+      rotate: -0.725deg;
+    }
+    35% {
+      rotate: 0.65deg;
+    }
+    36% {
+      rotate: 1.775deg;
+    }
+    37% {
+      rotate: 2.5deg;
+    }
+    38% {
+      rotate: 2.775deg;
+    }
+    39% {
+      rotate: 2.625deg;
+    }
+    40% {
+      rotate: 2.125deg;
+    }
+    41% {
+      rotate: 1.375deg;
+    }
+    42% {
+      rotate: 0.525deg;
+    }
+    43% {
+      rotate: -0.3deg;
+    }
+    44% {
+      rotate: -0.975deg;
+    }
+    45% {
+      rotate: -1.425deg;
+    }
+    46% {
+      rotate: -1.625deg;
+    }
+    47% {
+      rotate: -1.575deg;
+    }
+    48% {
+      rotate: -1.3deg;
+    }
+    49% {
+      rotate: -0.85deg;
+    }
+    50% {
+      rotate: -0.35deg;
+    }
+    51% {
+      rotate: 0.125deg;
+    }
+    52% {
+      rotate: 0.55deg;
+    }
+    53% {
+      rotate: 0.825deg;
+    }
+    54% {
+      rotate: 0.95deg;
+    }
+    55% {
+      rotate: 0.925deg;
+    }
+    56% {
+      rotate: 0.775deg;
+    }
+    57% {
+      rotate: 0.525deg;
+    }
+    57% {
+      rotate: 0.25deg;
+    }
+    58% {
+      rotate: -0.05deg;
+    }
+    60% {
+      rotate: -0.3deg;
+    }
+    61% {
+      rotate: -0.475deg;
+    }
+    62% {
+      rotate: -0.55deg;
+    }
+    63% {
+      rotate: -0.55deg;
+    }
+    64% {
+      rotate: -0.475deg;
+    }
+    65% {
+      rotate: -0.325deg;
+    }
+    66% {
+      rotate: -0.15deg;
+    }
+    67% {
+      rotate: 0deg;
+    }
+    68% {
+      rotate: 0.15deg;
+    }
+    69% {
+      rotate: 0.275deg;
+    }
+    70% {
+      rotate: 0.325deg;
+    }
+    71% {
+      rotate: 0.325deg;
+    }
+    72% {
+      rotate: 0.275deg;
+    }
+    73% {
+      rotate: 0.2deg;
+    }
+    74% {
+      rotate: 0.1deg;
+    }
+    75% {
+      rotate: 0deg;
+    }
+    76% {
+      rotate: -0.075deg;
+    }
+    77% {
+      rotate: -0.15deg;
+    }
+    78% {
+      rotate: -0.2deg;
+    }
+    79% {
+      rotate: -0.2deg;
+    }
+    80% {
+      rotate: -0.175deg;
+    }
+    81% {
+      rotate: -0.125deg;
+    }
+    82% {
+      rotate: -0.075deg;
+    }
+    83% {
+      rotate: 0deg;
+    }
+    84% {
+      rotate: 0.05deg;
+    }
+    85% {
+      rotate: 0.075deg;
+    }
+    86% {
+      rotate: 0.1deg;
+    }
+    87% {
+      rotate: 0.125deg;
+    }
+    88% {
+      rotate: 0.1deg;
+    }
+    89% {
+      rotate: 0.075deg;
+    }
+    90% {
+      rotate: 0.05deg;
+    }
+    91% {
+      rotate: 0deg;
+    }
+    92% {
+      rotate: -0.025deg;
+    }
+    93% {
+      rotate: -0.05deg;
+    }
+    94% {
+      rotate: -0.075deg;
+    }
+    95% {
+      rotate: -0.075deg;
+    }
+    96% {
+      rotate: -0.05deg;
+    }
+    97% {
+      rotate: -0.05deg;
+    }
+    98% {
+      rotate: -0.025deg;
+    }
+    99% {
+      rotate: 0deg;
+    }
+    100% {
+      rotate: 0deg;
+    }
+  }
+
+  .waveAnimation {
+    animation: 3.3s wave linear;
+    animation-fill-mode: both;
+  }
+</style>

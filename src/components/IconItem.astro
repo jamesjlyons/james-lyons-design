@@ -1,0 +1,679 @@
+---
+const { href, title, body } = Astro.props;
+---
+
+<div class="wrap" aria-hidden="true">
+  <h3>{title}</h3>
+  <li class="icon-item">
+    <svg
+      class="icon"
+      aria-hidden="true"
+      role="img"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 20 20"
+      fill="currentColor"
+    >
+      <slot>
+        <path
+          fill-rule="evenodd"
+          d="M6.56 1.14a.75.75 0 01.177 1.045 3.989 3.989 0 00-.464.86c.185.17.382.329.59.473A3.993 3.993 0 0110 2c1.272 0 2.405.594 3.137 1.518.208-.144.405-.302.59-.473a3.989 3.989 0 00-.464-.86.75.75 0 011.222-.869c.369.519.65 1.105.822 1.736a.75.75 0 01-.174.707 7.03 7.03 0 01-1.299 1.098A4 4 0 0114 6c0 .52-.301.963-.723 1.187a6.961 6.961 0 01-1.158.486c.13.208.231.436.296.679 1.413-.174 2.779-.5 4.081-.96a19.655 19.655 0 00-.09-2.319.75.75 0 111.493-.146 21.239 21.239 0 01.08 3.028.75.75 0 01-.482.667 20.874 20.874 0 01-5.153 1.249 2.51 2.51 0 01-.107.247 20.86 20.86 0 015.253 1.257.75.75 0 01.48.74 20.946 20.946 0 01-.907 5.107.75.75 0 01-1.433-.444c.415-1.34.69-2.743.806-4.19-.495-.174-1-.328-1.512-.461.05.284.076.575.076.873 0 1.814-.517 3.312-1.426 4.37A4.639 4.639 0 0110 19a4.64 4.64 0 01-3.574-1.63C5.516 16.311 5 14.813 5 13c0-.298.026-.59.076-.873-.513.133-1.017.287-1.512.46.116 1.448.39 2.85.806 4.191a.75.75 0 01-1.433.444 20.94 20.94 0 01-.908-5.107.75.75 0 01.482-.74 20.857 20.857 0 015.252-1.257 2.481 2.481 0 01-.107-.247 20.874 20.874 0 01-5.153-1.249.75.75 0 01-.482-.667 21.342 21.342 0 01.08-3.028.75.75 0 111.493.146 19.745 19.745 0 00-.09 2.32c1.302.459 2.668.785 4.08.959.066-.243.166-.471.297-.679a6.962 6.962 0 01-1.158-.486A1.348 1.348 0 016 6a4 4 0 01.166-1.143 7.032 7.032 0 01-1.3-1.098.75.75 0 01-.173-.707 5.48 5.48 0 01.822-1.736.75.75 0 011.046-.176z"
+          clip-rule="evenodd"></path>
+      </slot>
+    </svg>
+    <a href={href} target="_blank">
+      <h1>{body}</h1>
+    </a>
+  </li>
+</div>
+
+<style>
+  svg {
+    width: 20px;
+    height: 20px;
+    color: text.muted;
+  }
+  .icon-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: text.muted;
+  }
+
+  .icon-item > a {
+    text-decoration: none;
+    color: text.muted;
+    cursor: pointer;
+  }
+  .icon-item:hover > .icon {
+    animation: 1.7s beat linear;
+    animation-fill-mode: both;
+    color: accent.solid;
+  }
+
+  .icon-item:hover > a {
+    color: accent.solid;
+  }
+
+  .icon-item:hover > a > h1 {
+    color: accent.solid;
+    animation: 1.7s expand linear;
+    animation-fill-mode: both;
+  }
+
+  @keyframes beat {
+    0% {
+      rotate: 0deg;
+    }
+    1% {
+      rotate: -10.88deg;
+    }
+    2% {
+      rotate: -18.81deg;
+    }
+    3% {
+      rotate: -23.88deg;
+    }
+    4% {
+      rotate: -26.39deg;
+    }
+    5% {
+      rotate: -26.8deg;
+    }
+    6% {
+      rotate: -25.63deg;
+    }
+    7% {
+      rotate: -23.4deg;
+    }
+    8% {
+      rotate: -20.58deg;
+    }
+    9% {
+      rotate: -17.58deg;
+    }
+    10% {
+      rotate: -14.71deg;
+    }
+    11% {
+      rotate: -12.18deg;
+    }
+    12% {
+      rotate: -10.12deg;
+    }
+    13% {
+      rotate: -8.6deg;
+    }
+    14% {
+      rotate: -7.6deg;
+    }
+    15% {
+      rotate: -7.08deg;
+    }
+    16% {
+      rotate: -6.95deg;
+    }
+    17% {
+      rotate: -7.12deg;
+    }
+    18% {
+      rotate: -7.5deg;
+    }
+    19% {
+      rotate: -8deg;
+    }
+    20% {
+      rotate: -8.54deg;
+    }
+    21% {
+      rotate: -9.07deg;
+    }
+    22% {
+      rotate: -9.54deg;
+    }
+    23% {
+      rotate: -9.92deg;
+    }
+    24% {
+      rotate: -10.22deg;
+    }
+    25% {
+      rotate: -10.41deg;
+    }
+    26% {
+      rotate: -10.52deg;
+    }
+    27% {
+      rotate: -10.55deg;
+    }
+    28% {
+      rotate: -10.53deg;
+    }
+    29% {
+      rotate: -10.47deg;
+    }
+    29% {
+      rotate: -10.38deg;
+    }
+    31% {
+      rotate: -10.28deg;
+    }
+    32% {
+      rotate: -10.18deg;
+    }
+    33% {
+      rotate: -10.1deg;
+    }
+    34% {
+      rotate: -10.02deg;
+    }
+    35% {
+      rotate: -9.97deg;
+    }
+    36% {
+      rotate: -9.93deg;
+    }
+    37% {
+      rotate: -9.91deg;
+    }
+    38% {
+      rotate: -9.9deg;
+    }
+    39% {
+      rotate: -9.9deg;
+    }
+    40% {
+      rotate: -9.91deg;
+    }
+    41% {
+      rotate: -9.93deg;
+    }
+    42% {
+      rotate: -9.95deg;
+    }
+    43% {
+      rotate: -9.96deg;
+    }
+    44% {
+      rotate: -9.98deg;
+    }
+    45% {
+      rotate: -9.99deg;
+    }
+    46% {
+      rotate: -10deg;
+    }
+    47% {
+      rotate: -10.01deg;
+    }
+    48% {
+      rotate: -10.02deg;
+    }
+    49% {
+      rotate: -10.02deg;
+    }
+    50% {
+      rotate: -10.02deg;
+    }
+    51% {
+      rotate: -10.02deg;
+    }
+    52% {
+      rotate: -10.01deg;
+    }
+    53% {
+      rotate: -10.01deg;
+    }
+    54% {
+      rotate: -10.01deg;
+    }
+    55% {
+      rotate: -10deg;
+    }
+    56% {
+      rotate: -10deg;
+    }
+    57% {
+      rotate: -10deg;
+    }
+    57% {
+      rotate: -10deg;
+    }
+    58% {
+      rotate: -10deg;
+    }
+    60% {
+      rotate: -10deg;
+    }
+    61% {
+      rotate: -10deg;
+    }
+    62% {
+      rotate: -10deg;
+    }
+    63% {
+      rotate: -10deg;
+    }
+    64% {
+      rotate: -10deg;
+    }
+    65% {
+      rotate: -10deg;
+    }
+    66% {
+      rotate: -10deg;
+    }
+    67% {
+      rotate: -10deg;
+    }
+    68% {
+      rotate: -10deg;
+    }
+    69% {
+      rotate: -10deg;
+    }
+    70% {
+      rotate: -10deg;
+    }
+    71% {
+      rotate: -10deg;
+    }
+    72% {
+      rotate: -10deg;
+    }
+    73% {
+      rotate: -10deg;
+    }
+    74% {
+      rotate: -10deg;
+    }
+    75% {
+      rotate: -10deg;
+    }
+    76% {
+      rotate: -10deg;
+    }
+    77% {
+      rotate: -10deg;
+    }
+    78% {
+      rotate: -10deg;
+    }
+    79% {
+      rotate: -10deg;
+    }
+    80% {
+      rotate: -10deg;
+    }
+    81% {
+      rotate: -10deg;
+    }
+    82% {
+      rotate: -10deg;
+    }
+    83% {
+      rotate: -10deg;
+    }
+    84% {
+      rotate: -10deg;
+    }
+    85% {
+      rotate: -10deg;
+    }
+    86% {
+      rotate: -10deg;
+    }
+    87% {
+      rotate: -10deg;
+    }
+    88% {
+      rotate: -10deg;
+    }
+    89% {
+      rotate: -10deg;
+    }
+    90% {
+      rotate: -10deg;
+    }
+    91% {
+      rotate: -10deg;
+    }
+    92% {
+      rotate: -10deg;
+    }
+    93% {
+      rotate: -10deg;
+    }
+    94% {
+      rotate: -10deg;
+    }
+    95% {
+      rotate: -10deg;
+    }
+    96% {
+      rotate: -10deg;
+    }
+    97% {
+      rotate: -10deg;
+    }
+    98% {
+      rotate: -10deg;
+    }
+    99% {
+      rotate: -10deg;
+    }
+    100% {
+      rotate: -10deg;
+    }
+  }
+
+  .beatAnimation {
+    animation: 1.7s beat linear;
+    animation-fill-mode: both;
+  }
+
+  @keyframes expand {
+    0% {
+      font-variation-settings: "wght" 700;
+    }
+    1% {
+      font-variation-settings: "wght" 754.4;
+    }
+    2% {
+      font-variation-settings: "wght" 794.05;
+    }
+    3% {
+      font-variation-settings: "wght" 819.4;
+    }
+    4% {
+      font-variation-settings: "wght" 831.95;
+    }
+    5% {
+      font-variation-settings: "wght" 834;
+    }
+    6% {
+      font-variation-settings: "wght" 828.15;
+    }
+    7% {
+      font-variation-settings: "wght" 817;
+    }
+    8% {
+      font-variation-settings: "wght" 802.9;
+    }
+    9% {
+      font-variation-settings: "wght" 787.9;
+    }
+    10% {
+      font-variation-settings: "wght" 773.55;
+    }
+    11% {
+      font-variation-settings: "wght" 760.9;
+    }
+    12% {
+      font-variation-settings: "wght" 750.6;
+    }
+    13% {
+      font-variation-settings: "wght" 743;
+    }
+    14% {
+      font-variation-settings: "wght" 738;
+    }
+    15% {
+      font-variation-settings: "wght" 735.4;
+    }
+    16% {
+      font-variation-settings: "wght" 734.75;
+    }
+    17% {
+      font-variation-settings: "wght" 735.6;
+    }
+    18% {
+      font-variation-settings: "wght" 737.5;
+    }
+    19% {
+      font-variation-settings: "wght" 740;
+    }
+    20% {
+      font-variation-settings: "wght" 742.7;
+    }
+    21% {
+      font-variation-settings: "wght" 745.35;
+    }
+    22% {
+      font-variation-settings: "wght" 747.7;
+    }
+    23% {
+      font-variation-settings: "wght" 749.6;
+    }
+    24% {
+      font-variation-settings: "wght" 751.1;
+    }
+    25% {
+      font-variation-settings: "wght" 752.05;
+    }
+    26% {
+      font-variation-settings: "wght" 752.6;
+    }
+    27% {
+      font-variation-settings: "wght" 752.75;
+    }
+    28% {
+      font-variation-settings: "wght" 752.65;
+    }
+    29% {
+      font-variation-settings: "wght" 752.35;
+    }
+    29% {
+      font-variation-settings: "wght" 751.9;
+    }
+    31% {
+      font-variation-settings: "wght" 751.4;
+    }
+    32% {
+      font-variation-settings: "wght" 750.9;
+    }
+    33% {
+      font-variation-settings: "wght" 750.5;
+    }
+    34% {
+      font-variation-settings: "wght" 750.1;
+    }
+    35% {
+      font-variation-settings: "wght" 749.85;
+    }
+    36% {
+      font-variation-settings: "wght" 749.65;
+    }
+    37% {
+      font-variation-settings: "wght" 749.55;
+    }
+    38% {
+      font-variation-settings: "wght" 749.5;
+    }
+    39% {
+      font-variation-settings: "wght" 749.5;
+    }
+    40% {
+      font-variation-settings: "wght" 749.55;
+    }
+    41% {
+      font-variation-settings: "wght" 749.65;
+    }
+    42% {
+      font-variation-settings: "wght" 749.75;
+    }
+    43% {
+      font-variation-settings: "wght" 749.8;
+    }
+    44% {
+      font-variation-settings: "wght" 749.9;
+    }
+    45% {
+      font-variation-settings: "wght" 749.95;
+    }
+    46% {
+      font-variation-settings: "wght" 750;
+    }
+    47% {
+      font-variation-settings: "wght" 750.05;
+    }
+    48% {
+      font-variation-settings: "wght" 750.1;
+    }
+    49% {
+      font-variation-settings: "wght" 750.1;
+    }
+    50% {
+      font-variation-settings: "wght" 750.1;
+    }
+    51% {
+      font-variation-settings: "wght" 750.1;
+    }
+    52% {
+      font-variation-settings: "wght" 750.05;
+    }
+    53% {
+      font-variation-settings: "wght" 750.05;
+    }
+    54% {
+      font-variation-settings: "wght" 750.05;
+    }
+    55% {
+      font-variation-settings: "wght" 750;
+    }
+    56% {
+      font-variation-settings: "wght" 750;
+    }
+    57% {
+      font-variation-settings: "wght" 750;
+    }
+    57% {
+      font-variation-settings: "wght" 750;
+    }
+    58% {
+      font-variation-settings: "wght" 750;
+    }
+    60% {
+      font-variation-settings: "wght" 750;
+    }
+    61% {
+      font-variation-settings: "wght" 750;
+    }
+    62% {
+      font-variation-settings: "wght" 750;
+    }
+    63% {
+      font-variation-settings: "wght" 750;
+    }
+    64% {
+      font-variation-settings: "wght" 750;
+    }
+    65% {
+      font-variation-settings: "wght" 750;
+    }
+    66% {
+      font-variation-settings: "wght" 750;
+    }
+    67% {
+      font-variation-settings: "wght" 750;
+    }
+    68% {
+      font-variation-settings: "wght" 750;
+    }
+    69% {
+      font-variation-settings: "wght" 750;
+    }
+    70% {
+      font-variation-settings: "wght" 750;
+    }
+    71% {
+      font-variation-settings: "wght" 750;
+    }
+    72% {
+      font-variation-settings: "wght" 750;
+    }
+    73% {
+      font-variation-settings: "wght" 750;
+    }
+    74% {
+      font-variation-settings: "wght" 750;
+    }
+    75% {
+      font-variation-settings: "wght" 750;
+    }
+    76% {
+      font-variation-settings: "wght" 750;
+    }
+    77% {
+      font-variation-settings: "wght" 750;
+    }
+    78% {
+      font-variation-settings: "wght" 750;
+    }
+    79% {
+      font-variation-settings: "wght" 750;
+    }
+    80% {
+      font-variation-settings: "wght" 750;
+    }
+    81% {
+      font-variation-settings: "wght" 750;
+    }
+    82% {
+      font-variation-settings: "wght" 750;
+    }
+    83% {
+      font-variation-settings: "wght" 750;
+    }
+    84% {
+      font-variation-settings: "wght" 750;
+    }
+    85% {
+      font-variation-settings: "wght" 750;
+    }
+    86% {
+      font-variation-settings: "wght" 750;
+    }
+    87% {
+      font-variation-settings: "wght" 750;
+    }
+    88% {
+      font-variation-settings: "wght" 750;
+    }
+    89% {
+      font-variation-settings: "wght" 750;
+    }
+    90% {
+      font-variation-settings: "wght" 750;
+    }
+    91% {
+      font-variation-settings: "wght" 750;
+    }
+    92% {
+      font-variation-settings: "wght" 750;
+    }
+    93% {
+      font-variation-settings: "wght" 750;
+    }
+    94% {
+      font-variation-settings: "wght" 750;
+    }
+    95% {
+      font-variation-settings: "wght" 750;
+    }
+    96% {
+      font-variation-settings: "wght" 750;
+    }
+    97% {
+      font-variation-settings: "wght" 750;
+    }
+    98% {
+      font-variation-settings: "wght" 750;
+    }
+    99% {
+      font-variation-settings: "wght" 750;
+    }
+    100% {
+      font-variation-settings: "wght" 750;
+    }
+  }
+</style>
