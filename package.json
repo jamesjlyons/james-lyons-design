@@ -13,7 +13,7 @@
   "dependencies": {
     "@tokencss/astro": "^0.0.4",
     "astro": "^1.2.6",
-    "the-new-css-reset": "^1.7.3"
+    "the-new-css-reset": "^1.8.4"
   },
   "devDependencies": {
     "prettier": "^2.7.1",
