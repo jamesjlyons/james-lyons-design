@@ -72,7 +72,7 @@ import IconItem from "../components/IconItem.astro";
         </IconItem>
 
         <IconItem
-          title="or reach out and"
+          title="or reach out"
           body="say hi"
           href="mailto:hello@jameslyons.design"
         >
@@ -133,9 +133,9 @@ import IconItem from "../components/IconItem.astro";
         </div>
       </ul>
 
-      <ul class="col">
+      <!-- <ul class="col">
         <IconItem
-          title="case studies?"
+          title="case studies"
           body="view v1"
           href="https://v1.jameslyons.design/"
         >
@@ -143,10 +143,13 @@ import IconItem from "../components/IconItem.astro";
             d="M5.127 3.502L5.25 3.5h9.5c.041 0 .082 0 .123.002A2.251 2.251 0 0012.75 2h-5.5a2.25 2.25 0 00-2.123 1.502zM1 10.25A2.25 2.25 0 013.25 8h13.5A2.25 2.25 0 0119 10.25v5.5A2.25 2.25 0 0116.75 18H3.25A2.25 2.25 0 011 15.75v-5.5zM3.25 6.5c-.04 0-.082 0-.123.002A2.25 2.25 0 015.25 5h9.5c.98 0 1.814.627 2.123 1.502a3.819 3.819 0 00-.123-.002H3.25z"
           ></path>
         </IconItem>
-      </ul>
+      </ul> -->
     </section>
     <section class="construction">
       <p>Currently under construction</p>
+      <a href="https://jameslyons.design" rel="_blank">
+        View my old portfolio</a
+      >
     </section>
   </main>
 </Layout>
@@ -231,7 +234,12 @@ import IconItem from "../components/IconItem.astro";
     animation-delay: 450ms;
     font-variation-settings: "wght" 500;
     color: accent.solid;
-    opacity: 0.2 !important;
+    opacity: 0.5 !important;
+  }
+
+  .construction > a {
+    color: accent.solid;
+    text-decoration: underline;
   }
 
   @keyframes slide {
